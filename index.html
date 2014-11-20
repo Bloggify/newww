@@ -1,50 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Bloggify</title>
-        <link rel="SHORTCUT ICON" HREF="https://avatars3.githubusercontent.com/u/2864371?s=460">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <style>
-            body {
-                font-family: 'Open Sans', sans-serif;
-                text-align: center;
-                padding: 5em;
-                background: #FFFFFF;
-            }
-            h1.title {
-                font-weight: 300;
-                margin-bottom: 0px;
-                font-size: 5em;
-            }
-            p {
-                font-weight: 600;
-                margin-top: 0;
-                font-size: 24px;
-                color: #444;
-            }
-            div.avatar img {
-                border-radius: 100%;
-                width: 185px;
-                max-width: 100%;
-            }
-            a {
-                color: #3498db;
-            }
-            .container {
-                max-width: 740px;
-                margin: 0 auto;
-            }
-        </style>
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+        <meta charset="utf-8">
+        <title>Bloggify - A blogging platform, but not only.</title>
+        <meta name="author" content="quasado">
+        <link rel="shortcut icon" href="./img/logo.png">
+
+        <meta http-equiv="X-UA-Compatible" content="edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/basic.css">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="js/script.js" type="text/javascript"></script>
     </head>
     <body>
-        <div class="container">
-            <h1 class="title">Bloggify.net</h1>
-            <p><i><a href="https://github.com/Bloggify" target="blank">Bloggify</a></i> is a Node.JS based blogging platform that is designed to be fast and easy to use. It will be open sourced soon.</p>
-            <div class="avatar">
-                <img src="https://avatars3.githubusercontent.com/u/2864371?s=460" alt="Avatar">
+        <div class="mainmenu">
+            <div class="menuwrapper">
+                <div class="menulist">
+                    <ul class="items">
+                        <li class="menuitem" data-scroll-nav="1">
+                            <a href="#about">What is Bloggify?</a>
+                        </li>
+                        <li class="menuitem" data-scroll-nav="2">
+                            <a href="#plugins">Plugins</a>
+                        </li>
+                        <li class="menuitem">
+                            <a href="#features" data-scroll-nav="3">Features</a>
+                        </li>
+                        <li class="menuitem">
+                            <a href="#themes" data-scroll-nav="4">Themes</a>
+                        </li>
+                        <li class="menuitem">
+                            <a href="#support" data-scroll-nav="6">
+                                <i class="fa fa-heart"></i> Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#home" class="logoblock" data-scroll-nav="0">
+                    <span class="companyname">Bloggify</span>
+                </a>
+
+                <div class="socialblock">
+                    <a href="http://www.facebook.com/BloggifyOrg" target="_blank" title="Facebook"
+                    class="socialicon"><i class="fa fa-facebook"></i>
+                        </a>
+                    <a href="http://www.twitter.com/IonicaBizau" target="_blank" title="Twitter" class="socialicon"><i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/IonicaBizau" target="_blank" title="YouTube" class="socialicon"><i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/Bloggify" target="_blank" title="Github" class="socialicon"><i class="fa fa-github"></i>
+                    </a>
+                </div>
             </div>
-            <p>This place is owned by <a href="http://ionicabizau.net" target="blank">Ionică Bizău</a>.</p>
         </div>
+
+
+        <div id="home" class="homeblock colorblock block" data-scroll-index="0">
+            <div class="block-container">
+                <div id="description-home" class="active">
+                    <div class="wrapper">
+                        <p class="supertext">A blogging platform, but not only.</p>
+                        <h1 class="maintext">Bloggify</h1>
+                        <p class="descriptiontext">Introducing Bloggify, a blogging platform that is designed
+                            to be fast, beautiful and free.</p>
+                        <div class="links">
+                            <a href="http://github.com/Bloggify" class="button">
+                                <i class="fa fa-github"></i>
+                                Visit GitHub page
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    <!--
+                    <div id="picture-home" class="active">
+                        <div class="wrapper">
+                            <img class="display" src="img/dashboard.png">
+                        </div>
+                    </div>
+    -->
+            </div>
+        </div>
+
+        <div id="about" class="block" data-scroll-index="1">
+            <div class="block-container">
+                <h2 class="title">What is Bloggify?</h2>
+                <div class="description">
+                    <img class="small left" src="img/logo.png" alt="">
+                    <p><strong>Bloggify</strong> is a NodeJS platform that provides a simple
+                        way to build a blog in minutes. Few of the advantages are
+                        listed <a href="#features">below</a>, the main ones being <em>simplicity</em> and <em>speed</em>.
+                        The development started in <em>April, 2014</em> and the platform
+                        will be open sourced soon! <a href="#support">Your support</a> can
+                        help that.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="plugins" class="appsblock whiteblock block" data-scroll-index="2">
+            <div class="block-container">
+                <h2 class="title">Plugins</h2>
+                <div class="description">
+                    <p>
+                        <i class="fa fa-puzzle-piece puzzle"></i>
+                        <strong>Bloggify</strong> is like a puzzle: it is built from
+                        multiple pieces. Each piece must do one thing and do it good.
+                        And these pieces are the plugins. Even most of the Bloggify
+                        core parts are plugins. That makes mantaining a lot easier.
+                        The concept is: <em>Throw away what you don't use</em>. You
+                        don't need a feature? Cool. Uninstall that plugin.</p><p>For
+                        example, the Bloggify dashboard is a plugin. If you don't
+                        need a dashboard in your browser, just use a Bloggify client
+                        application for your platform and uninstall dashboard plugin.
+                        If you are too geek, you can always do the things from command
+                        line and not use any user interface.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="features" class="appsblock whiteblock block" data-scroll-index="3">
+            <div class="block-container">
+                <h2 class="title">Features</h2>
+                <div class="description">
+                    <p>
+                        <div class="apps">
+                            <div class="slider" style="height: 596px;">
+                                <div class="navigation navigation-left">
+                                    <i class="fa fa-chevron-left"></i>
+                                </div>
+                                <div class="navigation navigation-right">
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+
+                                <div class="rotator" style="-webkit-transform: rotateY(0deg); transform: rotateY(0deg);">
+                                    <div class="slide active simplicity" style="">
+                                        <div class="slide-wrapper">
+                                            <div class="picture">
+                                                <i class="fa fa-lightbulb-o"></i>
+                                            </div>
+                                            <div class="container aleft">
+                                                <h1 class="title">Simplicity</h1>
+
+                                                <div class="description">
+                                                    <strong>Bloggify</strong> is simple
+                                                    to use. With a minimalist interface,
+                                                    you can do anything you expect
+                                                    from a blogging platform. If you
+                                                    still want more, you can install
+                                                    <a href="#plugins">plugins</a>, or if you're a developer,
+                                                    create plugins.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide odd speed" style="">
+                                        <div class="slide-wrapper">
+                                            <div class="picture">
+                                                <i class="fa fa-tachometer"></i>
+                                            </div>
+                                            <div class="container aleft">
+                                                <h1 class="title">It's fast!</h1>
+
+                                                <div class="description">
+                                                    <strong>Bloggify</strong>'s performance
+                                                    is awesome. Caching techniques
+                                                    are used (both on server and client)
+                                                    to speed up the things.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide api" style="">
+                                        <div class="slide-wrapper">
+                                            <div class="container aright">
+                                                <h1 class="title">API</h1>
+
+                                                <div class="description">
+                                                    <strong>Bloggify</strong> comes
+                                                    a nice REST API for developers.
+                                                    Using this API developers can create
+                                                    third-pary applications to access
+                                                    Bloggify resources.
+                                                </div>
+                                            </div>
+                                            <div class="picture">
+                                                <i class="fa fa-cogs"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide odd git" style="">
+                                        <div class="slide-wrapper">
+                                            <div class="picture">
+                                                <i class="fa fa-git"></i>
+                                            </div>
+                                            <div class="container aleft">
+                                                <h1 class="title">Git Integration</h1>
+
+                                                <div class="description">
+                                                    <strong>Bloggify</strong>'s API
+                                                    has built-in <a href="http://git-scm.com/">Git</a> integration.
+                                                    This is cool when talking about
+                                                    content revisions. All changes
+                                                    made by user are saved and commited
+                                                    into a <code>git</code> repository.
+                                                    This repository can be synced with
+                                                    a Git provider (e.g. <a href="http:/github.com">GitHub</a>),
+                                                    so other people will be able to contribute
+                                                    to content (e.g. fixing typos etc).
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="themes" class="appsblock whiteblock block" data-scroll-index="4">
+                <div class="block-container">
+                    <h2 class="title">Themes</h2>
+                    <div class="description">
+                        <p>
+                            <i class="fa fa-paint-brush"></i>
+                            Themes are funny! As human, you can choose a theme you like.
+                            As developer, you can create a theme in few minutes. The Bloggify themes
+                            contain <a href="http://jade-lang.com/"><code>jade</code></a>, <code>html</code> and <code>css</code> files.
+                            Also, they contain the <code>package.json</code> file that has
+                            <a href="https://www.npmjs.org/">NPM</a> and theme information.
+                            And yes, themes support NodeJS modules!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="support" class="appsblock whiteblock block" data-scroll-index="5">
+                <div class="block-container">
+                    <h2 class="title"><i class="fa fa-heart"></i> Support</h2>
+                    <div class="description">
+                        <p>
+                            You can help Bloggify development.
+                            <br>Bring Bloggify release date closer by making a donation.
+                            <br>All donations are welcome! Thank you!</p>
+                        <br>
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YAWFYHZRX4DU6"
+                        class="button">
+                            <i class="fa fa-paypal"></i>
+                            Donate
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block whiteblock footerblock">
+                <i class="fa fa-code"></i> by with JavaScript and <i class="fa fa-heart pulse"></i> from Romania.<br>
+                <a href="http://ionicabizau.net">Ionică Bizău</a>
+            </div>
     </body>
 </html>
