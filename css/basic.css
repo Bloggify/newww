@@ -1,25 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 /* http://coolors.co/ffe095-88c198-017487-710149-fe3775  */
-@font-face {
-    font-family: 'proxima_nova_ltlight';
-    src: url('../fonts/ProximaNova-Light-webfont.eot');
-    src: url('../fonts/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Light-webfont.woff') format('woff'), url('../fonts/ProximaNova-Light-webfont.ttf') format('truetype'), url('../fonts/ProximaNova-Light-webfont.svg#proxima_nova_ltlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'proxima_nova_rgregular';
-    src: url('../fonts/ProximaNova-Reg-webfont.eot');
-    src: url('../fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'), url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype'), url('../fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'proxima_nova_ltsemibold';
-    src: url('../fonts/ProximaNova-Sbold-webfont.eot');
-    src: url('../fonts/ProximaNova-Sbold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Sbold-webfont.woff') format('woff'), url('../fonts/ProximaNova-Sbold-webfont.ttf') format('truetype'), url('../fonts/ProximaNova-Sbold-webfont.svg#proxima_nova_ltsemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 #picture-home img.display {
     width: 890px;
 }
@@ -30,7 +10,7 @@ html a {
 }
 body {
     background: #ffffff;
-    font-family: 'proxima_nova_rgregular', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 1.5;
@@ -59,13 +39,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'proxima_nova_ltsemibold', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
 }
 input,
 textarea {
-    font-family: 'proxima_nova_rgregular', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     padding: 8px 14px;
     margin: 0 5px;
@@ -90,7 +70,7 @@ textarea::selection {
 }
 button,
 input.send {
-    font-family: 'proxima_nova_rgregular', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     padding: 8px 18px;
     border: none;
@@ -131,7 +111,7 @@ i {
     text-shadow: none;
 }
 b {
-    font-family: 'proxima_nova_ltsemibold', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .aright {
     text-align: right;
@@ -340,7 +320,7 @@ b {
 }
 .mainmenu .menuwrapper .logoblock .companyname {
     float: left;
-    font-family: 'proxima_nova_ltsemibold', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     text-transform: uppercase;
     margin: 0.3em 0 0 1em;
@@ -361,7 +341,7 @@ b {
     list-style: none;
 }
 .mainmenu .menuwrapper .menulist .items .menuitem a {
-    font-family: 'proxima_nova_ltlight', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgba(255, 255, 255, 0.62);
     display: inline-block;
     padding: 0.6em 1em;
@@ -579,7 +559,7 @@ b {
 .appsblock .apps .slider .rotator .slide .slide-wrapper .container .title {
     margin: 0 0 20px 0;
     font-size: 40px;
-    font-family: 'proxima_nova_ltlight';
+    font-family: 'Open Sans';
     text-align: inherit;
     text-transform: none;
 }
