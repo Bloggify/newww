@@ -474,7 +474,7 @@ b {
     margin-bottom: -6px;
 }
 .appsblock .apps .slider {
-    margin: 15px 0 60px 0;
+    margin: 15px 0;
     position: relative;
     float: left;
     min-width: 99%;
@@ -1427,8 +1427,9 @@ img.left {
 }
 
 #features {
-    background: #FFE095;
     margin-top: 128px;
+    background: #FFE095;
+    padding: 60px 0 55px 0;
 }
 
 code {
@@ -1438,8 +1439,13 @@ code {
     border-radius: 4px;
 }
 
+
+#features .block-container .title {
+    margin: 0;
+}
+
 #features .block-container {
-    padding-top: 0;
+    width: 100%;
 }
 
 div#support {
@@ -1473,4 +1479,5 @@ div#support .block-container {
 .mainmenu.scrolled .menuwrapper .socialblock .socialicon i:hover {
     color: #475258;
 }
+
 

@@ -117,28 +117,15 @@ $(document).ready(function () {
     $('.appsblock .apps .slider').height($('.slide.active .slide-wrapper').height());
 
 
-//===== "Send mail" button =====
-    $('.mailbutton').click(function () {
-        $('.contactsblock .input-container').toggleClass('active');
-    });
-
-    $('#picture-home').delay(250).queue(function () {
-        $(this).addClass('active');
-    });
-    $('#description-home').delay(500).queue(function () {
-        $(this).addClass('active')
-    });
-
     $('a[href*=#]').bind("click", function (e) {
         var anchor = $(this);
         var locate = $.attr(this, 'href').substr($.attr(this, 'href').indexOf('#') + 1);
         $('html, body').stop().animate({
-            scrollTop: $('[id="' + locate + '"]').offset().top
-        }, 800, "swing");
-
-        $(this).delay(800).queue(function () {
+            scrollTop: $('#' + locate).offset().top
+        }, 800, "swing", function () {
             window.location.hash = locate;
         });
+
         e.preventDefault();
     });
 
@@ -162,6 +149,4 @@ $(document).ready(function () {
 
         return false;
     });
-
-    $.scrollIt();
 });
