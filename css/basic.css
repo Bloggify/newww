@@ -405,14 +405,9 @@ b {
     color: #1a1f22;
 }
 .mainmenu.scrolled .menuwrapper .menulist .items .menuitem a:hover,
-.mainmenu.scrolled .menuwrapper .menulist .items .menuitem a:active {
+.mainmenu.scrolled .menuwrapper .menulist .items .menuitem a:active,
+.mainmenu.scrolled .menuwrapper .logoblock:hover .companyname:hover {
     color: #2980b9;
-}
-.mainmenu.scrolled .menuwrapper .socialblock .socialicon i:hover {
-    color: #e30061;
-}
-.mainmenu.scrolled .menuwrapper .logoblock:hover .companyname {
-    color: #e30061;
 }
 .mainmenu.scrolled .menuwrapper .logoblock .companyname {
     visibility: visible;
