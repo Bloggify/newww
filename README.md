@@ -1,4 +1,4 @@
 Bloggify
 ========
 
-*Bloggify* is a Node.JS based blogging platform that is designed to be fast and easy to use. It will be open sourced soon.
+This repository contains the source code of http://bloggify.org/.
