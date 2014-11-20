@@ -6,7 +6,6 @@
 html,
 html a {
     -webkit-font-smoothing: subpixel-antialiased !important;
-    text-decoration: none;
 }
 body {
     background: #ffffff;
@@ -105,7 +104,7 @@ h4 {
     font-size: 24px;
 }
 a {
-    color: #475258;
+    color: #017487;
 }
 i {
     text-shadow: none;
@@ -206,7 +205,7 @@ b {
     color: #1a1f22;
 }
 .whiteblock a {
-    color: #475258;
+    color: #017487;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -233,6 +232,7 @@ b {
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    text-decoration: none;
 }
 .button:hover {
     background: rgba(0, 0, 0, 0.4);
@@ -352,6 +352,7 @@ b {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 .mainmenu .menuwrapper .menulist .items .menuitem a:hover,
 .mainmenu .menuwrapper .menulist .items .menuitem a:active {
@@ -1408,7 +1409,7 @@ img.left {
 #features {
     margin-top: 128px;
     background: #FFE095;
-    padding: 60px 0 55px 0;
+    padding: 60px 0 130px 0;
 }
 
 code {
@@ -1458,5 +1459,3 @@ div#support .block-container {
 .mainmenu.scrolled .menuwrapper .socialblock .socialicon i:hover {
     color: #475258;
 }
-
-
