@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic,400,700,800);
 @import url(http://fonts.googleapis.com/css?family=Cardo:800italic,400,700,800);
 @import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:800italic,400,700,800);
 
@@ -79,7 +78,7 @@ h4 {
     font-size: 24px;
 }
 a {
-    color: #017487;
+    color: #3687C3;
 }
 i {
     text-shadow: none;
@@ -94,7 +93,7 @@ i {
     color: #1a1f22;
 }
 .whiteblock a {
-    color: #017487;
+    color: #3687C3;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -147,7 +146,7 @@ i {
     text-align: center;
     font-weight: 300;
     margin: 40px 0 0.2em 0;
-    color: #017487;
+    color: #3687C3;
 }
 .block .block-container .description {
     font-size: 20px;
@@ -209,7 +208,7 @@ i {
 }
 .mainmenu .menuwrapper .logoblock .companyname {
     float: left;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sorts Mill Goudy', serif;
     font-size: 17px;
     text-transform: uppercase;
     margin: 0.3em 0 0 1em;
@@ -230,7 +229,7 @@ i {
     list-style: none;
 }
 .mainmenu .menuwrapper .menulist .items .menuitem a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cardo', serif;
     color: rgba(255, 255, 255, 0.62);
     display: inline-block;
     padding: 0.6em 1em;
@@ -356,13 +355,14 @@ i {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
 .appsblock .apps .slider .navigation {
     width: 50px;
     height: 50px;
     font-size: 20px;
     z-index: 500;
-    color: #ffffff;
-    background: rgba(117, 117, 117, 1);
+    color: #3687C3;
+    background: #FFFFFF;
     border-radius: 50%;
     position: absolute;
     margin: 0 40px;
@@ -390,7 +390,6 @@ i {
     -ms-transform: rotate(360deg) scale(1.3);
     -o-transform: rotate(360deg) scale(1.3);
     transform: rotate(360deg) scale(1.3);
-    background: #475258;
 }
 .appsblock .apps .slider .rotator {
     max-width: 960px;
@@ -450,7 +449,7 @@ i {
 .appsblock .apps .slider .rotator .slide .slide-wrapper .container .title {
     margin: 0 0 20px 0;
     font-size: 40px;
-    font-family: 'Open Sans';
+    font-family: 'Cardo';
     text-align: inherit;
     text-transform: none;
 }
@@ -459,7 +458,7 @@ i {
     font-size: 18px;
     text-align: inherit;
     line-height: 1.6;
-    color: #777777;
+    color: #FFFFFF;
 }
 .appsblock .apps .slider .rotator .active {
     opacity: 1;
@@ -651,7 +650,7 @@ i {
     font-size: 140px;
     float: left;
     padding: 20px;
-    color: #710149;
+    color: #3687C3;
 }
 
 #plugins .description {
@@ -680,26 +679,26 @@ img.left {
 
 .slide.simplicity .picture i.fa {
     font-size: 9.3em;
-    color: #017487;
+    color: #ffffff;
 }
 
 .slide.speed .picture i.fa {
     font-size: 9.3em;
-    color: #FE3775;
+    color: #ffffff;
 }
 
 .slide.api .picture i.fa {
     font-size: 9.3em;
-    color: #2c3e50;
+    color: #ffffff;
 }
 
 .slide.git .picture i.fa {
     font-size: 9.3em;
-    color: #6EB381;
+    color: #ffffff;
 }
 
 #themes i.fa {
-    color: #FE3775;
+    color: #ffffff;
     font-size: 140px;
     float: left;
     padding: 20px;
@@ -712,8 +711,18 @@ img.left {
 
 #features {
     margin-top: 128px;
-    background: #FFE095;
+    background: #3687C3;
     padding: 60px 0 130px 0;
+    color #ffffff;
+}
+
+#features a {
+    color: #ffffff;
+}
+
+#features h2,
+#features h1 {
+    color: #FFFFFF;
 }
 
 code {
@@ -733,7 +742,7 @@ code {
 }
 
 div#support {
-    background: #FE3775;
+    background: #3687C3;
     color: white;
     margin: 70px 0;
     padding-bottom: 50px;
