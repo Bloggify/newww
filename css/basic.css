@@ -669,6 +669,10 @@ img.small {
 }
 
 
+#about {
+    margin-top: -7px;
+}
+
 #about .description {
     text-align: left;
 }
@@ -712,7 +716,7 @@ img.left {
 #features {
     margin-top: 128px;
     background: #3687C3;
-    padding: 60px 0 130px 0;
+    padding: 0 0 100px 0;
     color #ffffff;
 }
 
@@ -789,4 +793,20 @@ div#support .block-container {
     -webkit-transform-origin: 50% 60%;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.triangle.white {
+    border-top: 20px solid #ffffff;
+}
+
+.triangle.blue {
+    border-top: 20px solid #3687C3;
 }
