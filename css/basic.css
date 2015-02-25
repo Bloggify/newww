@@ -726,9 +726,9 @@ img.left {
 }
 
 code {
-    background: rgb(236, 236, 236);
+    background: rgba(255, 255, 255, 0.2);
     padding: 1px 8px;
-    border: 1px solid rgb(166, 161, 161);
+    border: 1px solid rgba(166, 161, 161, 0.16);
     border-radius: 4px;
 }
 
