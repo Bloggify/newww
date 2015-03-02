@@ -829,3 +829,27 @@ div#support .block-container {
 .triangle.blue {
     border-top: 20px solid #3687C3;
 }
+
+.sponsors {
+    padding: 30px 0;
+}
+
+.sponsors img {
+    min-height: 50px;
+    display: inline-block;
+    max-width: 200px;
+    margin: 27px;
+    -webkit-filter: grayscale(1);
+}
+
+.sponsors img:hover {
+    -webkit-filter: none;
+}
+
+.sponsors a {
+    text-decoration: none;
+}
+
+div#themes {
+    padding-bottom: 60px;
+}
