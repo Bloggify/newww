@@ -853,3 +853,9 @@ div#support .block-container {
 div#themes {
     padding-bottom: 60px;
 }
+
+#home {
+    background-image: url("../img/bg.jpg");
+    background-size: 100%;
+    background-position: 0 center;
+}
