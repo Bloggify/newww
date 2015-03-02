@@ -476,8 +476,12 @@ i {
 }
 .footerblock {
     text-align: center;
+}
+
+.footerblock .block-container {
     padding: 40px 0;
 }
+
 .footerblock a.copyright {
     text-transform: uppercase;
     font-size: 18px;
@@ -745,15 +749,30 @@ code {
     width: 100%;
 }
 
-div#support {
+div.bg-blue {
     background: #3687C3;
     color: white;
-    margin: 70px 0;
+}
+
+div.bg-blue a {
+    color: white;
+}
+
+div#plugins {
+    padding-bottom: 150px;
+}
+
+div#support {
+    margin: 0px 0;
     padding-bottom: 50px;
 }
 
-div#support h2 {
-    color: white;
+div#support .button {
+    background: #3687C3;
+}
+
+div.bg-blue h2 {
+    color: white !important;
 }
 
 div#support .button {
