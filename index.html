@@ -66,12 +66,12 @@
                     <div class="wrapper">
                         <p class="supertext">A modular blogging framework for the 21st Century.</p>
                         <h1 class="maintext">Bloggify</h1>
-                        <p class="descriptiontext">Introducing Bloggify, a blogging platform that is designed
+                        <p class="descriptiontext">Introducing Bloggify, a blogging framework that is designed
                             to be fast, beautiful and free.</p>
                         <div class="links">
                             <a href="http://github.com/Bloggify" class="button">
                                 <i class="fa fa-github"></i>
-                                Visit GitHub page
+                                Browse the Bloggify projects
                             </a>
                         </div>
                     </div>
@@ -86,13 +86,12 @@
                 <h2 class="title">What is Bloggify?</h2>
                 <div class="description">
                     <img class="small left" src="img/logo.png" alt="">
-                    <p><strong>Bloggify</strong> is a NodeJS platform that provides a simple
-                        way to build a blog in minutes. Few of the advantages are
-                        listed <a href="#features">below</a>, the main ones being <em>simplicity</em> and <em>speed</em>.
-                        The development started in <em>April, 2014</em> and the platform
-                        will be open sourced soon! <a href="#support">Your support</a> can
-                        help that.
+                    <p><strong>Bloggify</strong> is a NodeJS framework that provides a simple
+                        way to build a blog in minutes. Some of the advantages are
+                        listed <a href="#features">below</a>, the main ones being <em>modularity</em>, <em>simplicity</em> and <em>speed</em>.
                     </p>
+                    <p>The Bloggify core is not public yet, but some of the tools that power it (including themes, plugins and other tools) are <a href="https://github.com/Bloggify" target="_blank">open-source here</a>.</p>
+                    <p>We intend to release a stable release which will be free and open-source. You can <a href="#support">help that</a>!</p>
                 </div>
             </div>
         </div>
@@ -112,7 +111,7 @@
                                     <i class="fa fa-chevron-right"></i>
                                 </div>
 
-                                <div class="rotator" style="-webkit-transform: rotateY(0deg); transform: rotateY(0deg);">
+                                <div class="rotator">
                                     <div class="slide active simplicity" style="">
                                         <div class="slide-wrapper">
                                             <div class="picture">
@@ -126,9 +125,8 @@
                                                     to use. With a minimalist interface,
                                                     you can do anything you expect
                                                     from a blogging platform. If you
-                                                    still want more, you can install
-                                                    <a href="#plugins">plugins</a>, or if you're a developer,
-                                                    create plugins.
+                                                    still want more, you can install and create
+                                                    <a href="#plugins">plugins</a> easily.
                                                 </div>
                                             </div>
                                         </div>
@@ -139,7 +137,7 @@
                                                 <i class="fa fa-tachometer"></i>
                                             </div>
                                             <div class="container aleft">
-                                                <h1 class="title">It's fast!</h1>
+                                                <h1 class="title">Speed</h1>
 
                                                 <div class="description">
                                                     <strong>Bloggify</strong>'s performance
@@ -156,11 +154,11 @@
                                                 <h1 class="title">API</h1>
 
                                                 <div class="description">
-                                                    <strong>Bloggify</strong> comes
-                                                    a nice REST API for developers.
-                                                    Using this API developers can create
+                                                    <strong>Bloggify</strong> has a nice
+                                                    REST API for developers.
+                                                    Using it, the developers can create
                                                     third-pary applications to access
-                                                    Bloggify resources.
+                                                    the Bloggify resources.
                                                 </div>
                                             </div>
                                             <div class="picture">
@@ -180,13 +178,12 @@
                                                     <strong>Bloggify</strong>'s API
                                                     has built-in <a href="http://git-scm.com/">Git</a> integration.
                                                     This is cool when talking about
-                                                    content revisions. All changes
-                                                    made by user are saved and commited
+                                                    content. All changes made by user are saved automatically
                                                     into a <code>git</code> repository.
                                                     This repository can be synced with
                                                     a Git provider (e.g. <a href="http:/github.com">GitHub</a>),
                                                     so other people will be able to contribute
-                                                    to content (e.g. fixing typos etc).
+                                                    to content (e.g. fixing typos and so on).
                                                 </div>
                                             </div>
                                         </div>
@@ -206,15 +203,14 @@
                         <p>
                             <i class="fa fa-puzzle-piece puzzle"></i>
                             <strong>Bloggify</strong> is like a puzzle: it is built from
-                            multiple pieces. Each piece must do one thing and do it good.
-                            And these pieces are the plugins. Even most of the Bloggify
-                            core parts are plugins. That makes maintaining a lot easier.
-                            The concept is: <em>Throw away what you don't use</em>. You
-                            don't need a feature? Cool. Just uninstall the plugin, you won't use.</p><p>For
-                            example, the Bloggify dashboard is a plugin. If you don't
-                            need a dashboard in your browser, just use a Bloggify client
-                            application for your platform and uninstall dashboard plugin.
-                            If you are a geek, you can always do the things from command
+                            multiple pieces. Each piece must do one thing and do it well.
+                            These pieces are called <em>plugins</em>. Bloggify itself is
+                            just a tiny server that puts them together. That makes maintaining
+                            the tools easier. The concept is: <em>Throw away what you don't need</em>.
+                            Do you not need a feature? Cool. Just uninstall it by removing the plugin.</p>
+                            <p>For example, the Bloggify dashboard is a plugin. If you don't
+                            need a dashboard in your browser, just uninstall it. You can use a Bloggify
+                            client for your platform. If you are a geek, you can always do the things from command
                             line and not use any user interface.</p>
                     </div>
                 </div>
@@ -227,12 +223,8 @@
                     <div class="description">
                         <p>
                             <i class="fa fa-paint-brush"></i>
-                            Themes are funny! As human, you can choose a theme you like.
-                            As developer, you can create a theme in few minutes. The Bloggify themes
-                            contain <code>jade</code>, <code>html</code> and <code>css</code> files.
-                            Also, they contain the <code>package.json</code> file that has
-                            <a href="https://www.npmjs.org/">NPM</a> and theme information.
-                            And yes, themes support NodeJS modules!
+                            The themes are another part that makes Bloggify awesome. If you are non-technical,
+                            you can choose a theme you like. However, as developer, you can create a theme easily.
                         </p>
                     </div>
                 </div>
@@ -243,8 +235,8 @@
                 <div class="block-container">
                     <h2 class="title"><i class="fa fa-heart"></i> Support</h2>
                     <div class="description">
-                        <p>You can bring Bloggify release date closer by making a donation.
-                            Thank you for each piece of support!</p>
+                        <p>Your support will help Bloggify be released sooner.
+                        <a href="mailto:contact@bloggify.org">Write to us</a> how can you sponsor Bloggify.</p>
                         <br>
 
                         <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YAWFYHZRX4DU6" class="button">
@@ -255,9 +247,11 @@
                         <a href="mailto:contact@bloggify.org" class="button">
                             <i class="fa fa-envelope"></i>
                             Contact us
-                        </a>
+                        </a></br>
+
 
                         <div class="sponsors">
+                            <p>Big thanks to these sponsors!</p>
                             <a target="blank" href="https://www.brightbox.com/" class="s-brightbox">
                                 <img src="./img/sponsors/brightbox.png" alt="">
                             </a>
@@ -272,8 +266,7 @@
             <div class="block whiteblock footerblock bg-blue">
                 <div class="triangle white"></div>
                 <div class="block-container">
-                    <i class="fa fa-code"></i> with JavaScript and <i class="fa fa-heart pulse"></i> from Romania.<br>
-                    <a href="http://ionicabizau.net">Ionică Bizău</a>
+                    <i class="fa fa-code"></i> with JavaScript and <i class="fa fa-heart pulse"></i> from Romania by <a href="http://ionicabizau.net">Ionică Bizău</a>
                 </div>
             </div>
     </body>
