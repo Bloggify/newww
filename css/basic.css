@@ -840,9 +840,7 @@ div#support .block-container {
 }
 
 .sponsors img {
-    min-height: 50px;
     display: inline-block;
-    max-width: 200px;
     margin: 27px;
     -webkit-filter: grayscale(1);
 }
@@ -879,3 +877,13 @@ div#themes {
     height: 100px;
     bottom: 0px;
 }
+
+.sponsors .s-brightbox img {
+    height: 75px;
+}
+
+.sponsors .s-devstickers img {
+    height: 31px;
+    padding-bottom: 4px;
+}
+
