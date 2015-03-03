@@ -78,7 +78,7 @@ h4 {
     font-size: 24px;
 }
 a {
-    color: #3687C3;
+    color: #7B3928;
 }
 i {
     text-shadow: none;
@@ -93,7 +93,7 @@ i {
     color: #1a1f22;
 }
 .whiteblock a {
-    color: #3687C3;
+    color: #7B3928;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -146,7 +146,7 @@ i {
     text-align: center;
     font-weight: 300;
     margin: 40px 0 0.2em 0;
-    color: #3687C3;
+    color: #7B3928;
 }
 .block .block-container .description {
     font-size: 20px;
@@ -282,7 +282,7 @@ i {
     visibility: visible;
 }
 .homeblock {
-    background: #3687C3;
+    background: #7B3928;
 }
 .homeblock #description-home {
     text-align: center;
@@ -362,7 +362,7 @@ i {
     height: 50px;
     font-size: 20px;
     z-index: 500;
-    color: #3687C3;
+    color: #7B3928;
     background: #FFFFFF;
     border-radius: 50%;
     position: absolute;
@@ -655,7 +655,7 @@ i {
     font-size: 140px;
     float: left;
     padding: 20px;
-    color: #3687C3;
+    color: #7B3928;
 }
 
 #plugins .description {
@@ -720,7 +720,7 @@ img.left {
 
 #features {
     margin-top: 128px;
-    background: #c0392b;
+    background: #7B3928;
     padding: 0 0 100px 0;
     color #ffffff;
 }
@@ -751,7 +751,7 @@ code {
 }
 
 div.bg-blue {
-    background: #3687C3;
+    background: #7B3928;
     color: white;
 }
 
@@ -769,7 +769,7 @@ div#support {
 }
 
 div#support .button {
-    background: #3687C3;
+    background: #7B3928;
 }
 
 div.bg-blue h2 {
@@ -828,7 +828,7 @@ div#support .block-container {
 }
 
 .triangle.blue {
-    border-top: 20px solid #3687C3;
+    border-top: 20px solid #7B3928;
 }
 
 .triangle.black {
