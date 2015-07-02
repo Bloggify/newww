@@ -1,7 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Cardo:800italic,400,700,800);
 @import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:800italic,400,700,800);
 
-
 /* http://coolors.co/ffe095-88c198-017487-710149-fe3775  */
 #picture-home img.display {
     width: 890px;
@@ -887,7 +886,10 @@ div#themes {
 }
 
 .sponsors .s-devstickers img {
-    height: 31px;
-    padding-bottom: 4px;
+    height: 21px;
+    padding-bottom: 22px;
 }
 
+.sponsors .s-carlisa img {
+    height: 78px;
+}
