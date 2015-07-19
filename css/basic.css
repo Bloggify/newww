@@ -877,6 +877,10 @@ div#themes {
     bottom: 0px;
 }
 
+.sponsors img {
+    vertical-align: middle;
+}
+
 .sponsors .s-brightbox img {
     height: 75px;
 }
@@ -886,10 +890,13 @@ div#themes {
 }
 
 .sponsors .s-devstickers img {
-    height: 21px;
-    padding-bottom: 22px;
+    height: 26px;
 }
 
 .sponsors .s-carlisa img {
     height: 78px;
+}
+
+.sponsors .s-statuspage img {
+    height: 37px;
 }
