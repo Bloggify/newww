@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     var parallax = debounce(function() {
         no_of_elements = 0;
         $('.parallax').each(function() {
