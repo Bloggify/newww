@@ -1,281 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-        <meta charset="utf-8">
-        <title>Bloggify - A modular blogging framework for the 21st Century.</title>
-        <meta name="author" content="quasado">
-        <link rel="shortcut icon" href="./img/logo.png">
-
-        <meta http-equiv="X-UA-Compatible" content="edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./css/basic.css">
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="js/script.js" type="text/javascript"></script>
+	<meta charset="utf-8">
+	<title>Bloggify - A modular blogging platform for the 21st Century.</title>
+	<meta name="author" content="Bloggify">
+	<link rel="shortcut icon" href="img/logo.png">
+	<meta http-equiv="X-UA-Compatible" content="edge">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/IonicaBizau/donate.js/gh-pages/dist/donate.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+        <script src="js/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <div class="mainmenu">
-            <div class="menuwrapper">
-                <div class="menulist">
-                    <ul class="items">
-                        <li class="menuitem" data-scroll-nav="1">
-                            <a href="#about">What is Bloggify?</a>
+	<nav class="navbar navbar-transparent">
+	    <div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand" href="/">
+                        <img src="img/mark-white-circle.svg">
+                    </a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Features</a></li>
+			<li><a href="#">Support Bloggify</a></li>
+			<li><a href="#">Contact</a></li>
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="http://www.facebook.com/BloggifyOrg"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li class="menuitem">
-                            <a href="#features" data-scroll-nav="3">Features</a>
+                        <li>
+                            <a href="http://www.twitter.com/Bloggify"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li class="menuitem" data-scroll-nav="2">
-                            <a href="#plugins">Plugins</a>
+                        <li>
+                            <a href="https://github.com/Bloggify"><i class="fa fa-github"></i></a>
                         </li>
-                        <li class="menuitem">
-                            <a href="#themes" data-scroll-nav="4">Themes</a>
+                        <li>
+                            <a href="https://plus.google.com/104963974860139832791"><i class="fa fa-google-plus"></i></a>
                         </li>
-                        <li class="menuitem">
-                            <a href="#support" data-scroll-nav="6">
-                                <i class="fa fa-heart"></i> Support
-                            </a>
-                        </li>
-                    </ul>
+		    </ul>
+		</div>
+	    </div>
+	</nav>
+        <div class="page-wrapper">
+            <section class="heading parallax">
+                <div class="parallax-background">
+                    <img src="img/bg.jpg">
                 </div>
-
-                <a href="#home" class="logoblock" data-scroll-nav="0">
-                    <span class="companyname">Bloggify</span>
-                </a>
-
-                <div class="socialblock">
-                    <a href="http://www.facebook.com/BloggifyOrg" target="_blank" title="Facebook"
-                    class="socialicon"><i class="fa fa-facebook"></i>
-                        </a>
-                    <a href="http://www.twitter.com/IonicaBizau" target="_blank" title="Twitter" class="socialicon"><i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://www.youtube.com/IonicaBizau" target="_blank" title="YouTube" class="socialicon"><i class="fa fa-youtube"></i>
-                    </a>
-                    <a href="https://github.com/Bloggify" target="_blank" title="Github" class="socialicon"><i class="fa fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="home" class="homeblock colorblock block" data-scroll-index="0">
-            <div class="block-container">
-                <div id="description-home" class="active">
-                    <div class="wrapper">
-                        <p class="supertext">A modular blogging framework for the 21st Century.</p>
-                        <h1 class="maintext">Bloggify</h1>
-                        <p class="descriptiontext">Fast, beautiful and free.</p>
-                        <div class="links">
-                            <a href="http://github.com/Bloggify" class="button">
-                                <i class="fa fa-github"></i>
-                                Browse the Bloggify projects
-                            </a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <h1><img class="logo-title" src="img/logo.svg" /></h1>
+                                <p>A modular blogging platform for the 21st Century.</p><br>
+                                <a class="btn btn-default" href="https://twitter.com/Bloggify">
+                                    <i class="fa fa-twitter"></i> Follow us on Twitter
+                                </a>
+                                <a class="btn btn-default" href="mailto:support@bloggify.org">
+                                    <i class="fa fa-envelope"></i> Contact us
+                                </a>
+                            </div>
+                            <div class="subscribe-form text-center hide">
+                                <p>Subscribe for news</p>
+				<form class="form-horizontal">
+				    <div class="form-group">
+					<div class="col-sm-12">
+					    <input type="email" class="form-control" placeholder="Email">
+					</div>
+				    </div>
+				    <div class="form-group">
+					<div class="col-sm-12">
+					    <input type="password" class="form-control" placeholder="Name">
+					</div>
+				    </div>
+				    <div class="form-group">
+					<div class="col-sm-12">
+					    <button type="submit" class="btn btn-default form-control">Subscribe</button>
+					</div>
+				    </div>
+				</form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="shadow"></div>
-        </div>
+            </section>
+            <section class="about bg-gray pad-big text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-content">
+                                <h1>About</h1>
+                                <p><strong>Bloggify</strong> is a NodeJS platform providing a simple
+                                    way to build a blog in minutes. We focus on <em>modularity</em>, <em>flexibility</em>, <em>simplicity</em> and <em>speed</em>.
+                                </p>
+                                <hr>
 
-        <div id="about" class="block" data-scroll-index="1">
-            <div class="triangle black"> </div>
-            <div class="block-container">
-                <h2 class="title">What is Bloggify?</h2>
-                <div class="description">
-                    <img class="small left" src="img/logo.png" alt="">
-                    <p><strong>Bloggify</strong> is a NodeJS framework that provides a simple
-                        way to build a blog in minutes. Some of the advantages are
-                        listed <a href="#features">below</a>, the main ones being <em>modularity</em>, <em>simplicity</em> and <em>speed</em>.
-                    </p>
-                    <p>The Bloggify core is not public yet, but some of the tools that power it (including themes, plugins and other tools) are <a href="https://github.com/Bloggify" target="_blank">open-source here</a>.</p>
-                    <p>We intend to release a stable release which will be free and open-source. You can <a href="#support">help that</a>!</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="features" class="appsblock whiteblock block" data-scroll-index="3">
-            <div class="triangle white"> </div>
-            <div class="block-container">
-                <h2 class="title">Features</h2>
-                <div class="description">
-                    <p>
-                        <div class="apps">
-                            <div class="slider" style="height: 596px;">
-                                <div class="navigation navigation-left">
-                                    <i class="fa fa-chevron-left"></i>
-                                </div>
-                                <div class="navigation navigation-right">
-                                    <i class="fa fa-chevron-right"></i>
-                                </div>
-
-                                <div class="rotator">
-                                    <div class="slide active simplicity" style="">
-                                        <div class="slide-wrapper">
-                                            <div class="picture">
-                                                <i class="fa fa-lightbulb-o"></i>
-                                            </div>
-                                            <div class="container aleft">
-                                                <h1 class="title">Simplicity</h1>
-
-                                                <div class="description">
-                                                    <strong>Bloggify</strong> is simple
-                                                    to use. With a minimalist interface,
-                                                    you can do anything you expect
-                                                    from a blogging platform. If you
-                                                    still want more, you can install and create
-                                                    <a href="#plugins">plugins</a> easily.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide odd speed" style="">
-                                        <div class="slide-wrapper">
-                                            <div class="picture">
-                                                <i class="fa fa-tachometer"></i>
-                                            </div>
-                                            <div class="container aleft">
-                                                <h1 class="title">Speed</h1>
-
-                                                <div class="description">
-                                                    <strong>Bloggify</strong>'s performance
-                                                    is awesome. Caching techniques
-                                                    are used (both on server and client)
-                                                    to speed up the things.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide api" style="">
-                                        <div class="slide-wrapper">
-                                            <div class="container aright">
-                                                <h1 class="title">API</h1>
-
-                                                <div class="description">
-                                                    <strong>Bloggify</strong> has a nice
-                                                    REST API for developers.
-                                                    Using it, the developers can create
-                                                    third-pary applications to access
-                                                    the Bloggify resources.
-                                                </div>
-                                            </div>
-                                            <div class="picture">
-                                                <i class="fa fa-cogs"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide odd git" style="">
-                                        <div class="slide-wrapper">
-                                            <div class="picture">
-                                                <i class="fa fa-git"></i>
-                                            </div>
-                                            <div class="container aleft">
-                                                <h1 class="title">Git Integration</h1>
-
-                                                <div class="description">
-                                                    <strong>Bloggify</strong>'s API
-                                                    has built-in <a href="http://git-scm.com/">Git</a> integration.
-                                                    This is cool when talking about
-                                                    content. All changes made by user are saved automatically
-                                                    into a <code>git</code> repository.
-                                                    This repository can be synced with
-                                                    a Git provider (e.g. <a href="http:/github.com">GitHub</a>),
-                                                    so other people will be able to contribute
-                                                    to content (e.g. fixing typos and so on).
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <h3>Made possible with the help of these sponsors!</h3>
+                                <div class="sponsors">
+                                    <a target="blank" href="https://www.brightbox.com/" class="s-brightbox">
+                                        <img src="./img/sponsors/brightbox.png" alt="">
+                                    </a>
+                                    <a target="blank" href="https://imedicare.com/" class="s-imedicare">
+                                        <img src="./img/sponsors/imedicare.png" alt="">
+                                    </a>
+                                    <a target="blank" href="http://www.pleasebelievepeoplearehungry.com/" class="s-carlisa">
+                                        <img src="./img/sponsors/carlisa.png" alt="">
+                                    </a>
+                                    <a target="blank" href="http://devstickers.com/" class="s-devstickers">
+                                        <img src="./img/sponsors/devstickers.png" alt="">
+                                    </a>
+                                    <a target="blank" href="https://statuspage.io/" class="s-statuspage">
+                                        <img src="./img/sponsors/statuspage.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section class="features">
+                <div class="container">
+                    <h2 class="text-center">Features</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card feature">
+                                <div class="icon">
+                                    <i class="pe-7s-magic-wand"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>Simple</h2>
+                                    <p><strong>Bloggify</strong> is simple
+                                    to use. With a minimalist interface,
+                                    you can do anything you expect
+                                    from a blogging platform. If you
+                                    still want more, you can install and create
+                                    <a href="#plugins">plugins</a> easily.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card feature">
+                                <div class="icon">
+                                    <i class="pe-7s-rocket"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>Fast</h2>
+                                    <strong>Bloggify</strong>'s performance
+                                    is awesome. Caching techniques
+                                    are used (both on server and client)
+                                    to speed up the things.
+                                </div>
+                            </div>
+                        </div>
 
-            <div id="plugins" class="appsblock whiteblock block" data-scroll-index="2">
-                <div class="triangle blue"></div>
-                <div class="block-container">
-                    <h2 class="title">Plugins</h2>
-                    <div class="description">
-                        <p>
-                            <i class="fa fa-puzzle-piece puzzle"></i>
-                            <strong>Bloggify</strong> is like a puzzle: it is built from
-                            multiple pieces. Each piece must do one thing and do it well.
-                            These pieces are called <em>plugins</em>. Bloggify itself is
-                            just a tiny server that puts them together. That makes maintaining
-                            the tools easier. The concept is: <em>Throw away what you don't need</em>.
-                            Do you not need a feature? Cool. Just uninstall it by removing the plugin.</p>
-                            <p>For example, the Bloggify dashboard is a plugin. If you don't
-                            need a dashboard in your browser, just uninstall it. You can use a Bloggify
-                            client for your platform. If you are a geek, you can always do the things from command
-                            line and not use any user interface.</p>
-                    </div>
-                </div>
-            </div>
+                        <div class="col-md-4">
+                            <div class="card feature">
+                                <div class="icon">
+                                    <i class="pe-7s-tools"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>RESTful APIs</h2>
+                                    <strong>Bloggify</strong> has a nice
+                                    REST API for developers.
+                                    Using it, the developers can create
+                                    third-pary applications to access
+                                    the Bloggify resources.
+                                </div>
+                            </div>
+                        </div>
 
-            <div id="themes" class="bg-blue appsblock whiteblock block" data-scroll-index="4">
-                <div class="triangle white"></div>
-                <div class="block-container">
-                    <h2 class="title">Themes</h2>
-                    <div class="description">
-                        <p>
-                            <i class="fa fa-paint-brush"></i>
-                            The themes are another part that makes Bloggify awesome. If you are non-technical,
-                            you can choose a theme you like. However, as developer, you can create a theme easily.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="support" class="appsblock whiteblock block" data-scroll-index="5">
-                <div class="triangle blue"> </div>
-                <div class="block-container">
-                    <h2 class="title"><i class="fa fa-heart"></i> Support</h2>
-                    <div class="description">
-                        <p>Your support will help Bloggify be released sooner.
-                        <a href="mailto:contact@bloggify.org">Write to us</a> how can you sponsor Bloggify.</p>
-                        <br>
-
-                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UAFJRHSCH9JVS" class="button">
-                            <i class="fa fa-paypal"></i>
-                            Donate
-                        </a>
-
-                        <a href="mailto:contact@bloggify.org" class="button">
-                            <i class="fa fa-envelope"></i>
-                            Contact us
-                        </a></br>
-
-
-                        <div class="sponsors">
-                            <p>Big thanks to these sponsors!</p>
-                            <a target="blank" href="https://www.brightbox.com/" class="s-brightbox">
-                                <img src="./img/sponsors/brightbox.png" alt="">
-                            </a>
-                            <a target="blank" href="https://imedicare.com/" class="s-imedicare">
-                                <img src="./img/sponsors/imedicare.png" alt="">
-                            </a>
-                            <a target="blank" href="http://www.pleasebelievepeoplearehungry.com/" class="s-carlisa">
-                                <img src="./img/sponsors/carlisa.png" alt="">
-                            </a><br>
-                            <a target="blank" href="http://devstickers.com/" class="s-devstickers">
-                                <img src="./img/sponsors/devstickers.png" alt="">
-                            </a>
-                            <a target="blank" href="https://statuspage.io/" class="s-statuspage">
-                                <img src="./img/sponsors/statuspage.png" alt="">
-                            </a>
+                        <div class="col-md-12">
+                            <div class="card feature">
+                                <div class="icon">
+                                    <i class="pe-7s-refresh-cloud"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>Git Integration</h2>
+                                    <p><strong>Bloggify</strong>'s API
+                                    has built-in <a href="http://git-scm.com/">Git</a> integration.
+                                    This is cool when talking about
+                                    content.</p> All changes made by user are saved automatically
+                                    into a <code>git</code> repository.
+                                    <p>This repository can be synced with
+                                    a Git provider (e.g. <a href="http:/github.com">GitHub</a>),
+                                    so other people will be able to contribute
+                                    to content (e.g. fixing typos and so on).</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="block whiteblock footerblock bg-blue">
-                <div class="triangle white"></div>
-                <div class="block-container">
-                    <i class="fa fa-code"></i> with JavaScript and <i class="fa fa-heart pulse"></i> from Romania by <a href="http://ionicabizau.net">Ionică Bizău</a>
+            </section>
+            <section class="plugins bg-gray pad-big">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2>Plugins</h2>
+                            <p>
+                                <strong>Bloggify</strong> is like a puzzle: it is built from
+                                multiple pieces. Each piece must do one thing and do it well.
+                                These pieces are called <em>plugins</em>. Bloggify itself is
+                                just a tiny server that puts them together. That makes maintaining
+                                the tools easier. The concept is: <em>Throw away what you don't need</em>.
+                                Do you not need a feature? Cool. Just uninstall it by removing the plugin.</p>
+                                <p>For example, the Bloggify dashboard is a plugin. If you don't
+                                need a dashboard in your browser, just uninstall it. You can use a Bloggify
+                                client for your platform. If you are a geek, you can always do the things from command
+                                line and not use any user interface.</p>
+                        </div>
+                        <div class="col-md-4 icon">
+                            <i class="pe-7s-keypad"></i>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section class="plugins pad-big">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 icon">
+			    <i class="pe-7s-diamond"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Themes</h2>
+                            <p>
+                                The themes are another part that makes Bloggify awesome. If you are non-technical,
+                                you can choose a theme you like. However, as developer, you can create a theme easily.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="support text-center pad-big bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Support Bloggify</h2>
+                            <p>Your support will help Bloggify be released sooner.
+                            <a href="mailto:support@bloggify.org">Write to us</a> how can you sponsor Bloggify.</p>
+                            <br>
+
+                            <div class="donate"></div>
+			    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_donations">
+				<input type="hidden" name="business" value="contact@ionicabizau.net">
+				<input type="hidden" name="lc" value="US">
+				<input type="hidden" name="amount">
+				<input type="hidden" name="no_note" value="0">
+				<input type="hidden" name="cn" value="Add special instructions to the seller:">
+				<input type="hidden" name="no_shipping" value="2">
+				<input type="hidden" name="currency_code" value="USD">
+				<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+				<center>
+                                    <button class="btn btn-lg btn-default btn-donate btn-info">
+                                        Donate
+                                    </button>
+				</center>
+			    </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pad-big text-center footer">
+                <i class="fa fa-code"></i> with JavaScript and <i class="fa fa-heart"></i>
+                <center>
+                    <img src="img/mark-gray-circle.svg">
+                </center>
+            </section>
+        </div>
     </body>
 </html>

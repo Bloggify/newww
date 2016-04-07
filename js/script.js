@@ -1,133 +1,80 @@
 $(document).ready(function() {
-    // Smart Resize
-    (function($, sr) {
-        var debounce = function(func, threshold, execAsap) {
+        var parallax = debounce(function() {
+            no_of_elements = 0;
+            $('.parallax').each(function() {
+                var $elem = $(this);
+
+                if (isElementInViewport($elem)) {
+                    var parent_top = $elem.offset().top;
+                    var window_bottom = $(window).scrollTop();
+                    var $image = $elem.find('.parallax-background img')
+                    var $oVal = ((window_bottom - parent_top) / 3);
+                    $image.css('margin-top', $oVal + 'px');
+                }
+            });
+        }, 6)
+
+        function debounce(func, wait, immediate) {
             var timeout;
-
-            return function debounced() {
-                var obj = this,
+            return function() {
+                var context = this,
                     args = arguments;
-
-                function delayed() {
-                    if (!execAsap)
-                        func.apply(obj, args);
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
                     timeout = null;
-                };
-
-                if (timeout)
-                    clearTimeout(timeout);
-                else if (execAsap)
-                    func.apply(obj, args);
-
-                timeout = setTimeout(delayed, threshold || 100);
+                    if (!immediate) func.apply(context, args);
+                }, wait);
+                if (immediate && !timeout) func.apply(context, args);
             };
-        }
-
-        jQuery.fn[sr] = function(fn) {
-            return fn ? this.bind("resize", debounce(fn)) : this.trigger(sr);
         };
 
-    })(jQuery, "smartresize");
 
+        function isElementInViewport(elem) {
+            var $elem = $(elem);
 
-    // Slider
-    var angle = 0;
-    $(".appsblock .apps .slider .slide:odd").addClass("odd");
-    var slideCount = $(".slider > .rotator > .slide").length;
+            // Get the scroll position of the page.
+            var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+            var viewportTop = $(scrollElem).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
 
-    $(".slider .navigation-right").click(function() {
-        if ($(this).parent().find(".active").is(":last-child") == false) {
-            angle = angle - 180;
-            var angledeg = "rotateY(" + angle + "deg)";
+            // Get the position of the element on the page.
+            var elemTop = Math.round($elem.offset().top);
+            var elemBottom = elemTop + $elem.height();
 
-            $(this).parent().find(".rotator").css({
-                "-webkit-transform": angledeg,
-                "-moz-transform": angledeg,
-                "-o-transform": angledeg,
-                "-ms-transform": angledeg,
-                "transform": angledeg
-            });
-            $(this).parent().find(".active").next().toggleClass("active");
-            $(this).parent().find(".active:first").toggleClass("active");
-        } else {
-            angle = 0;
-            var angledeg = "rotateY(" + angle + "deg)";
-
-            $(this).parent().find(".rotator").css({
-                "-webkit-transform": angledeg,
-                "-moz-transform": angledeg,
-                "-o-transform": angledeg,
-                "-ms-transform": angledeg,
-                "transform": angledeg
-            });
-            $(this).parent().find(".active:last").toggleClass("active");
-            $(this).parent().find(".slide").css("opacity", "1").delay(250).queue(function() {
-                $(this).parent().find(".slide").removeAttr("style").stop();
-            });
-            $(this).parent().find(".slide:first").toggleClass("active");
+            return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
         }
-        $(".appsblock .apps .slider").height($(".slide.active .slide-wrapper").height());
-    });
 
-    // Slider controls
-    $(".slider .navigation-left").click(function() {
-
-        if ($(this).parent().find(".active").is(":first-child") == false) {
-            angle = angle + 180;
-            var angledeg = "rotateY(" + angle + "deg)";
-
-            $(this).parent().find(".rotator").css({
-                "-webkit-transform": angledeg,
-                "-moz-transform": angledeg,
-                "-o-transform": angledeg,
-                "-ms-transform": angledeg,
-                "transform": angledeg
-            });
-            $(this).parent().find(".active").prev().toggleClass("active");
-            $(this).parent().find(".active:last").toggleClass("active");
-        } else {
-            angle = -180 * slideCount + 180;
-            var angledeg = "rotateY(" + angle + "deg)";
-
-            $(this).parent().find(".rotator").css({
-                "-webkit-transform": angledeg,
-                "-moz-transform": angledeg,
-                "-o-transform": angledeg,
-                "-ms-transform": angledeg,
-                "transform": angledeg
-            });
-            $(this).parent().find(".active:first").toggleClass("active");
-            $(this).parent().find(".slide").css("opacity", "1").delay(250).queue(function() {
-                $(this).parent().find(".slide").removeAttr("style").stop();
-            });
-            $(this).parent().find(".slide:last").toggleClass("active");
-
-        }
-        $(".appsblock .apps .slider").height($(".slide.active .slide-wrapper").height());
-    });
-
-    $(".slide:first").addClass("active");
-    $(".appsblock .apps .slider").height($(".slide.active .slide-wrapper").height());
-
-
-    // Hash menu
-    $("a[href*=#]").bind("click", function(e) {
-        var anchor = $(this);
-        var locate = $.attr(this, "href").substr($.attr(this, "href").indexOf("#") + 1);
-        $("html, body").stop().animate({
-            scrollTop: $("#" + locate).offset().top
-        }, 800, "swing", function() {
-            window.location.hash = locate;
+        $(window).on('scroll', function() {
+            var responsive = $(window).width();
+            if (responsive >= 768) {
+                parallax();
+            }
         });
-
-        e.preventDefault();
-    });
-
-    // Window resize
-    $(window).smartresize(function() {
-        $(".appsblock .apps .slider").height($(".slide.active .slide-wrapper").height());
-    }).scroll(function() {
-        var $mainmenu = $(".mainmenu");
-        $mainmenu.toggleClass("scrolled", $(this).scrollTop() >= $mainmenu.height());
-    });
+        Donate({
+            container: ".donate"
+          , prefix: "$"
+          , classes: {
+                active: "active"
+            }
+          , amounts: [
+                1
+              , 5
+              , 10
+              , 50
+              , 100
+              , 300
+              , 500
+            ]
+          , custom: true
+          , format: function (val) {
+              return val > 1000
+                   ? (val = val.toString()).substring(0, 1) + "," + val.substring(1)
+                   : val
+                   ;
+            }
+          , onChange: function (val, li, e) {
+                document.querySelector("[name=amount]").value = val;
+            }
+          , defaultValue: 10
+        });
 });
