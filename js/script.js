@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    var $collapse = $("#home .collapse");
+    $(".nav li > a").on("click", function () {
+        $collapse.removeClass("in");
+    });
+
     var parallax = debounce(function() {
         no_of_elements = 0;
         $('.parallax').each(function() {

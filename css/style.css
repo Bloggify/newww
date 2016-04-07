@@ -156,6 +156,7 @@ section.bg-gray {
 .parallax-background img {
     -webkit-filter: brightness(0.7);
     filter: brightness(0.7);
+    width: 100%;
 }
 
 .logo-title {
@@ -265,3 +266,68 @@ button.btn.bg-orange {
     margin-top: 24px;
     opacity: 0.6;
 }
+
+@media (min-width: 765px) and (max-width: 995px) {
+    .navbar-transparent .navbar-nav > li > a {
+        font-size: 15px;
+    }
+    section.heading.parallax {
+	height: 420px;
+    }
+    .parallax .container {
+	margin-top: 0;
+    }
+}
+
+@media (max-width: 765px) {
+    .navbar-header {
+	text-align: center;
+    }
+
+    a.navbar-brand {
+	float: none;
+	display: inline-block;
+	margin-left: 70px;
+    }
+
+    a.navbar-brand img {
+	height: 40px;
+    }
+
+    .navbar-toggle {
+	border-color: white;
+	margin-top: 18px;
+    }
+
+    span.icon-bar {
+	border-top: 1px solid white;
+	margin-top: 1px;
+    }
+
+    .navbar-transparent.navbar {
+	background: rgba(0, 0, 0, 0.63);
+	text-align: center;
+	font-weight: bold;
+    }
+
+    .nav>li {
+	border-bottom: 1px solid rgba(208, 208, 208, 0.25);
+    }
+
+    img.logo-title {
+    }
+
+    .parallax .container {
+	margin-top: 0;
+    }
+
+    .parallax .container img.logo-title {
+      	height: 60px;
+    }
+
+    section.heading.parallax {
+	height: 320px;
+    }
+}
+
+
