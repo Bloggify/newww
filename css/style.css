@@ -35,7 +35,7 @@ img {
 
 .parallax {
     width: 100%;
-    height: 650px;
+    height: 500px;
     overflow: hidden;
     display: block;
     background-size: 100%;
@@ -171,7 +171,6 @@ section.bg-gray {
     border-radius: 4px;
 }
 
-
 .navbar-brand {
     height: 70px;
 }
@@ -201,7 +200,6 @@ section.bg-gray {
     color: #666D73;
 }
 
-
 .donate li {
     list-style: none;
     display: inline-block;
@@ -226,7 +224,6 @@ section.bg-gray {
     background-color: #2C3E50;
     color: #fff;
 }
-
 
 .donate li > input {
     border: none;
@@ -272,7 +269,7 @@ button.btn.bg-orange {
         font-size: 15px;
     }
     section.heading.parallax {
-	height: 420px;
+	height: 390px;
     }
     .parallax .container {
 	margin-top: 0;
@@ -330,4 +327,64 @@ button.btn.bg-orange {
     }
 }
 
+@media (min-width: 1680px) {
+    .parallax.heading .container {
+        top: 20%;
+    }
+    section.heading.parallax {
+        height: 100vh;
+        min-height: 500px;
+    }
+    section.heading.parallax img {
+        min-height: 100%;
+    }
+}
 
+@media (max-width: 635px) {
+    .parallax-background img {
+        display: none;
+    }
+}
+
+.parallax.logos {
+    height: 500px;
+}
+
+.equal, .equal > div[class*='col-'] {
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
+.logos .panel-body {
+    padding: 50px;
+    height: 100%;
+}
+
+.logos .panel-footer {
+    position: absolute;
+    bottom: 21px;
+    left: 16px;
+    right: 16px;
+}
+
+.logos .panel.panel-default {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i.pe-7s-check {
+    color: #3dd37c;
+    font-weight: bold;
+}
+
+i.pe-7s-close {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+ul.list-unstyled {
+    font-size: 14px;
+}
