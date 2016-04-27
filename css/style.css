@@ -267,6 +267,7 @@ button.btn.bg-orange {
 @media (min-width: 765px) and (max-width: 995px) {
     .navbar-transparent .navbar-nav > li > a {
         font-size: 15px;
+        padding: 25px 10px 30px;
     }
     section.heading.parallax {
 	height: 390px;
