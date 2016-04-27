@@ -359,7 +359,7 @@ button.btn.bg-orange {
 
 .logos .panel-body {
     padding: 50px;
-    height: 100%;
+    width: 100%;
 }
 
 .logos .panel-footer {
@@ -371,9 +371,11 @@ button.btn.bg-orange {
 
 .logos .panel.panel-default {
     padding-bottom: 20px;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 i.pe-7s-check {
