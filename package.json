@@ -1,0 +1,23 @@
+{
+  "name": "bloggify.github.io",
+  "version": "1.0.0",
+  "description": "The Bloggify.org website source code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bloggify/bloggify.github.io.git"
+  },
+  "keywords": [
+    "bloggify",
+    "website"
+  ],
+  "author": "Bloggify <support@bloggify.org> (http://bloggify.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bloggify/bloggify.github.io/issues"
+  },
+  "homepage": "https://github.com/Bloggify/bloggify.github.io#readme"
+}
