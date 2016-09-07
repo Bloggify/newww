@@ -30,6 +30,7 @@
     "bloggify-analytics": "ionicabizau/bloggify-analytics",
     "bloggify-mongoose": "bitbucket:bloggify/bloggify-mongoose",
     "bloggify-plugin-manager": "IonicaBizau/bloggify-plugin-manager",
+    "bloggify-prebuilt": "^1.0.1",
     "bloggify-router": "IonicaBizau/bloggify-router",
     "bloggify-template-renderer": "ionicabizau/bloggify-template-renderer",
     "bloggify-viewer": "ionicabizau/bloggify-viewer"
