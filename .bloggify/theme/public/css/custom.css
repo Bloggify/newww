@@ -1,0 +1,66 @@
+.logo img {
+    height: 43px;
+    margin-top: -7px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* sponsors */
+.sponsors {
+    padding: 30px 0;
+}
+
+.sponsors img {
+    display: inline-block;
+    margin: 27px;
+    -webkit-filter: grayscale(1);
+}
+
+.sponsors img:hover {
+    -webkit-filter: none;
+}
+
+.sponsors a {
+    text-decoration: none;
+}
+
+.sponsors img {
+    vertical-align: middle;
+}
+
+.sponsors .s-brightbox img {
+    height: 75px;
+}
+
+.sponsors .s-imedicare img {
+    height: 75px;
+}
+
+.sponsors .s-devstickers img {
+    height: 26px;
+}
+
+.sponsors .s-carlisa img {
+    height: 78px;
+}
+
+.sponsors .s-statuspage img {
+    height: 37px;
+}
+
+
+.fh5co-content-style-4 {
+    background: #e5e6e7;
+}
+
+
+.fh5co-content-style-4 .fh5co-heading {
+    color: #313f51;
+}
+
+.fh5co-content-style-4 .btn-outline {
+    color: #313f51;
+    border-color: #313f51;
+}

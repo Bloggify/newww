@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html><!--<![endif]--><head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title><%= title %> | <%= siteMetadata.siteTitle %></title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Free HTML5 Template by FREEHTML5.CO">
+   <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive">
+   <meta name="author" content="FREEHTML5.CO">
+
+   <!-- Facebook and Twitter integration -->
+   <meta property="og:title" content="">
+   <meta property="og:image" content="">
+   <meta property="og:url" content="">
+   <meta property="og:site_name" content="">
+   <meta property="og:description" content="">
+   <meta name="twitter:title" content="">
+   <meta name="twitter:image" content="">
+   <meta name="twitter:url" content="">
+   <meta name="twitter:card" content="">
+
+   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+   <link rel="shortcut icon" href="/logo.png">
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Monsterrat:400,700|Merriweather:400,300italic,700" rel="stylesheet" type="text/css">
+
+   <!-- Animate.css -->
+   <link rel="stylesheet" href="<%= _public('css/animate.css') %>">
+   <!-- Icomoon Icon Fonts-->
+   <link rel="stylesheet" href="<%= _public('css/icomoon.css') %>">
+   <!-- Magnific Popup-->
+   <link rel="stylesheet" href="<%= _public('css/magnific-popup.css') %>">
+   <!-- Owl Carousel -->
+   <link rel="stylesheet" href="<%= _public('css/owl.carousel.min.css') %>">
+   <link rel="stylesheet" href="<%= _public('css/owl.theme.default.min.css') %>">
+   <!-- Bootstrap  -->
+   <link rel="stylesheet" href="<%= _public('css/bootstrap.css') %>">
+
+   <!-- Cards -->
+   <link rel="stylesheet" href="<%= _public('css/cards.css') %>">
+
+   <!-- Custom -->
+   <link rel="stylesheet" href="<%= _public('css/custom.css') %>">
+
+   <!-- Modernizr JS -->
+   <script src="<%= _public('js/modernizr-2.6.2.min.js') %>"></script>
+   <!-- FOR IE9 below -->
+   <!--[if lt IE 9]>
+   <script src="<%= _public('js/respond.min.js') %>"></script>
+   <![endif]-->
+
+   </head>
+   <body class="fh5co-overflow">
+
+   <div id="fh5co-page">
+      <nav class="fh5co-nav-style-1" role="navigation" data-offcanvass-position="fh5co-offcanvass-left">
+         <div class="container">
+            <div class="col-md-3 col-sm-3 col-xs-12 fh5co-logo">
+                <a href="#" class="js-fh5co-mobile-toggle fh5co-nav-toggle"><i></i></a>
+                <a href="/" class="logo">
+                    <img src="<%= _public('/img/logo.svg') %>">
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-6 text-center fh5co-link-wrap">
+               <ul data-offcanvass="yes">
+                  <li class="active"><a href="#">Tour</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Pricing</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 text-right fh5co-link-wrap">
+               <ul class="fh5co-special" data-offcanvass="yes">
+                  <li><a href="#" class="call-to-action">Preview</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <div class="fh5co-cover fh5co-cover-style-2 js-full-height" data-next="yes" style="height: 918px; background-image: url('<%= _public('/img/bg.png') %>');">
+         <span class="scroll-btn">
+            <a href="#">
+               <span class="mouse"><span></span></span>
+            </a>
+         </span>
+         <div class="fh5co-overlay"></div>
+         <div class="fh5co-cover-text">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-5 full-height hidden-xs hidden-sm">
+                     <div class="fh5co-cover-intro">
+                      <img src="<%= _public('/assets/mascot/beky.png') %>">
+                    </div>
+                  </div>
+                  <div class="col-md-7 full-height js-full-height" style="height: 818px;">
+                     <div class="fh5co-cover-intro">
+                        <h1 class="cover-text-lead">We make publishing easy.</h1>
+                        <h2 class="cover-text-sublead">
+                            <strong>Bloggify</strong> is a NodeJS platform providing a simple
+                                    way to build a blog in minutes. We focus on <em>modularity</em>, <em>flexibility</em>, <em>simplicity</em> and <em>speed</em>.
+                        </h2>
+                        <p><a href="#" class="btn btn-outline btn-lg">Learn more</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="fh5co-content-style-4">
+         <div class="container">
+            <div class="row p-b">
+               <div class="col-md-8 col-md-offset-2 text-center">
+                  <h3 class="fh5co-sub"></h3>
+                  <h3 class="fh5co-heading">Made possible with the help of these sponsors!</h3>
+                  <div class="sponsors">
+                      <a target="blank" href="https://www.brightbox.com/" class="s-brightbox">
+                          <img src="<%= _public('/img/sponsors/brightbox.png') %>" alt="">
+                      </a>
+                      <a target="blank" href="https://imedicare.com/" class="s-imedicare">
+                          <img src="<%= _public('/img/sponsors/imedicare.png') %>" alt="">
+                      </a>
+                      <a target="blank" href="http://www.pleasebelievepeoplearehungry.com/" class="s-carlisa">
+                          <img src="<%= _public('/img/sponsors/carlisa.png') %>" alt="">
+                      </a>
+                      <a target="blank" href="http://devstickers.com/" class="s-devstickers">
+                          <img src="<%= _public('/img/sponsors/devstickers.png') %>" alt="">
+                      </a>
+                      <a target="blank" href="https://statuspage.io/" class="s-statuspage">
+                          <img src="<%= _public('/img/sponsors/statuspage.png') %>" alt="">
+                      </a>
+                  </div>
+                  <p><a href="#" class="btn btn-outline">Tell us how you can help</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="fh5co-blog-style-2 hide">
+         <div class="container">
+            <div class="row p-b text-center">
+               <div class="col-md-6 col-md-offset-3">
+                  <h2>Recent Blog</h2>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4 col-sm-6">
+                  <a href="#" class="link-block">
+                      <figure><img src="<%= _public('images/img_same_dimension_1.jpg') %>" alt="Image" class="img-responsive img-rounded"></figure>
+                     <h3>Traveling in North Pole</h3>
+                     <p><span class="fh5co-meta">15, August 2015</span></p>
+                  </a>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <a href="#" class="link-block">
+                     <figure><img src="<%= _public('images/img_same_dimension_2.jpg') %>" alt="Image" class="img-responsive img-rounded"></figure>
+                     <h3>Easy Ways to Create Cards</h3>
+                     <p><span class="fh5co-meta">12, September 2015</span></p>
+                  </a>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <a href="#" class="link-block">
+                      <figure><img src="<%= _public('images/img_same_dimension_3.jpg') %>" alt="Image" class="img-responsive img-rounded"></figure>
+                     <h3>Live a Healthy Lifestyle this 2016</h3>
+                     <p><span class="fh5co-meta">9, October 2015</span></p>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div><div class="fh5co-content-style-10">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-5 col-sm-5">
+                  <h2>Join the Preview program.</h2>
+               </div>
+               <div class="col-md-6 col-md-push-1 col-sm-6 col-sm-push-1">
+                  <p>You can now register the Preview program which will help you to stay tuned with the latest news. Also, you may get an invitation to the alpha stage.</p>
+                  <p><a href="https://preview.bloggify.org" class="btn btn-outline">Join Now</a></p>
+               </div>
+            </div>
+         </div>
+      </div><div class="fh5co-features-style-3">
+         <div class="container">
+            <div class="row p-b">
+               <div class="col-md-6 col-md-offset-3 text-center">
+                  <h2 class="fh5co-heading">Features</h2>
+                  <p>At Bloggify, we focus on maintaining a blogging platform which is simple to use and still extensible, keeping the core minimal.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="box to-animate">
+                     <div class="icon colored-1"><span><i class="icon-command"></i></span></div>
+                     <h3>Simplicity</h3>
+                      <p><strong>Bloggify</strong> is simple
+                      to use. With a minimalist interface,
+                      you can do anything you expect
+                      from a blogging platform. If you
+                      still want more, you can install and create
+                      <a href="#plugins">plugins</a> easily.</p>
+                  </div>
+                  <div class="box to-animate">
+                     <div class="icon colored-4"><span><i class="icon-heart22"></i></span></div>
+                     <h3>Made with love</h3>
+                     <p>We enjoy doing what we do.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box to-animate">
+                     <div class="icon colored-2"><span><i class="icon-toggle"></i></span></div>
+                     <h3>Fully responsive</h3>
+                     <p><strong>Bloggify</strong> has a nice
+                    REST API for developers.
+                    Using it, the developers can create
+                    third-pary applications to access
+                    the Bloggify resources.</p>
+                  </div>
+                  <div class="box to-animate">
+                     <div class="icon colored-5"><span><i class="icon-clock2"></i></span></div>
+                     <h3>Fast &amp; light</h3>
+                     <p><strong>Bloggify</strong>'s performance
+                      is awesome. Caching techniques
+                      are used (both on server and client)
+                      to speed up the things.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box to-animate">
+                     <div class="icon colored-3"><span><i class="icon-eye22"></i></span></div>
+                     <h3>RESTful APIs</h3>
+                     <p><strong>Bloggify</strong> has a nice
+                     REST API for developers.
+                     Using it, the developers can create
+                     third-pary applications to access
+                     the Bloggify resources.</p>
+                  </div>
+                  <div class="box to-animate">
+                     <div class="icon colored-6"><span><i class="icon-head"></i></span></div>
+                     <h3>Git Integration</h3>
+                     <p><strong>Bloggify</strong>'s API
+                     has built-in <a href="http://git-scm.com/">Git</a> integration.
+                     This is cool when talking about
+                     content.</p> All changes made by user are saved automatically
+                     into a <code>git</code> repository.
+                     <p>This repository can be synced with
+                     a Git provider (e.g. <a href="http:/github.com">GitHub</a>),
+                     so other people will be able to contribute
+                     to content (e.g. fixing typos and so on).</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div><div class="fh5co-footer-style-3">
+         <div class="container">
+            <div class="row p-b">
+               <div class="col-md-12 text-center">
+                    <img src="<%= _public('/img/logo-mark.svg') %>">
+               </div>
+            </div>
+            <div class="row fh5co-made">
+               <div class="col-md-12">
+                  <p>Made with <i class="heart icon-heart"></i> in Romania</p>
+               </div>
+            </div>
+         </div>
+      </div></div>
+   <!-- END page-->
+
+   <!-- jQuery -->
+   <script src="<%= _public('js/jquery.min.js') %>"></script>
+   <!-- jQuery Easing -->
+   <script src="<%= _public('js/jquery.easing.1.3.js') %>"></script>
+   <!-- Bootstrap -->
+   <script src="<%= _public('js/bootstrap.min.js') %>"></script>
+   <!-- Waypoints -->
+   <script src="<%= _public('js/jquery.waypoints.min.js') %>"></script>
+   <!-- Owl Carousel -->
+   <script src="<%= _public('js/owl.carousel.min.js') %>"></script>
+   <!-- Magnific Popup -->
+   <script src="<%= _public('js/jquery.magnific-popup.min.js') %>"></script>
+   <!-- Main -->
+   <script src="<%= _public('js/main.js') %>"></script>
+</body></html>
+
+
