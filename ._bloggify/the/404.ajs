@@ -11,5 +11,3 @@
     <br>You're invited to return to the <a href="/">main page</a>.
 </p>
 <% include("includes/err-bottom") %>
-
-123
