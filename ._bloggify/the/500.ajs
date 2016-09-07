@@ -1,0 +1,6 @@
+<% include("includes/err-top") %>
+<h3>500</h3>
+<p>Internal Server Error
+<br>We track these errors automatically, but if the problem persists feel free to <a href="https://github.com/Bloggify/Bloggify/issues/new">open an issue</a>. In the meantime, try refreshing.</p>
+<p><a href="/">Click here to return to the main page</a>.</p>
+<% include("includes/err-bottom") %>

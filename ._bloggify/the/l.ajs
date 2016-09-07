@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="application-name" content="Transfer Elevi">
+        <meta name="description" content="DESCRIPTION">
+        <meta name="keywords" content="bloggify, preview, blog">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Control the behavior of search engine crawling and indexing -->
+        <meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
+        <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+        <title><%= title %></title>
+
+        <meta name="google" content="nositelinkssearchbox">
+        <meta name="subject" content="Making the publishing experience smoother than even before.">
+        <meta name="abstract" content="DESCRIPTION">
+        <meta name="url" content="<%= Bloggify.options.metadata.domain %>">
+        <meta name="directory" content="submission">
+        <meta name="rating" content="General">
+
+        <meta property="og:url" content="<%= Bloggify.options.metadata.domain %>">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Transfer Elevi">
+        <meta property="og:image" content="<%= _public('/images/beky.png', true) %>">
+        <meta property="og:description" content="DESCRIPTION">
+        <meta property="og:site_name" content="Transfer Elevi">
+        <meta property="og:locale" content="en_US">
+
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+        <!--<link rel="stylesheet" href="<%= _public('css/style.css') %>">-->
+
+        <link rel="stylesheet" href="<%= _public('css/style.css') %>">
+        <link rel="stylesheet" href="<%= _public('assets/bootstrap/css/bootstrap.min.css') %>">
+        <link rel="stylesheet" href="<%= _public('assets/css/style.css') %>">
+        <link rel="stylesheet" href="<%= _public('assets/css/media-queries.css') %>">
+        <link rel="stylesheet" href="<%= _public('/css/home.css') %>" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="http://bloggify.org/img/logo.png">
+        <style>
+            @media (min-width: 776px) {
+                div.background {
+                    background: url("<%= _public('/images/background.png') %>");
+                    position: fixed;
+                    height: 100%;
+                    max-width: none;
+                    left: -100px;
+                    background-size: auto 100%;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <%
+            session = lien.getSessionData();
+        %>
+
+        <div class="background"></div>
+        <!-- Top content -->
+        <div class="top-content">
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                    	<div class="col-sm-3 phone">
+                            <img src="<%= _public('assets/img/mascot.svg') %>" alt="" class="beky">
+                        </div>
+                    	<div class="col-sm-9 phone">
+                            <% if (session) {
+                                    if (lien.query.transfer) {
+                                        var semTwo = lien.query.semester ? 2 : 1;
+                                        var result = Bloggify.app.transfer({
+                                            year: lien.query.year
+                                          , semester: semTwo
+                                          , from: lien.query.source
+                                          , to: lien.query.target
+                                        });
+                                        %>
+                                        <div class="result">
+                                            <% if (result.error) { %>
+                                                <div class="alert alert-danger">
+                                                    <%= result.error.message %>
+                                                </div>
+                                            <% } else { %>
+                                                <br>
+                                                <button class="btn hide-print btn-success" onclick="print()">
+                                                    Printează
+                                                </button>
+                                                <% if (lien.query.name) { %>
+                                                    <h1><strong><%= lien.query.name %></strong></h1>
+                                                <% } %>
+                                                <h4>Clasa a <%= lien.query.year %>–a sem. <%= semTwo %></h4>
+                                                <h3>Transfer: <strong><%= lien.query.source %>&rarr;<%= lien.query.target %></strong></h3>
+                                                <h2>Examene:</h2>
+                                                <% if (result.exams.length) { %>
+                                                    <table class="table exams-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Clasa</th>
+                                                                <th>Disciplina</th>
+                                                                <th>Semestrele</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <% result.exams.forEach(function (c, i) { %>
+                                                                <tr>
+                                                                    <td><%= i + 1 %></td>
+                                                                    <td><%= c.year %></td>
+                                                                    <td><%= c.subject %></td>
+                                                                    <td><%= c.semester.replace("-", " și ").replace("1", "I").replace("2", "II") %></td>
+                                                                </tr>
+                                                            <% }) %>
+                                                        </tbody>
+                                                    </table>
+                                                <% } else { %>
+                                                    <div class="alert alert-success">
+                                                        Niciun examen.
+                                                    </div>
+                                                <% } %>
+                                            <% } %>
+                                        </div>
+                                <%
+                                    } else {
+                                %>
+                                <h1>Transfer Elevi</h1>
+                                <h4>Autentificat ca <strong>@<%= session.user.login %></strong>. <a href="/logout">Logout</a></h4>
+                                <div class="items">
+                                    <div class="student-item">
+                                        <form action="/" class="form-inline" target="_blank">
+                                            <label>
+                                                <span>
+                                                    Elevul
+                                                </span>
+                                                <input type="text" name="name" class="form-control" placeholder="Numele elevului" autofocus>
+                                            </label>
+                                            <label>
+                                                <span>
+                                                    din clasa
+                                                </span>
+                                                <select name="year" class="form-control">
+                                                    <% Bloggify.app.getYears().forEach(function (c) { %>
+                                                        <option value="<%= c %>"><%= c %></option>
+                                                    <% }) %>
+                                                </select>
+                                            </label>
+                                            <label>
+                                                <span>
+                                                </span>
+                                                <select name="source" class="form-control">
+                                                    <% Bloggify.app.getProfiles().forEach(function (c) { %>
+                                                        <option value="<%= c %>"><%= c %></option>
+                                                    <% }) %>
+                                                </select>
+                                            </label>
+                                            <label>
+                                                <span>
+                                                    se transferă la
+                                                </span>
+                                                <select name="target" class="form-control">
+                                                    <% Bloggify.app.getProfiles().forEach(function (c) { %>
+                                                        <option value="<%= c %>"><%= c %></option>
+                                                    <% }) %>
+                                                </select>
+                                            </label>
+                                            <button name="transfer" value="true" class="btn btn-primary">OK</button>
+                                            <br>
+                                            <label onclick="">
+                                                Vacanța intersemestrială
+                                                <input type="checkbox" name="semester">
+                                            </label>
+                                        </form>
+                                    </div>
+                                </div>
+                                <%
+                                    }
+                                %>
+                            <% } else { %>
+                                <h1>Transfer Elevi</h1>
+                                <div class="description">
+                                </div>
+                                <a href="/login" class="btn btn-danger login-btn btn-lg">Autentificare</a><br>
+                                <sub>Pentru autentificare trebuie să aveți un cont de GitHub.</sub>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span class="hide-print">&copy; 2016 Bloggify</span>
+                <a style="text-decoration:none" href="http://bloggify.org"><span class="icon-mark-bloggify-circle"></span></a>
+                <a href="http://bloggify.org" class="hide-print">About</a> <span class="hide-print">|</span>
+                <a href="mailto:support@bloggify.org" class="hide-print">Contact</a>
+                <br>
+                <h3><span class="icon-logo-bloggify"></span> Education</h3>
+                <div class="show-inline-print hide">
+                    http://bloggify.org
+                </div>
+            </div>
+        </div>
+        <script src="<%= _public('assets/js/scripts.js') %>"></script>
+    </body>
+</html>

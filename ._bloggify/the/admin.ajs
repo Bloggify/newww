@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Bloggify Preview—Join the Bloggify Alpha program.">
+        <meta name="keywords" content="bloggify, preview, blog">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title><%= title %></title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+        <link rel="stylesheet" href="<%= _public('assets/bootstrap/css/bootstrap.min.css') %>">
+    </head>
+    <body>
+        <%
+            function getGitHubLink (user) {
+                if (!user) { return ""; }
+                return '<a href="https://github.com/' + user + '">@' + user + '</a>';
+            }
+        %>
+        <div class="container">
+            <h1>Admin</h1>
+            <%
+                session = lien.getSessionData();
+                if (!session || session.user.login !== "IonicaBizau") { %>
+            <script>
+                location = "/";
+            </script>
+            <% } else {
+                // Find users
+                Bloggify.options.UserModel.find(function (err, users) { %>
+                    <% if (err) { %>
+                        <div class="alert alert-danger">
+                            <%= err.message %>
+                        </div>
+                    <% } else {%>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <% users.forEach(function (c, index) { %>
+                                <tr>
+                                    <td><%= index + 1 %></td>
+                                    <td><%- getGitHubLink(c.username) %></td>
+                                    <td><%= c.email %></td>
+                                </tr>
+                            <% }) %>
+                        </table>
+            <%      }
+                });
+            %>
+            <h1>Analytics</h1>
+            <% Bloggify.options.Stat.find({ url: { $ne: "/admin" } }).sort({ date: -1 }).limit(30).exec(function (err, data) { %>
+                    <% if (err) { %>
+                        <div class="alert alert-danger">
+                            <%= err.message %>
+                        </div>
+                    <% } else {%>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Date</th>
+                                    <th>Ip</th>
+                                    <th>Url</th>
+                                    <th>OS</th>
+                                    <th>Browser</th>
+                                    <th>Platform</th>
+                                    <th>User</th>
+                                </tr>
+                            </thead>
+                            <% data.forEach(function (c, index) { %>
+                                <tr>
+                                    <td><%= index + 1 %></td>
+                                    <td><%= c.date %></td>
+                                    <td><a href="https://ipinfo.io/<%= c.ip %>"><%= c.ip %></a></td>
+                                    <td><%= c.url %></td>
+                                    <td><%= c.device.os.name %></td>
+                                    <td><%= c.device.browser.name %> <%= c.device.browser.version.info %></td>
+                                    <td><%= c.device.platform %></td>
+                                    <td><%- getGitHubLink(c.session && c.session.user.login) %></td>
+                                </tr>
+                            <% }); %>
+                        </table>
+            <%      }
+                });
+            } %>
+    </body>
+</html>

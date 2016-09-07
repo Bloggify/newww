@@ -1,0 +1,39 @@
+<% include("header") %>
+<style>
+    body {
+        font-family: 'PT Mono', sans-serif;
+        background: white;
+    }
+    div.container {
+        margin: 0 auto;
+        max-width: 715px;
+    }
+
+    div.error-box {
+        color: #2c3e50;
+        text-align: center;
+        padding: 17px;
+        border: 2px dashed #34495e;
+        border-radius: 9px;
+        background: #ecf0f1;
+        margin-top: 35px;
+    }
+
+    div.error-box h3 {
+        font-size: 230px;
+        margin: 20px 0 15px 0;
+        font-weight: 100;
+    }
+
+    .error-box p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .error-box a {
+        color: #34495e;
+        text-decoration: underline;
+    }
+</style>
+
+<div class="container">
+    <div class="error-box">

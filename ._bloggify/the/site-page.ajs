@@ -1,0 +1,11 @@
+<% include("includes/header") %>
+<% include("includes/top") %>
+
+<div class="container">
+    <div class="content markdown">
+        <h1 class="article-title"><%= content.metadata.title %></h1>
+        <div class="markdown"><%- content.html %></div>
+    </div>
+</div>
+
+<% include("includes/footer") %>
