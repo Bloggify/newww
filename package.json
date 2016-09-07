@@ -23,5 +23,14 @@
   "blah": {
     "ex_img": "http://i.imgur.com/VpW4ZGd.png",
     "ex_url": "http://bloggify.org/"
+  },
+  "dependencies": {
+    "bloggify-ajs-renderer": "ionicabizau/bloggify-ajs-renderer",
+    "bloggify-analytics": "ionicabizau/bloggify-analytics",
+    "bloggify-mongoose": "bitbucket:bloggify/bloggify-mongoose",
+    "bloggify-plugin-manager": "IonicaBizau/bloggify-plugin-manager",
+    "bloggify-router": "IonicaBizau/bloggify-router",
+    "bloggify-template-renderer": "ionicabizau/bloggify-template-renderer",
+    "bloggify-viewer": "ionicabizau/bloggify-viewer"
   }
 }
