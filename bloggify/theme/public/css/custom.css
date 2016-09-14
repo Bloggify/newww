@@ -64,3 +64,8 @@ img {
     color: #313f51;
     border-color: #313f51;
 }
+
+.mark-logo {
+    width: 70px;
+    max-width: 100%;
+}

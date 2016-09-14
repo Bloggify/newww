@@ -402,8 +402,8 @@ a:hover .lnk-icon-right {
   }
 }
 /*
-/////////////////////////////////////////////////// 
-2.0 NAVIGATIONS 
+///////////////////////////////////////////////////
+2.0 NAVIGATIONS
 ///////////////////////////////////////////////////
 */
 #fh5co-offcanvass {
@@ -852,9 +852,9 @@ a:hover .lnk-icon-right {
   }
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-3.0 COVERS 
+3.0 COVERS
 ///////////////////////////////////////////////////
 */
 .fh5co-cover {
@@ -898,8 +898,8 @@ a:hover .lnk-icon-right {
 }
 .fh5co-cover .fh5co-cover-text .btn-outline:hover {
   color: #fff;
-  background: #1784fb;
-  border-color: #1784fb;
+  background: #E26C00;
+  border-color: #C25B00;
 }
 .fh5co-cover .fh5co-cover-text .btn-outline:hover, .fh5co-cover .fh5co-cover-text .btn-outline:focus, .fh5co-cover .fh5co-cover-text .btn-outline:active {
   outline: none;
@@ -941,9 +941,9 @@ a:hover .lnk-icon-right {
   z-index: 4;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-4.0 PROJECTS 
+4.0 PROJECTS
 ///////////////////////////////////////////////////
 */
 /* PROJECTS STYLE #1 */
@@ -1342,9 +1342,9 @@ a:hover .lnk-icon-right {
   transform: scale(1.1);
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-5.0 CONTENTS 
+5.0 CONTENTS
 ///////////////////////////////////////////////////
 */
 .fh5co-content-style-2,
@@ -1579,8 +1579,8 @@ a:hover .lnk-icon-right {
   border-color: #fff;
 }
 .fh5co-content-style-4 .btn-outline:hover {
-  background: #035fc2;
-  border-color: #035fc2;
+  background: #E26C00;
+  border-color: #C25B00;
 }
 
 .fh5co-content-style-5 {
@@ -1758,7 +1758,7 @@ a:hover .lnk-icon-right {
 
 /* CONTENT STYLE #10 */
 .fh5co-content-style-10 {
-  background: #1784fb;
+  background: #C25B00;
 }
 .fh5co-content-style-10 h2 {
   margin-top: 20px;
@@ -1785,13 +1785,14 @@ a:hover .lnk-icon-right {
   border-color: #fff;
 }
 .fh5co-content-style-10 .btn-outline:hover {
-  background: #035fc2;
-  border-color: #035fc2;
+  color: #E26C00;
+  background: #ffffff;
+  border-color: #ffffff;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-6.0 FEATURES 
+6.0 FEATURES
 ///////////////////////////////////////////////////
 */
 /* FEATURE STYLE #1 */
@@ -2149,9 +2150,9 @@ a:hover .lnk-icon-right {
   font-size: 40px;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-7.0 BLOGS 
+7.0 BLOGS
 ///////////////////////////////////////////////////
 */
 /* BLOG STYLE #1 */
@@ -2348,9 +2349,9 @@ a:hover .lnk-icon-right {
   transform: scale(1.1);
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-8.0 BLOGS 
+8.0 BLOGS
 ///////////////////////////////////////////////////
 */
 .fh5co-team-style-1,
@@ -2556,7 +2557,7 @@ a:hover .lnk-icon-right {
   color: #1784fb;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
 9.0 FOOTERS
 ///////////////////////////////////////////////////
@@ -2910,7 +2911,7 @@ a:hover .lnk-icon-right {
   color: #fb4f59;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
 10.0 TESTIMONIALS
 ///////////////////////////////////////////////////
@@ -3039,7 +3040,7 @@ a:hover .lnk-icon-right {
   margin-bottom: 0;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
 11.0 TESTIMONIALS
 ///////////////////////////////////////////////////
