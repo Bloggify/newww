@@ -100,7 +100,7 @@
                             <strong>Bloggify</strong> is a NodeJS platform providing a simple
                                     way to build a blog in minutes. We focus on <em>modularity</em>, <em>flexibility</em>, <em>simplicity</em> and <em>speed</em>.
                         </h2>
-                        <p><a href="#" class="btn btn-outline btn-lg">Learn more</a></p>
+                        <p><a href="https://twitter.com/Bloggify" class="btn btn-outline btn-lg">Follow us</a></p>
                      </div>
                   </div>
                </div>
@@ -179,7 +179,8 @@
                </div>
             </div>
          </div>
-      </div><div class="fh5co-features-style-3">
+     </div>
+     <div class="fh5co-features-style-3">
          <div class="container">
             <div class="row p-b">
                <div class="col-md-6 col-md-offset-3 text-center">
@@ -190,52 +191,56 @@
             <div class="row">
                <div class="col-md-4">
                   <div class="box to-animate">
-                     <div class="icon colored-1"><span><i class="icon-command"></i></span></div>
+                     <div class="icon colored-4"><span><i class="icon-heart22"></i></span></div>
                      <h3>Simplicity</h3>
                       <p><strong>Bloggify</strong> is simple
                       to use. With a minimalist interface,
                       you can do anything you expect
-                      from a blogging platform. If you
+                      from a blogging platform.</p>
+                    <p>If you
                       still want more, you can install and create
                       <a href="#plugins">plugins</a> easily.</p>
+                     <p>Bloggify is built with love and we should keep it simple.</p>
                   </div>
                   <div class="box to-animate">
-                     <div class="icon colored-4"><span><i class="icon-heart22"></i></span></div>
-                     <h3>Made with love</h3>
-                     <p>We enjoy doing what we do.</p>
+                     <div class="icon colored-3"><span><i class="icon-palette"></i></span></div>
+                     <h3>Themes</h3>
+                     <p>
+                         The themes are another part that makes <strong>Bloggify</strong> awesome. If you are non-technical,
+                         you can choose a theme you like. However, as developer, you can create a theme easily.
+                     </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="box to-animate">
-                     <div class="icon colored-2"><span><i class="icon-toggle"></i></span></div>
-                     <h3>Fully responsive</h3>
+                     <div class="icon colored-2"><span><i class="icon-gears"></i></span></div>
+                     <h3>RESTful APIs</h3>
                      <p><strong>Bloggify</strong> has a nice
-                    REST API for developers.
-                    Using it, the developers can create
-                    third-pary applications to access
-                    the Bloggify resources.</p>
+                         REST API for developers.</p>
+                     <p>Using it, the developers can create
+                     third-pary applications to access
+                     the Bloggify resources.</p>
                   </div>
                   <div class="box to-animate">
-                     <div class="icon colored-5"><span><i class="icon-clock2"></i></span></div>
+                     <div class="icon colored-1"><span><i class="icon-palette"></i></span></div>
+                     <h3>Plugin System</h3>
+                     <p>
+                         <strong>Bloggify</strong> is like a puzzle: it is built from
+                         multiple pieces. Each piece does one thing and does it well.</p>
+                         <p>The plugin system makes Bloggify very extensible allowing you to add more custom features and change the core functionality.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box to-animate">
+                     <div class="icon colored-5"><span><i class="icon-rocket2"></i></span></div>
                      <h3>Fast &amp; light</h3>
                      <p><strong>Bloggify</strong>'s performance
                       is awesome. Caching techniques
                       are used (both on server and client)
                       to speed up the things.</p>
                   </div>
-               </div>
-               <div class="col-md-4">
                   <div class="box to-animate">
-                     <div class="icon colored-3"><span><i class="icon-eye22"></i></span></div>
-                     <h3>RESTful APIs</h3>
-                     <p><strong>Bloggify</strong> has a nice
-                     REST API for developers.
-                     Using it, the developers can create
-                     third-pary applications to access
-                     the Bloggify resources.</p>
-                  </div>
-                  <div class="box to-animate">
-                     <div class="icon colored-6"><span><i class="icon-head"></i></span></div>
+                     <div class="icon colored-6"><span><i class="icon-git"></i></span></div>
                      <h3>Git Integration</h3>
                      <p><strong>Bloggify</strong>'s API
                      has built-in <a href="http://git-scm.com/">Git</a> integration.
@@ -250,20 +255,64 @@
                </div>
             </div>
          </div>
-      </div><div class="fh5co-footer-style-3">
+      </div>
+      <div class="fh5co-content-style-9">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-3">
+                   <p><img src="<%= _public('/img/beky.png') %>" alt="Image" class="img-responsive"></p>
+               </div>
+               <div class="col-md-9">
+                  <h2 class="font-weight-normal">Meet <strong>Beky</strong></h2>
+                  <p>Meet <strong>Beky</strong>—the Bloggify mascot. She is smart, fast, agile and cute.</p>
+                  <p>During your experience with Bloggify, Beky will guide and help you.</p>
+                  <p>What makes her a special owl is the newspaper hat, the notebook and the pen. That's giving her publishing super-powers.</p>
+                  <p class="btn-actions"><a href="/logos" class="btn btn-success"><i class="icon-"></i> Learn more</a></p>
+                  <hr>
+                  <sub>If you want to use the mascot image or any other similar resources (e.g. logos), please follow the <a href="/logos#logos">Bloggify logos and usage</a>.</sub>
+               </div>
+            </div>
+         </div>
+      </div>
+        <div class="fh5co-features-style-3">
          <div class="container">
             <div class="row p-b">
+               <div class="col-md-8 col-md-offset-2 text-center">
+                  <h2 class="fh5co-heading">Donate</h2>
+                  <p>Donations are always welcome!
+                      <a href="mailto:support@bloggify.org">Tell us</a> how can you help Bloggify.
+                  </p>
+                  <div class="donate"></div>
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                      <input type="hidden" name="cmd" value="_donations">
+                      <input type="hidden" name="business" value="contact@ionicabizau.net">
+                      <input type="hidden" name="lc" value="US">
+                      <input type="hidden" name="amount">
+                      <input type="hidden" name="no_note" value="0">
+                      <input type="hidden" name="cn" value="Add special instructions to the seller:">
+                      <input type="hidden" name="no_shipping" value="2">
+                      <input type="hidden" name="currency_code" value="USD">
+                      <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+                      <center>
+                          <button class="btn btn-lg btn-default btn-donate btn-info">
+                              Donate
+                          </button>
+                      </center>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="fh5co-footer-style-3">
+         <div class="container">
+            <div class="row">
                <div class="col-md-12 text-center">
                     <img src="<%= _public('/img/mark-white-circle.svg') %>" class="mark-logo">
                </div>
             </div>
-            <div class="row fh5co-made">
-               <div class="col-md-12">
-                  <p>Made with <i class="heart icon-heart"></i> in Romania</p>
-               </div>
-            </div>
          </div>
-      </div></div>
+        </div>
+     </div>
    <!-- END page-->
 
    <!-- jQuery -->
@@ -280,6 +329,7 @@
    <script src="<%= _public('js/jquery.magnific-popup.min.js') %>"></script>
    <!-- Main -->
    <script src="<%= _public('js/main.js') %>"></script>
+
+   <!-- Donate -->
+   <script src="https://cdn.rawgit.com/IonicaBizau/donate.js/gh-pages/dist/donate.js"></script>
 </body></html>
-
-

@@ -15,11 +15,14 @@ img {
 .sponsors img {
     display: inline-block;
     margin: 27px;
+    max-width: 80%;
     -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
 }
 
 .sponsors img:hover {
     -webkit-filter: none;
+    -moz-filter: none;
 }
 
 .sponsors a {
@@ -68,4 +71,82 @@ img {
 .mark-logo {
     width: 70px;
     max-width: 100%;
+}
+
+.fh5co-features-style-3 .box .icon > span i {
+    position: relative;
+    top: 3px;
+}
+
+.donate li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    background-color: #FFFFFF;
+    margin: 10px;
+    width: calc(25% - 20px);
+    text-align: center;
+    color: #696969;
+    font-weight: bold;
+    opacity: 0.7;
+    cursor: pointer;
+    min-width: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.donate li:hover {
+    opacity: 1;
+}
+
+.donate li.active {
+    opacity: 1;
+    background-color: #d5740f;
+    color: #fff;
+}
+
+.donate li > input {
+    border: none;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 10px;
+    color: #2C3E50;
+    width: calc(100% - 47px) !important;
+}
+
+.donate li:last-of-type {
+    height: 66px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0;
+}
+
+.donate ul {
+    padding: 0;
+    margin: 0;
+}
+
+button.btn.btn-lg.btn-default.btn-donate {
+    width: calc(100% - 20px);
+    background: #d5740f;
+    border-color: #C25B00;
+    margin: 10px;
+}
+
+button.btn.btn-lg.btn-default.btn-donate:hover,
+button.btn.btn-lg.btn-default.btn-donate:focus,
+button.btn.btn-lg.btn-default.btn-donate:active {
+    color: #C25B00;
+    border-color: #C25B00 !important;
+    background: #fff !important;
+}
+
+@media (max-width: 400px) {
+    .donate li {
+        width: 100% ;
+        margin: 5px 0;
+    }
+}
+
+.fh5co-content-style-4 .btn-outline:hover {
+    color: #fff;
 }
