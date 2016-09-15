@@ -1,4 +1,8 @@
-<% include("includes/header") %>
+<% include("includes/header", { title: "Blog" }) %>
+
+<% articles.forEach(function (article) { %>
+    <% include("includes/blog-article", { article: article }) %>
+<% }); %>
 
 <div class="fh5co-features-style-3 p-t">
     <div class="container">
