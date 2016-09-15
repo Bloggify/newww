@@ -1,0 +1,19 @@
+<% include("includes/header", { title: "500" }) %>
+<div class="fh5co-cover fh5co-cover-style-2 full-height js-full-height" data-next="yes" style="background-image: url('<%= _public('/img/bg.png') %>');">
+    <div class="fh5co-overlay"></div>
+    <div class="fh5co-cover-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="fh5co-cover-intro text-center p-t">
+                        <h1 class="cover-text-lead">500</h1>
+                        <h2 class="cover-text-sublead">
+                            Something went really wrong.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include("includes/footer") %>
