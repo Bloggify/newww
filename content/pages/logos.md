@@ -1,7 +1,7 @@
 ---
 title: Logos
 author: Admin
-order: 2
+order: 3
 pageTemplate: logos
 tags:
     - bloggify
