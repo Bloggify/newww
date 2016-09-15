@@ -1,10 +1,18 @@
 
-# bloggify.github.io [![Version](https://img.shields.io/npm/v/bloggify.github.io.svg)](https://www.npmjs.com/package/bloggify.github.io) [![Downloads](https://img.shields.io/npm/dt/bloggify.github.io.svg)](https://www.npmjs.com/package/bloggify.github.io)
+# bloggify.github.io
+
+ [![Version](https://img.shields.io/npm/v/bloggify.github.io.svg)](https://www.npmjs.com/package/bloggify.github.io) [![Downloads](https://img.shields.io/npm/dt/bloggify.github.io.svg)](https://www.npmjs.com/package/bloggify.github.io)
 
 > The Bloggify.org website source code.
 
-[![bloggify.github.io](http://i.imgur.com/VpW4ZGd.png)](http://bloggify.org/)
-
+## Installation steps
+```sh
+git clone https://github.com/Bloggify/bloggify.github.io bloggify-newww
+cd bloggify-newww
+git checkout app
+npm i
+npm run start:dev
+```
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
