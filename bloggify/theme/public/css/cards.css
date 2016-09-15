@@ -538,7 +538,7 @@ a:hover .lnk-icon-right {
 }
 
 #fh5co-page {
-  position: relative;
+  /* position: relative; */
   z-index: 2;
 }
 #fh5co-page.fh5co-offcanvass-left {

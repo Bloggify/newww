@@ -1,0 +1,11 @@
+<ul data-offcanvass="yes">
+<% Bloggify.adapter.getAllPages(function (err, pages) { %>
+    <% pages.forEach(function (cPage) { %>
+        <li class="page <%= lien.path === cPage.path ? 'active' : '' %>">
+            <a href="<%= cPage.path %>">
+                <%= cPage.metadata.title %>
+            </a>
+        </li>
+    <% }); %>
+<% }) %>
+</ul>

@@ -150,3 +150,127 @@ button.btn.btn-lg.btn-default.btn-donate:active {
 .fh5co-content-style-4 .btn-outline:hover {
     color: #fff;
 }
+
+@media (min-width: 666px) {
+    .equal, .equal > div[class*='col-'] {
+        display: -webkit-flex;
+        display: flex;
+        flex:1 1 auto;
+    }   
+
+    .logos .panel-body {
+        padding: 50px;
+        width: 100%;
+    }
+
+    .logos .panel-footer {
+        position: absolute;
+        bottom: 21px;
+        left: 16px;
+        right: 16px;
+    }
+
+    .logos .panel.panel-default {
+        padding-bottom: 20px;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .fh5co-cover-text {
+        top: 40px !important;
+    }
+}
+
+
+.p-t {
+    padding-top: 100px;
+}
+
+.full-screen-popup h2 {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.full-screen-popup {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    background: #000;
+    color: #fff;
+    padding: 70px;
+    font-size: 21px;
+    z-index: 9999999;
+    overflow: auto;
+    display: none;
+    height: 100vh;
+    overflow: auto;
+    width: 100vw;
+}
+
+.full-screen-popup a {
+    color: #428bca;
+}
+
+.close-icon {
+    font-size: 60px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 99;
+    color: #eee;
+    cursor: pointer;
+}
+
+.full-screen-popup ul {
+    margin-bottom: 50px; 
+}
+
+.full-screen-popup li {
+    line-height: 40px;
+}
+
+@media (max-width: 400px) {
+    .full-screen-popup {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .close-icon {
+        left: initial;
+        right: 20px;
+    }
+}
+
+.logos .panel.panel-default {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logos .panel-footer {
+    background-color: rgba(255, 255, 255, 0.33) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.box.to-animate {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.fh5co-content-style-9 {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.disable-scroll {
+    overflow: hidden;
+    position: fixed;
+}
+
+.fh5co-cover .fh5co-cover-text {
+    top: 30px;
+}

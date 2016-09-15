@@ -1,0 +1,28 @@
+      <div class="fh5co-footer-style-3">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center">
+                    <img src="<%= _public('/img/mark-white-circle.svg') %>" class="mark-logo">
+               </div>
+            </div>
+         </div>
+        </div>
+     </div>
+   <!-- END page-->
+
+   <!-- jQuery -->
+   <script src="<%= _public('js/jquery.min.js') %>"></script>
+
+   <!-- Bootstrap -->
+   <script src="<%= _public('js/bootstrap.min.js') %>"></script>
+
+   <!-- Waypoints -->
+   <script src="<%= _public('js/jquery.waypoints.min.js') %>"></script>
+
+   <!-- Main -->
+   <script src="<%= _public('js/main.js') %>"></script>
+
+   <!-- Donate -->
+   <script src="https://cdn.rawgit.com/IonicaBizau/donate.js/gh-pages/dist/donate.js"></script>
+</body>
+</html>
