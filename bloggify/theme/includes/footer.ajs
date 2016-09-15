@@ -23,6 +23,6 @@
    <script src="<%= _public('js/main.js') %>"></script>
 
    <!-- Donate -->
-   <script src="https://cdn.rawgit.com/IonicaBizau/donate.js/gh-pages/dist/donate.js"></script>
+   <script src="https://cdn.rawgit.com/IonicaBizau/donate.js/d85ec20a601cc5d8c009e288b0ac0576a0c3047b/dist/donate.js"></script>
 </body>
 </html>
