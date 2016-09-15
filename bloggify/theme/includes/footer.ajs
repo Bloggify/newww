@@ -2,7 +2,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12 text-center">
-                    <img src="<%= _public('/img/mark-white-circle.svg') %>" class="mark-logo">
+                    <a href="/"><img src="<%= _public('/img/mark-white-circle.svg') %>" class="mark-logo"></a>
                </div>
             </div>
          </div>
