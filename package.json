@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "bloggify start"
+    "start": "NODE_ENV=production bloggify start > log.txt",
+    "start:dev": "bloggify start"
   },
   "repository": {
     "type": "git",
@@ -30,9 +31,9 @@
     "bloggify-analytics": "ionicabizau/bloggify-analytics",
     "bloggify-mongoose": "bitbucket:bloggify/bloggify-mongoose",
     "bloggify-plugin-manager": "IonicaBizau/bloggify-plugin-manager",
-    "bloggify-prebuilt": "^1.0.1",
     "bloggify-router": "IonicaBizau/bloggify-router",
-    "bloggify-template-renderer": "ionicabizau/bloggify-template-renderer",
-    "bloggify-viewer": "ionicabizau/bloggify-viewer"
+    "bloggify-viewer": "ionicabizau/bloggify-viewer",
+
+    "bloggify-cli": "^1.0.0"
   }
 }
