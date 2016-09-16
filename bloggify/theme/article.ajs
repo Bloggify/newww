@@ -1,0 +1,34 @@
+<% include("includes/header") %>
+
+<% include("includes/blog-article", { article: article }) %>
+
+<div class="fh5co-features-style-3 p-t">
+    <div class="container">
+        <div class="row p-b">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2 class="fh5co-heading">Donate</h2>
+                <p>Donations are always welcome!
+                    <a href="mailto:support@bloggify.org">Tell us</a> how can you help Bloggify.
+                </p>
+                <div class="donate"></div>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_donations">
+                    <input type="hidden" name="business" value="contact@ionicabizau.net">
+                    <input type="hidden" name="lc" value="US">
+                    <input type="hidden" name="amount">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="cn" value="Add special instructions to the seller:">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+                    <center>
+                        <button class="btn btn-lg btn-default btn-donate btn-info">
+                            Donate
+                        </button>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<% include("includes/footer") %>
