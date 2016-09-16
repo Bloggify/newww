@@ -12,6 +12,7 @@ cd bloggify-newww
 git checkout app
 npm i
 npm run start:dev
+# Then open http://localhost:8080 in your browser
 ```
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
