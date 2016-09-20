@@ -11,17 +11,16 @@
             <div class="row">
                 <div class="col-md-5 full-height hidden-xs hidden-sm">
                     <div class="fh5co-cover-intro">
-                        <img src="<%= _public('/assets/mascot/beky.png') %>">
+                        <img src="<%= _public(content.metadata.landingImage) %>">
                     </div>
                 </div>
                 <div class="col-md-7 full-height js-full-height">
                     <div class="fh5co-cover-intro">
-                        <h1 class="cover-text-lead">We make publishing easy.</h1>
+                        <h1 class="cover-text-lead"><%= content.metadata.landingTitle || siteMetadata.title %></h1>
                         <h2 class="cover-text-sublead">
-                            <strong>Bloggify</strong> is a NodeJS platform providing a simple
-                            way to build a blog in minutes. We focus on <em>modularity</em>, <em>flexibility</em>, <em>simplicity</em> and <em>speed</em>.
+                            <%- content.metadata.landingDescription || siteMetadata.description %>
                         </h2>
-                        <p><a href="https://twitter.com/Bloggify" class="btn btn-outline btn-lg">Follow us</a></p>
+                        <p><a href="https://twitter.com/<%= content.metadata.twitterUsername %>" class="btn btn-outline btn-lg">Follow us</a></p>
                     </div>
                 </div>
             </div>
@@ -33,25 +32,15 @@
         <div class="row p-b">
             <div class="col-md-8 col-md-offset-2 text-center">
                 <h3 class="fh5co-sub"></h3>
-                <h3 class="fh5co-heading">Made possible with the help of these sponsors!</h3>
+                <h3 class="fh5co-heading"><%= content.metadata.secondSection.title %></h3>
                 <div class="sponsors">
-                    <a target="blank" href="https://www.brightbox.com/" class="s-brightbox">
-                        <img src="<%= _public('/img/sponsors/brightbox.png') %>" alt="">
-                    </a>
-                    <a target="blank" href="https://imedicare.com/" class="s-imedicare">
-                        <img src="<%= _public('/img/sponsors/imedicare.png') %>" alt="">
-                    </a>
-                    <a target="blank" href="http://www.pleasebelievepeoplearehungry.com/" class="s-carlisa">
-                        <img src="<%= _public('/img/sponsors/carlisa.png') %>" alt="">
-                    </a>
-                    <a target="blank" href="http://devstickers.com/" class="s-devstickers">
-                        <img src="<%= _public('/img/sponsors/devstickers.png') %>" alt="">
-                    </a>
-                    <a target="blank" href="https://statuspage.io/" class="s-statuspage">
-                        <img src="<%= _public('/img/sponsors/statuspage.png') %>" alt="">
-                    </a>
+                    <% content.metadata.sponsors.forEach(function (c) { %>
+                        <a target="blank" href="<%= c.url %>" class="s-<%= c.name %>">
+                            <img src="<%= _public('/img/sponsors/' + c.name + '.png') %>">
+                        </a>
+                    <% }) %>
                 </div>
-                <p><a href="#" class="btn btn-outline">Tell us how you can help</a></p>
+                <p><a href="<%= content.metadata.helpUsLink %>" class="btn btn-outline">Tell us how you can help</a></p>
             </div>
         </div>
     </div>
@@ -92,11 +81,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5 col-sm-5">
-                <h2>Join the Preview program.</h2>
+                <h2><%= content.metadata.thirdSection.title %></h2>
             </div>
             <div class="col-md-6 col-md-push-1 col-sm-6 col-sm-push-1">
-                <p>You can now register the Preview program which will help you to stay tuned with the latest news. Also, you may get an invitation to the alpha stage.</p>
-                <p><a href="https://preview.bloggify.org" class="btn btn-outline">Join Now</a></p>
+                <%- content.metadata.thirdSection.description %>
             </div>
         </div>
     </div>
@@ -105,73 +93,33 @@
     <div class="container">
         <div class="row p-b">
             <div class="col-md-6 col-md-offset-3 text-center">
-                <h2 class="fh5co-heading">Features</h2>
-                <p>At Bloggify, we focus on maintaining a blogging platform which is simple to use and still extensible, keeping the core minimal.</p>
+                <h2 class="fh5co-heading"><%= content.metadata.features.title %></h2>
+                <p><%= content.metadata.features.description %></p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="box to-animate">
-                    <div class="icon colored-4"><span><i class="icon-heart22"></i></span></div>
-                    <h3>Simplicity</h3>
-                    <p><strong>Bloggify</strong> is simple
-                        to use. With a minimalist interface,
-                        you can do anything you expect
-                        from a blogging platform.</p>
-                    <p>If you
-                        still want more, you can install and create
-                        <a href="#plugins">plugins</a> easily.</p>
-                    <p>Bloggify is built with love and we should keep it simple.</p>
-                </div>
-                <div class="box to-animate">
-                    <div class="icon colored-3"><span><i class="icon-palette"></i></span></div>
-                    <h3>Themes</h3>
-                    <p>
-                        The themes are another part that makes <strong>Bloggify</strong> awesome. If you are non-technical,
-                        you can choose a theme you like. However, as developer, you can create a theme easily.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="box to-animate">
-                    <div class="icon colored-2"><span><i class="icon-gears"></i></span></div>
-                    <h3>RESTful APIs</h3>
-                    <p><strong>Bloggify</strong> has a nice
-                        REST API for developers.</p>
-                    <p>Using it, the developers can create
-                        third-pary applications to access
-                        the Bloggify resources.</p>
-                </div>
-                <div class="box to-animate">
-                    <div class="icon colored-1"><span><i class="icon-palette"></i></span></div>
-                    <h3>Plugin System</h3>
-                    <p>
-                        <strong>Bloggify</strong> is like a puzzle: it is built from
-                        multiple pieces. Each piece does one thing and does it well.</p>
-                    <p>The plugin system makes Bloggify very extensible allowing you to add more custom features and change the core functionality.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="box to-animate">
-                    <div class="icon colored-5"><span><i class="icon-rocket2"></i></span></div>
-                    <h3>Fast &amp; light</h3>
-                    <p><strong>Bloggify</strong>'s performance
-                        is awesome. Caching techniques
-                        are used (both on server and client)
-                        to speed up the things.</p>
-                </div>
-                <div class="box to-animate">
-                    <div class="icon colored-6"><span><i class="icon-git"></i></span></div>
-                    <h3>Git Integration</h3>
-                    <p><strong>Bloggify</strong>'s API
-                        has built-in <a href="http://git-scm.com/">Git</a> integration.
-                        This is cool when talking about
-                        content.</p> All changes made by user are saved automatically
-                    into a <code>git</code> repository.
-                    <p>This repository can be synced with
-                        a Git provider (e.g. <a href="http:/github.com">GitHub</a>),
-                        so other people will be able to contribute
-                        to content (e.g. fixing typos and so on).</p>
+            <%
+                var groups = []
+                  , items = content.metadata.features.items
+                  , howMany = items.length
+                  , perGroup = Math.floor(howMany / 3)
+                  ;
+
+                for (var i = 0; i < howMany; i += perGroup) {
+                    groups.push(items.slice(i, i + perGroup))
+                }
+
+                groups.forEach(function (cFeatureGroup) { %>
+                    <div class="col-md-4">
+                    <% cFeatureGroup.forEach(function (c) { %>
+                        <div class="box to-animate">
+                            <div class="icon <%= c.class %>"><span><i class="icon-<%= c.icon %>"></i></span></div>
+                            <h3><%= c.title %></h3>
+                            <%- c.description %>
+                        </div>
+                    <% }); %>
+                    </div>
+            <% }) %>
                 </div>
             </div>
         </div>
@@ -184,13 +132,7 @@
                 <p><img src="<%= _public('/img/beky.png') %>" alt="Image" class="img-responsive"></p>
             </div>
             <div class="col-md-9">
-                <h2 class="font-weight-normal">Meet <strong>Beky</strong></h2>
-                <p>Meet <strong>Beky</strong>—the Bloggify mascot. She is smart, fast, agile and cute.</p>
-                <p>During your experience with Bloggify, Beky will guide and help you.</p>
-                <p>What makes her a special owl is the newspaper hat, the notebook and the pen. That's giving her publishing super-powers.</p>
-                <p class="btn-actions"><a href="/logos" class="btn btn-success"><i class="icon-"></i> Learn more</a></p>
-                <hr>
-                <sub>If you want to use the mascot image or any other similar resources (e.g. logos), please follow the <a href="/logos#logos">Bloggify logos and usage</a>.</sub>
+                <h2 class="font-weight-normal"><%- content.metadata.forthSection.title %></h2>
             </div>
         </div>
     </div>
