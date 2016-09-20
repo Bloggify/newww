@@ -1,0 +1,24 @@
+<div class="container page-content">
+    <div class="col-md-12">
+        <article class="content">
+            <a href="<%= article.path %>" class="article-title">
+                <h1><%= article.metadata.title %></h1>
+            </a>
+            <div>
+                <% if (article.metadata.date) { %>
+                <span class="date"></span>
+                <% } %>
+                <% if (article.metadata.tags && article.metadata.tags.length) { %>
+                    <span class="tags">
+                    <% article.metadata.tags.forEach(function (cTag) { %>
+                        | <span><%= cTag %></span>
+                    <% }); %>
+                    </span>
+                <% } %>
+            </div>
+            <div class="markdown">
+                <%- article.html %>
+            </div>
+        </article>
+    </div>
+</div>

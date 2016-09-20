@@ -538,7 +538,7 @@ a:hover .lnk-icon-right {
 }
 
 #fh5co-page {
-  /* position: relative; */
+  position: relative;
   z-index: 2;
 }
 #fh5co-page.fh5co-offcanvass-left {
@@ -930,6 +930,7 @@ a:hover .lnk-icon-right {
   background-position: center center;
   width: 100%;
   position: relative;
+  height: 100vh;
 }
 .fh5co-cover-style-2 > .fh5co-overlay {
   position: absolute;

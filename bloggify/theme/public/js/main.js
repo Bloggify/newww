@@ -1,7 +1,7 @@
 $(function() {
 
     'use strict';
-    
+
     var $window = $(window)
       , $body = $("body")
       , $bodyAndHtml = $("body,html")
@@ -22,6 +22,7 @@ $(function() {
     var fullHeight = function() {
         var setMinHeight = function () {
             $jsFullHeight.css('min-height', windowHeight < 550 && windowWidth > 350 && windowWidth < 600 ? 450 : windowHeight);
+            $(".full-height").animate({ opacity: 1 })
         };
       //  if (!isiPhone && !isiPad) {
         setMinHeight();

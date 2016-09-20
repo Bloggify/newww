@@ -1,85 +1,86 @@
 <!DOCTYPE html>
-<html><!--<![endif]--><head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title><%= title %> | <%= siteMetadata.siteTitle %></title>
+<html><!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title><%= title %> | <%= siteMetadata.siteTitle %></title>
 
-   <meta name="application-name" content="<%= siteMetadata.siteTitle %>">
-   <meta name="keywords" content="<%= siteMetadata.keywords && siteMetadata.keywords.join(', ') %>">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="application-name" content="<%= siteMetadata.siteTitle %>">
+        <meta name="keywords" content="<%= siteMetadata.keywords && siteMetadata.keywords.join(', ') %>">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <!-- Control the behavior of search engine crawling and indexing -->
-   <meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
-   <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+        <!-- Control the behavior of search engine crawling and indexing -->
+        <meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
+        <meta name="googlebot" content="index,follow"><!-- Google Specific -->
 
-   <meta name="description" content="<%= siteMetadata.description %>">
-   <meta name="author" content="Bloggify">
+        <meta name="description" content="<%= siteMetadata.description %>">
+        <meta name="author" content="Bloggify">
 
-   <meta name="google" content="nositelinkssearchbox">
-   <meta name="subject" content="<%= Bloggify.options.metadata.domain %>">
-   <meta name="abstract" content="<%= Bloggify.options.metadata.domain %>">
-   <meta name="url" content="<%= Bloggify.options.metadata.domain %>">
-   <meta name="directory" content="submission">
-   <meta name="rating" content="General">
+        <meta name="google" content="nositelinkssearchbox">
+        <meta name="subject" content="<%= Bloggify.options.metadata.domain %>">
+        <meta name="abstract" content="<%= Bloggify.options.metadata.domain %>">
+        <meta name="url" content="<%= Bloggify.options.metadata.domain %>">
+        <meta name="directory" content="submission">
+        <meta name="rating" content="General">
 
-   <!-- TODO -->
-   <meta property="og:url" content="<%= Bloggify.options.metadata.domain %>">
+        <!-- TODO -->
+        <meta property="og:url" content="<%= Bloggify.options.metadata.domain %>">
 
-   <meta property="og:type" content="website">
-   <meta property="og:title" content="<%= siteMetadata.siteTitle %>">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="<%= siteMetadata.siteTitle %>">
 
-   <!-- TODO -->
-   <meta property="og:image" content="<%= _public('/images/beky.png', true) %>">
+        <!-- TODO -->
+        <meta property="og:image" content="<%= _public('/images/beky.png', true) %>">
 
-   <meta property="og:site_name" content="<%= siteMetadata.siteTitle %>">
-   <meta property="og:locale" content="en_US">
-   <meta property="og:description" content="<%= siteMetadata.description %>">
+        <meta property="og:site_name" content="<%= siteMetadata.siteTitle %>">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:description" content="<%= siteMetadata.description %>">
 
-   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-   <link rel="shortcut icon" href="<%= _public('/img/logo.png') %>">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="<%= _public('/img/logo.png') %>">
 
-   <!-- Google Fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Monsterrat:400,700|Merriweather:400,300italic,700" rel="stylesheet" type="text/css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Monsterrat:400,700|Merriweather:400,300italic,700" rel="stylesheet" type="text/css">
 
-   <!-- Icomoon Icon Fonts-->
-   <link rel="stylesheet" href="<%= _public('css/icomoon.css') %>">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="<%= _public('css/icomoon.css') %>">
 
-   <!-- Bootstrap  -->
-   <link rel="stylesheet" href="<%= _public('css/bootstrap.css') %>">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="<%= _public('css/bootstrap.css') %>">
 
-   <!-- Cards -->
-   <link rel="stylesheet" href="<%= _public('css/cards.css') %>">
+        <!-- Cards -->
+        <link rel="stylesheet" href="<%= _public('css/cards.css') %>">
 
-   <!-- Custom -->
-   <link rel="stylesheet" href="<%= _public('css/custom.css') %>">
+        <!-- Custom -->
+        <link rel="stylesheet" href="<%= _public('css/custom.css') %>">
 
-   <!-- Modernizr JS -->
-   <script src="<%= _public('js/modernizr-2.6.2.min.js') %>"></script>
+        <!-- Modernizr JS -->
+        <script src="<%= _public('js/modernizr-2.6.2.min.js') %>"></script>
 
-   <!-- FOR IE9 below -->
-   <!--[if lt IE 9]>
-   <script src="<%= _public('js/respond.min.js') %>"></script>
-   <![endif]-->
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="<%= _public('js/respond.min.js') %>"></script>
+        <![endif]-->
 
-   </head>
-   <body class="fh5co-overflow">
-    <div id="fh5co-page">
-        <nav class="fh5co-nav-style-1" role="navigation" data-offcanvass-position="fh5co-offcanvass-left">
-            <div class="container">
-                <div class="col-md-3 col-sm-3 col-xs-12 fh5co-logo">
-                    <a href="#" class="js-fh5co-mobile-toggle fh5co-nav-toggle"><i></i></a>
-                    <a href="/" class="logo">
-                        <img src="<%= _public('/img/logo.svg') %>">
-                    </a>
+        <% include("../styles/critical") %>
+    </head>
+    <body class="fh5co-overflow template-<%= template %>">
+        <div id="fh5co-page">
+            <nav class="fh5co-nav-style-1" role="navigation" data-offcanvass-position="fh5co-offcanvass-left">
+                <div class="container">
+                    <div class="col-md-3 col-sm-3 col-xs-12 fh5co-logo">
+                        <a href="#" class="js-fh5co-mobile-toggle fh5co-nav-toggle"><i></i></a>
+                        <a href="/" class="logo">
+                            <img src="<%= _public('/img/logo.svg') %>">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 text-center fh5co-link-wrap">
+                        <% include("menu") %>
+                    </div>
+                    <div class="col-md-3 col-sm-3 text-right fh5co-link-wrap">
+                        <ul class="fh5co-special" data-offcanvass="yes">
+                            <li><a href="<%= Bloggify.options.theme.previewLink %>" class="call-to-action">Preview</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-6 col-sm-6 text-center fh5co-link-wrap">
-                    <% include("menu") %>
-                </div>
-                <div class="col-md-3 col-sm-3 text-right fh5co-link-wrap">
-                    <ul class="fh5co-special" data-offcanvass="yes">
-                        <li><a href="<%= Bloggify.options.theme.previewLink %>" class="call-to-action">Preview</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+            </nav>

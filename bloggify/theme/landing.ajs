@@ -133,6 +133,7 @@
             </div>
             <div class="col-md-9">
                 <h2 class="font-weight-normal"><%- content.metadata.forthSection.title %></h2>
+                <%- content.metadata.forthSection.description %>
             </div>
         </div>
     </div>

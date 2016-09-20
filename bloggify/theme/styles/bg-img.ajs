@@ -1,0 +1,6 @@
+<style>
+    body {
+        background-image: url(<%= _public('/img/bg.png') %>);
+    }
+</style>
+

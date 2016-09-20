@@ -274,3 +274,154 @@ button.btn.btn-lg.btn-default.btn-donate:active {
 .fh5co-cover .fh5co-cover-text {
     top: 30px;
 }
+
+
+
+div.background-cover {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  overflow-x: hidden;
+}
+
+body.template-blog-page,
+body.template-article,
+body.template-site-page {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.page-content {
+  margin: 0 auto;
+  position: relative;
+  top: 120px;
+  margin-bottom: 160px;
+}
+
+article.article-item {
+  margin-top: 2em;
+}
+
+
+article.content {
+  margin-top: 2em;
+}
+
+article.content,
+.article-info,
+.article-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 65px rgba(0, 0, 0, 0.2);
+  padding: 27px;
+}
+
+.fh5co-special a {
+  margin-right: 0 !important;
+}
+
+div#fh5co-page {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.article-img {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.33);
+}
+
+.article-img img {width: 100%;}
+
+@media (min-width: 500px) {
+
+  .article-img {
+        margin-bottom: -150px;
+  }
+
+  .article-item.has-image .article-content.content {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/transparent+0,ffffff+0,000000+73 */
+      background: rgba(38, 38, 38, 0.8); /* Old browsers */
+
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/transparent+0,7c4344+57 */
+      background: transparent; /* Old browsers */
+      background: -moz-linear-gradient(top, transparent 0%, rgba(38, 38, 38, 0.9) 57%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, transparent 0%,rgba(38, 38, 38, 0.9) 57%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, transparent 0%,rgba(38, 38, 38, 0.9) 57%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='transparent', endColorstr='rgba(38, 38, 38, 0.9)',GradientType=0 ); /* IE6-9 */
+  }
+
+  .single-article-item.has-image .article-info {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/transparent+0,ffffff+0,000000+73 */
+      background: rgba(38, 38, 38, 0.8); /* Old browsers */
+
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/transparent+0,7c4344+57 */
+      background: transparent; /* Old browsers */
+      background: -moz-linear-gradient(top, transparent 0%, rgba(38, 38, 38, 0.9) 57%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, transparent 0%,rgba(38, 38, 38, 0.9) 57%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, transparent 0%,rgba(38, 38, 38, 0.9) 57%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='transparent', endColorstr='rgba(38, 38, 38, 0.9)',GradientType=0 ); /* IE6-9 */
+  }
+
+  .single-article-item.has-image .article-info,
+  .article-item.has-image .article-content.content {
+      position: relative;
+      background-color: transparent;
+      box-shadow: none;
+      top: -90px;
+      height: 240px;
+      padding-top: 6.5em;
+  }
+
+  .article-item.has-image .read-more {
+    color: #262626;
+    background: red;
+    padding: 10px 24px;
+    box-sizing: border-box;
+    float: right;
+    border-radius: 27px;
+    background: #fff;
+    position: relative;
+    top: -46px;
+  }
+
+  .article-item.has-image {
+  }
+
+  .article-item.has-image h1,
+  .single-article-item.has-image h1,
+  .single-article-item.has-image div.article-meta,
+  .article-item.has-image div {
+    color: #fff;
+  } 
+
+  .article-item.has-image h1 {
+    margin: 0;
+  }
+  a.article-title h1 {
+     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  .article-info {
+    margin-bottom: -90px;
+  }
+  .single-article-content.article-content.content {
+    border-top: 2px solid black;
+    padding-top: 2em;
+  }
+  .single-article-item {
+    margin-bottom: 4em;
+  }
+}

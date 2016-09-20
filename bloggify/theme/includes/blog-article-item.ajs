@@ -1,0 +1,35 @@
+<% var articleImage = article.metadata.image %>
+<article class="article-item <%= articleImage ? 'has-image' : 'no-image' %>">
+    <% if (articleImage) { %>
+        <div class="article-img">
+            <a href="<%= article.path %>">
+                <img src="<%= _public(articleImage) %>">
+            </a>
+        </div>
+    <% } %>
+    <div class="article-content content">
+        <a href="<%= article.path %>" class="article-title">
+            <h1><%= article.metadata.title %></h1>
+        </a>
+        <div>
+            <% if (article.metadata.date) { %>
+            <span class="date"></span>
+            <% } %>
+            <% if (article.metadata.author) { %>
+            by Ionică Bizău
+            <% } %>
+        </div>
+        <div class="markdown">
+        <% if (article.metadata.summary) { %>
+            <div class="article-summary">
+                <%- article.metadata.summary %>
+            </div>
+        <% } else { %>
+            <%- article.html %>
+        <% } %>
+        </div>
+        <a href="<%= article.path %>" class="read-more bottom">
+            Read more »
+        </a>
+    </div>
+</article>
