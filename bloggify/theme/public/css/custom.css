@@ -156,7 +156,7 @@ button.btn.btn-lg.btn-default.btn-donate:active {
         display: -webkit-flex;
         display: flex;
         flex:1 1 auto;
-    }   
+    }
 
     .logos .panel-body {
         padding: 50px;
@@ -228,7 +228,7 @@ button.btn.btn-lg.btn-default.btn-donate:active {
 }
 
 .full-screen-popup ul {
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
 
 .full-screen-popup li {
@@ -405,7 +405,7 @@ div#fh5co-page {
   .single-article-item.has-image div.article-meta,
   .article-item.has-image div {
     color: #fff;
-  } 
+  }
 
   .article-item.has-image h1 {
     margin: 0;
@@ -423,5 +423,8 @@ div#fh5co-page {
   }
   .single-article-item {
     margin-bottom: 4em;
+  }
+  .full-height {
+     height: 100vh;
   }
 }
