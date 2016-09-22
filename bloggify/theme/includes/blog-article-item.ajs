@@ -1,5 +1,24 @@
 <% var articleImage = article.metadata.image %>
 <article class="article-item <%= articleImage ? 'has-image' : 'no-image' %>">
+
+    <div class="article-item-top">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="long-dash">— </div>
+                <a href="<%= article.path %>" class="article-title-top">
+                    <h1> <%= article.metadata.title %></h1>
+                </a>
+                <div class="summary-top">
+                    <% if (article.metadata.summary) { %>
+                        <%- article.metadata.summary %>
+                    <% } else { %>
+                        <%- article.html.slice(0, 100) + "..." %>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <% if (articleImage) { %>
         <div class="article-img">
             <a href="<%= article.path %>">
@@ -7,7 +26,8 @@
             </a>
         </div>
     <% } %>
-    <div class="article-content content">
+
+    <div class="article-content content hide">
         <a href="<%= article.path %>" class="article-title">
             <h1><%= article.metadata.title %></h1>
         </a>
@@ -32,4 +52,31 @@
             Read more »
         </a>
     </div>
+
+    <% if (article.metadata.date) { %>
+    <div class="article-bottom-side">
+        <div class="row">
+            <div class="col-xs-5 hidden-xs">
+                <p class="article-section-name">Date</p>
+                <p class="article-section-value"><%= article.metadata.date %></p>
+            </div>
+            <div class="col-xs-3 hidden-xs">
+                <p class="article-section-name">Posted in</p>
+                <p class="article-section-value"><%= article.metadata.category %></p>
+            </div>
+            <div class="col-xs-3 hidden-xs hidden-sm">
+                <p class="article-section-name">Written by</p>
+                <p class="article-section-value"><%= article.metadata.author %></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="<%= article.path %>" class="read-more bottom" title="Read more">
+                    <span class="icon icon-triangle-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <% } %>
+
 </article>

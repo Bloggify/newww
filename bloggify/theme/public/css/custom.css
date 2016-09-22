@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Cardo';
+
 .logo img {
     height: 43px;
     margin-top: -7px;
@@ -304,6 +306,7 @@ body.template-site-page {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .page-content {
@@ -313,21 +316,8 @@ body.template-site-page {
   margin-bottom: 160px;
 }
 
-article.article-item {
-  margin-top: 2em;
-}
-
-
 article.content {
   margin-top: 2em;
-}
-
-article.content,
-.article-info,
-.article-content {
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 10px 65px rgba(0, 0, 0, 0.2);
-  padding: 27px;
 }
 
 .fh5co-special a {
@@ -338,93 +328,191 @@ div#fh5co-page {
     background: rgba(0, 0, 0, 0.4);
 }
 
-.article-img {
+.article-item .article-img {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.33);
 }
 
-.article-img img {width: 100%;}
+.article-item .article-img img {
+  width: 100%;
+  -webkit-filter: brightness(0.7);
+  -moz-filter: brightness(0.7);
+  -ms-filter: brightness(0.7);
+  filter: brightness(0.7);
+}
+
+article.article-item {
+  margin-top: -10em;
+}
+
+.article-item.has-image h1,
+.single-article-item.has-image h1,
+.single-article-item.has-image div.article-meta,
+.article-item.has-image div {
+  color: #fff;
+}
+
+.article-item.has-image .read-more {
+  color: #262626;
+  padding: 17px;
+  box-sizing: border-box;
+  float: right;
+  background: #fff;
+  position: relative;
+  top: -1.5em;
+  font-size: 2.5em;
+  right: 1em;
+}
+
+.article-item.has-image .read-more:hover {
+  opacity: 0.8;
+}
 
 @media (min-width: 500px) {
-
-  .article-img {
-        margin-bottom: -150px;
-  }
-
-  .article-item.has-image .article-content.content {
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/transparent+0,ffffff+0,000000+73 */
-      background: rgba(38, 38, 38, 0.8); /* Old browsers */
-
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/transparent+0,7c4344+57 */
-      background: transparent; /* Old browsers */
-      background: -moz-linear-gradient(top, transparent 0%, rgba(38, 38, 38, 0.9) 57%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(top, transparent 0%,rgba(38, 38, 38, 0.9) 57%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to bottom, transparent 0%,rgba(38, 38, 38, 0.9) 57%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='transparent', endColorstr='rgba(38, 38, 38, 0.9)',GradientType=0 ); /* IE6-9 */
-  }
-
-  .single-article-item.has-image .article-info {
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/transparent+0,ffffff+0,000000+73 */
-      background: rgba(38, 38, 38, 0.8); /* Old browsers */
-
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/transparent+0,7c4344+57 */
-      background: transparent; /* Old browsers */
-      background: -moz-linear-gradient(top, transparent 0%, rgba(38, 38, 38, 0.9) 57%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(top, transparent 0%,rgba(38, 38, 38, 0.9) 57%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to bottom, transparent 0%,rgba(38, 38, 38, 0.9) 57%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='transparent', endColorstr='rgba(38, 38, 38, 0.9)',GradientType=0 ); /* IE6-9 */
-  }
-
-  .single-article-item.has-image .article-info,
-  .article-item.has-image .article-content.content {
-      position: relative;
-      background-color: transparent;
-      box-shadow: none;
-      top: -90px;
-      height: 240px;
-      padding-top: 6.5em;
-  }
-
-  .article-item.has-image .read-more {
-    color: #262626;
-    background: red;
-    padding: 10px 24px;
-    box-sizing: border-box;
-    float: right;
-    border-radius: 27px;
-    background: #fff;
-    position: relative;
-    top: -46px;
-  }
-
-  .article-item.has-image {
-  }
-
-  .article-item.has-image h1,
-  .single-article-item.has-image h1,
-  .single-article-item.has-image div.article-meta,
-  .article-item.has-image div {
-    color: #fff;
-  }
-
-  .article-item.has-image h1 {
-    margin: 0;
-  }
-  a.article-title h1 {
-     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.7);
-  }
-
-  .article-info {
-    margin-bottom: -90px;
-  }
-  .single-article-content.article-content.content {
-    border-top: 2px solid black;
-    padding-top: 2em;
-  }
-  .single-article-item {
-    margin-bottom: 4em;
-  }
+  article.article-item {margin-top: -3em;}  
   .full-height {
      height: 100vh;
   }
+}
+
+.long-dash,
+.article-item-top h1 {
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.article-item-top {
+    position: relative;
+    left: 4.6em;
+    top: 9em;
+    z-index: 3;
+}
+
+
+.long-dash {
+  position: absolute;
+  left: -1.2em;
+  top: 0.33em;
+}
+
+.summary-top {
+    font-size: 2em;
+    font-family: 'Cardo', serif;
+    margin-top: 10px;
+}
+
+.article-bottom-side {
+    position: relative;
+    bottom: 8em;
+    left: 4.6em;
+    right: 0;
+    /* width: calc(100% - 7.5em); */
+}
+
+.article-bottom-side p {
+  margin: 0;
+}
+
+.article-bottom-side p.article-section-name {
+  font-family: 'Cardo', serif;
+  font-size: 1.1em;
+}
+
+.article-bottom-side p.article-section-value {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+
+
+
+.col-md-0 {
+    width: 0
+    float: left;
+}
+
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.single-article-item .article-info {
+    text-align: center;
+}
+
+.single-article-item h1.article-title {
+    font-size: 4em;
+    margin: 0;
+}
+
+.single-article-item .summary-top {
+  color: #fff;
+  margin: 1em 0;
+}
+
+.single-article-item .article-sup {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 800;
+}
+
+.single-article-content.article-content.content {
+    font-family: 'Cardo', serif;
+    background: white;
+    padding: 2em 5em;
+    font-size: 1.3em;
+    line-height: 2em;
+    margin-bottom: 3em;
+}
+
+@media (max-width: 500px) {
+  .long-dash, .article-item-top h1 {
+    font-size: 2em;
+  }
+  .long-dash {
+    top: 0.1em;
+    left: -0.8em;
+  }
+  .article-item-top,
+  .article-bottom-side {
+      left: 2.1em;
+  }
+
+  .article-bottom-side {
+    top: -2em;
+  }
+
+  .article-item-top {
+    top: 4em;
+  }
+
+  article.article-item {
+    margin-top: -6em;
+  }
+  
+  .article-bottom-side p.article-section-name,
+  .article-bottom-side p.article-section-value {
+    display: none;
+  }
+
+  .summary-top {
+    font-size: 1.2em;
+    margin-top: 0em;
+  }
+
+  .article-item.has-image .read-more {
+    right: 0.5em;
+    padding: 10px;
+    font-size: 1.7em;
+    top: -1em;
+  }
+
+  .single-article-content.article-content.content {
+      font-family: 'Cardo', serif;
+      background: white;
+      padding: 2em 1.5em;
+      font-size: 1em;
+      line-height: 1.5em;
+  }
+
 }

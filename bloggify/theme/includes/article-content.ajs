@@ -1,37 +1,50 @@
 <% var articleImage = article.metadata.image %>
+
 <div class="container page-content">
-    <div class="col-md-12">
-        <article class="single-article-item <%= articleImage ? 'has-image' : 'no-image' %>">
-            <% if (articleImage) { %>
-                <div class="article-img">
-                    <img src="<%= _public(articleImage) %>">
-                </div>
-            <% } %>
+    <div class="row">
+        <div class="col-md-12">
+            <article class="single-article-item <%= articleImage ? 'has-image' : 'no-image' %>">
 
-            <div class="article-info">
-                <a href="<%= article.path %>" class="article-title">
-                    <h1><%= article.metadata.title %></h1>
-                </a>
-                <div class="article-meta">
-                    <% if (article.metadata.date) { %>
-                    <span class="date"></span>
-                    <% } %>
-                    <% if (article.metadata.author) { %>
-                    by Ionică Bizău
-                    <% } %>
-                    <% if (article.metadata.summary) { %>
-                        <div class="article-summary">
+                <div class="article-info">
+                    <h1 class="article-title"><%= article.metadata.title %></h1>
+                    <div class="article-sup">
+                        <% if (article.metadata.date) { %>
+                        <span class="date">
+                            <%= article.metadata.date %> //
+                        </span>
+                        <% } %>
+                        <% if (article.metadata.category) { %>
+                        <span class="category"><%= article.metadata.category %></span> //
+                        <% } %>
+                        <% if (article.metadata.author) { %>
+                        <span class="date">
+                            Written by <%= article.metadata.author %>
+                        </span>
+                        <% } %>
+                    </div>
+                    <div class="summary-top">
+                        <% if (article.metadata.summary) { %>
                             <%- article.metadata.summary %>
-                        </div>
-                    <% } %>
+                        <% } else { %>
+                            <%- article.html.slice(0, 100) + "..." %>
+                        <% } %>
+                    </div>
                 </div>
-            </div>
 
-            <div class="single-article-content article-content content">
-                <div class="markdown">
-                <%- article.html %>
+                <% if (articleImage) { %>
+                    <div class="article-img">
+                        <img src="<%= _public(articleImage) %>">
+                    </div>
+                <% } %>
+
+
+                <div class="single-article-content article-content content">
+                    <div class="markdown">
+                    <%- article.html %>
+                    </div>
                 </div>
-            </div>
-        </article>
+
+            </article>
+        </div>
     </div>
 </div>

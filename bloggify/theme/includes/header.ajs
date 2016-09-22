@@ -40,7 +40,7 @@
         <link rel="shortcut icon" href="<%= _public('/img/logo.png') %>">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Monsterrat:400,700|Merriweather:400,300italic,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
 
         <!-- Icomoon Icon Fonts-->
         <link rel="stylesheet" href="<%= _public('css/icomoon.css') %>">

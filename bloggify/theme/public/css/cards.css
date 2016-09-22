@@ -26,7 +26,7 @@ html.mobile-menu-expanded {
 }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 16px;
   line-height: 26px;
   color: #444;
@@ -43,7 +43,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 30px 0;
   padding: 0;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 700;
   color: #262626;
 }
@@ -62,7 +62,7 @@ h2 {
 }
 
 a {
-  color: #1784fb;
+  color: #c25b00;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -121,13 +121,13 @@ a:hover, a:focus, a:active {
 }
 
 .btn-success {
-  background: #58ca7e;
+  background: #d5740f;
   color: #fff;
-  border: 2px solid #58ca7e;
+  border: 2px solid #d5740f;
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active {
-  background: #45c46f !important;
-  border-color: #45c46f !important;
+  background: #e5ad67 !important;
+  border-color: #e5ad67 !important;
 }
 .btn-success.btn-outline {
   background: transparent;
@@ -518,13 +518,14 @@ a:hover .lnk-icon-right {
 }
 #fh5co-offcanvass ul li a.call-to-action {
   margin-top: 40px;
-  border: 2px solid #58ca7e;
-  background: #58ca7e;
+  border: 2px solid #c25b00;
+  background: #c25b00;
   padding: 2px 15px !important;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  *
+  display: inline;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -533,8 +534,8 @@ a:hover .lnk-icon-right {
 }
 #fh5co-offcanvass ul li a.call-to-action:hover {
   color: #fff;
-  border: 2px solid #45c46f;
-  background: #45c46f;
+  border: 2px solid #e5ad67;
+  background: #e5ad67;
 }
 
 #fh5co-page {
@@ -622,7 +623,7 @@ a:hover .lnk-icon-right {
 .fh5co-nav-style-1 .fh5co-logo a, .fh5co-nav-style-2 .fh5co-logo a {
   font-size: 25px;
   color: #fff;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 700;
 }
 .fh5co-nav-style-1 .fh5co-logo a:hover, .fh5co-nav-style-1 .fh5co-logo a:focus, .fh5co-nav-style-1 .fh5co-logo a:active, .fh5co-nav-style-2 .fh5co-logo a:hover, .fh5co-nav-style-2 .fh5co-logo a:focus, .fh5co-nav-style-2 .fh5co-logo a:active {
@@ -673,13 +674,14 @@ a:hover .lnk-icon-right {
 }
 .fh5co-nav-style-1 .fh5co-link-wrap ul li a.call-to-action, .fh5co-nav-style-2 .fh5co-link-wrap ul li a.call-to-action {
   margin-top: 2px;
-  border: 2px solid #58ca7e;
-  background: #58ca7e;
+  border: 2px solid #C25B00;
+  background: #C25B00;
   padding: 2px 15px !important;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  *
+  display: inline;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -688,8 +690,8 @@ a:hover .lnk-icon-right {
 }
 .fh5co-nav-style-1 .fh5co-link-wrap ul li a.call-to-action:hover, .fh5co-nav-style-2 .fh5co-link-wrap ul li a.call-to-action:hover {
   color: #fff;
-  border: 2px solid #45c46f;
-  background: #45c46f;
+  border: 2px solid #e5ad67;
+  background: #e5ad67;
 }
 .fh5co-nav-style-1 .fh5co-link-wrap ul li.active a, .fh5co-nav-style-2 .fh5co-link-wrap ul li.active a {
   color: #fff;
@@ -786,7 +788,7 @@ a:hover .lnk-icon-right {
   display: table-cell;
   padding: 10px;
   vertical-align: middle;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 30px;
   color: #fff;
   font-weight: 700;
@@ -875,7 +877,7 @@ a:hover .lnk-icon-right {
 }
 .fh5co-cover .fh5co-cover-text .cover-text-lead {
   font-size: 40px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 700;
   color: #fff;
 }
@@ -1310,7 +1312,7 @@ a:hover .lnk-icon-right {
   }
 }
 .fh5co-project-style-5 .fh5co-project-item .fh5co-project-description h2 {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 20px;
   font-weight: 300;
 }
@@ -1658,7 +1660,7 @@ a:hover .lnk-icon-right {
   }
 }
 .fh5co-content-style-5 .fh5co-content-item .fh5co-content-description h2 {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 20px;
   font-weight: 300;
 }
@@ -2471,7 +2473,7 @@ a:hover .lnk-icon-right {
 }
 .fh5co-team-style-2 .fh5co-person .fh5co-text .fh5co-meta {
   color: #b3b3b3 !important;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -2531,7 +2533,7 @@ a:hover .lnk-icon-right {
   margin-bottom: 30px;
   letter-spacing: 2px;
   color: #b3b3b3;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 12px;
 }
 .fh5co-team-style-3 .person .social-circle {
@@ -2684,7 +2686,7 @@ a:hover .lnk-icon-right {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
 }
 .fh5co-footer-style-1 .fh5co-footer-inner .fh5co-logo a:hover, .fh5co-footer-style-1 .fh5co-footer-inner .fh5co-logo a:focus {
   text-decoration: none;
@@ -2747,7 +2749,7 @@ a:hover .lnk-icon-right {
 .fh5co-footer-style-2 .fh5co-logo {
   color: #fff;
   font-size: 24px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   margin-bottom: 0px;
 }
 @media screen and (max-width: 480px) {
@@ -2831,7 +2833,7 @@ a:hover .lnk-icon-right {
 .fh5co-footer-style-3 .fh5co-logo {
   color: #fff;
   font-size: 24px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   margin-bottom: 40px;
 }
 .fh5co-footer-style-3 .fh5co-logo .logo {
@@ -2851,7 +2853,7 @@ a:hover .lnk-icon-right {
 }
 .fh5co-footer-style-3 h3 {
   color: #fff;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -2901,7 +2903,7 @@ a:hover .lnk-icon-right {
   padding-top: 4em;
 }
 .fh5co-footer-style-3 .fh5co-made p {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 24px;
 }
 .fh5co-footer-style-3 .fh5co-made p:last-child {
@@ -3108,7 +3110,7 @@ a:hover .lnk-icon-right {
 }
 .fh5co-pricing-style-1 .fh5co-pricing-item .fh5co-pricing-item-lead {
   font-size: 12px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -3150,7 +3152,7 @@ a:hover .lnk-icon-right {
   margin: 0 auto 3em;
 }
 .fh5co-pricing-style-2 .pricing-item {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   padding: 2em 3em;
   margin: 1em;
   color: #262b38;
