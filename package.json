@@ -28,10 +28,12 @@
   },
   "dependencies": {
     "bloggify-ajs-renderer": "ionicabizau/bloggify-ajs-renderer",
-    "bloggify-analytics": "ionicabizau/bloggify-analytics",
     "bloggify-plugin-manager": "IonicaBizau/bloggify-plugin-manager",
     "bloggify-router": "IonicaBizau/bloggify-router",
     "bloggify-viewer": "ionicabizau/bloggify-viewer",
+
+    "bloggify-analytics": "ionicabizau/bloggify-analytics",
+    "bloggify-mongoose": "bitbucket:bloggify/bloggify-mongoose",
 
     "bloggify-cli": "^1.0.0"
   },
