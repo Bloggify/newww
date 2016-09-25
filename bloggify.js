@@ -12,7 +12,6 @@ module.exports = {
   , theme: {
         previewLink: "https://preview.bloggify.org"
     }
-  , themeDir: "/theme"
   , pluginConfigs: {
         "bloggify-ajs-renderer": {
             disableCache: false
