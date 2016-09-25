@@ -1,6 +1,7 @@
 <style>
+    <% var customBackgroundImage = customBackgroundImage || '/img/bg.png'; %>
     body {
-        background-image: url(<%= _public('/img/bg.png') %>);
+        background-image: url(<%= _public(customBackgroundImage) %>);
     }
 </style>
 

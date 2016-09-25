@@ -2567,7 +2567,7 @@ a:hover .lnk-icon-right {
 .fh5co-footer-style-1,
 .fh5co-footer-style-2,
 .fh5co-footer-style-3 {
-  padding: 5em 0;
+  padding: 5em;
 }
 @media screen and (max-width: 768px) {
   .fh5co-footer-style-1,

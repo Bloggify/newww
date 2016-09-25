@@ -326,7 +326,7 @@ article.content {
 }
 
 div#fh5co-page {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0,0,0,0.8);
 }
 
 .article-item .article-img {
@@ -463,12 +463,13 @@ body, html {
 }
 
 .single-article-content.article-content.content {
-    font-family: 'Cardo', serif;
+    /* font-family: 'Cardo', serif; */
     background: white;
     padding: 2em 5em;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.9em;
     margin-bottom: 3em;
+    text-align: justify;
 }
 
 @media (max-width: 500px) {

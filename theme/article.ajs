@@ -1,5 +1,6 @@
 <% include("includes/header") %>
-<% include("styles/bg-img") %>
+<% include("styles/bg-img", { customBackgroundImage: page.image }) %>
+
 
 <% include("includes/article-content", { article: page }) %>
 
