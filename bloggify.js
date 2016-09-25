@@ -42,8 +42,8 @@ module.exports = {
                 "bloggify-viewer"
             ].concat(
                 isProduction
-              ? []
-              : ["bloggify-analytics", "bloggify-mongoose"]
+              ? ["bloggify-analytics", "bloggify-mongoose"]
+              : []
             )
         }
     }
