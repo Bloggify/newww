@@ -1,38 +1,36 @@
-<% var articleImage = article.metadata.image %>
+<% var articleImage = article.image %>
 
 <div class="container page-content">
     <div class="row">
         <div class="col-md-12">
             <article class="single-article-item <%= articleImage ? 'has-image' : 'no-image' %>">
-
-                <div class="article-info">
-                    <h1 class="article-title"><%= article.metadata.title %></h1>
-                    <div class="article-sup">
-                        <% if (article.metadata.date) { %>
-                        <span class="date">
-                            <%= article.metadata.date %> //
-                        </span>
-                        <% } %>
-                        <% if (article.metadata.category) { %>
-                        <span class="category"><%= article.metadata.category %></span> //
-                        <% } %>
-                        <% if (article.metadata.author) { %>
-                        <span class="date">
-                            Written by <%= article.metadata.author %>
-                        </span>
-                        <% } %>
-                    </div>
-                    <div class="summary-top">
-                        <% if (article.metadata.summary) { %>
-                            <%- article.metadata.summary %>
-                        <% } else { %>
-                            <%- article.html.slice(0, 100) + "..." %>
-                        <% } %>
-                    </div>
-                </div>
-
                 <% if (articleImage) { %>
                     <div class="article-img">
+                        <div class="article-info">
+                            <h1 class="article-title"><%= article.title %></h1>
+                            <div class="article-sup">
+                                <% if (article.date) { %>
+                                <span class="date">
+                                    <%= article.date.format("LL") %> //
+                                </span>
+                                <% } %>
+                                <% if (article.category) { %>
+                                <span class="category"><%= article.category %></span> //
+                                <% } %>
+                                <% if (article.author) { %>
+                                <span class="date">
+                                    Written by <%= article.author %>
+                                </span>
+                                <% } %>
+                            </div>
+                            <div class="summary-top">
+                                <% if (article.summary) { %>
+                                    <%- article.summary %>
+                                <% } else { %>
+                                    <%- article.html.slice(0, 100) + "..." %>
+                                <% } %>
+                            </div>
+                        </div>
                         <img src="<%= _public(articleImage) %>">
                     </div>
                 <% } %>

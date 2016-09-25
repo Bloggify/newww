@@ -250,7 +250,7 @@ button.btn.btn-lg.btn-default.btn-donate:active {
 }
 
 .logos .panel.panel-default {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
 }
 
 .logos .panel-footer {
@@ -271,6 +271,7 @@ button.btn.btn-lg.btn-default.btn-donate:active {
 .disable-scroll {
     overflow: hidden;
     position: fixed;
+    width: 100%;
 }
 
 .fh5co-cover .fh5co-cover-text {
@@ -387,6 +388,7 @@ article.article-item {
     left: 4.6em;
     top: 9em;
     z-index: 3;
+    pointer-events: none;
 }
 
 
@@ -438,7 +440,11 @@ body, html {
 }
 
 .single-article-item .article-info {
-    text-align: center;
+    position: absolute;
+    left: 0;
+    background: rgba(38, 38, 38, 0.68);
+    padding: 1em 2em 1em 6em;
+    bottom: 3em;
 }
 
 .single-article-item h1.article-title {
@@ -452,7 +458,7 @@ body, html {
 }
 
 .single-article-item .article-sup {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
   font-weight: 800;
 }
 
@@ -496,7 +502,7 @@ body, html {
   }
 
   .summary-top {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 0em;
   }
 
@@ -515,6 +521,23 @@ body, html {
       line-height: 1.5em;
   }
 
+  .single-article-item .article-info {
+    padding: 1em;
+    bottom: 1em;
+  }
+
+  .single-article-item h1.article-title {
+    font-size: 1.8em;
+  }
+
+  .single-article-item .article-sup {
+    font-size: 0.6em;
+  }
+
+  .single-article-item .summary-top {
+    margin: 0.5em 0;
+    font-size: 1em;
+  }
 }
 
 .markdown h1, 
@@ -525,4 +548,13 @@ body, html {
 .markdown h6 {
     margin-bottom: 10px;
     margin-top: 45px;
+}
+
+.article-img {
+    position: relative;
+}
+
+
+.article-item .row.article-info {
+    width: 100%;
 }

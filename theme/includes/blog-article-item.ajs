@@ -1,18 +1,19 @@
-<% var articleImage = article.metadata.image %>
+<% var articleImage = article.image %>
+
 <article class="article-item <%= articleImage ? 'has-image' : 'no-image' %>">
 
     <div class="article-item-top">
         <div class="row">
             <div class="col-md-12">
                 <div class="long-dash">— </div>
-                <a href="<%= article.path %>" class="article-title-top">
-                    <h1> <%= article.metadata.title %></h1>
+                <a href="<%= article.url %>" class="article-title-top">
+                    <h1> <%= article.title %></h1>
                 </a>
                 <div class="summary-top">
-                    <% if (article.metadata.summary) { %>
-                        <%- article.metadata.summary %>
+                    <% if (article.summary) { %>
+                        <%- article.summary %>
                     <% } else { %>
-                        <%- article.html.slice(0, 100) + "..." %>
+                        <%- article.content.slice(0, 100) + "..." %>
                     <% } %>
                 </div>
             </div>
@@ -21,57 +22,31 @@
 
     <% if (articleImage) { %>
         <div class="article-img">
-            <a href="<%= article.path %>">
+            <a href="<%= article.url %>">
                 <img src="<%= _public(articleImage) %>">
             </a>
         </div>
     <% } %>
 
-    <div class="article-content content hide">
-        <a href="<%= article.path %>" class="article-title">
-            <h1><%= article.metadata.title %></h1>
-        </a>
-        <div>
-            <% if (article.metadata.date) { %>
-            <span class="date"></span>
-            <% } %>
-            <% if (article.metadata.author) { %>
-            by Ionică Bizău
-            <% } %>
-        </div>
-        <div class="markdown">
-        <% if (article.metadata.summary) { %>
-            <div class="article-summary">
-                <%- article.metadata.summary %>
-            </div>
-        <% } else { %>
-            <%- article.html %>
-        <% } %>
-        </div>
-        <a href="<%= article.path %>" class="read-more bottom">
-            Read more »
-        </a>
-    </div>
-
-    <% if (article.metadata.date) { %>
+    <% if (article.date) { %>
     <div class="article-bottom-side">
-        <div class="row">
+        <div class="row article-info">
             <div class="col-xs-5 hidden-xs">
                 <p class="article-section-name">Date</p>
-                <p class="article-section-value"><%= article.metadata.date %></p>
+                <p class="article-section-value"><%= article.date.format("LL") %></p>
             </div>
             <div class="col-xs-3 hidden-xs">
                 <p class="article-section-name">Posted in</p>
-                <p class="article-section-value"><%= article.metadata.category %></p>
+                <p class="article-section-value"><%= article.category %></p>
             </div>
             <div class="col-xs-3 hidden-xs hidden-sm">
                 <p class="article-section-name">Written by</p>
-                <p class="article-section-value"><%= article.metadata.author %></p>
+                <p class="article-section-value"><%= article.author %></p>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <a href="<%= article.path %>" class="read-more bottom" title="Read more">
+                <a href="<%= article.url %>" class="read-more bottom" title="Read more">
                     <span class="icon icon-triangle-right"></span>
                 </a>
             </div>

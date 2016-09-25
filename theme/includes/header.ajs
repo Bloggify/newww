@@ -1,40 +1,67 @@
 <!DOCTYPE html>
-<html><!--<![endif]-->
+<html lang="en">
     <head>
+        <%
+            var description = page.summary || siteMetadata.description;
+            var ogImage = _public(page.image, true);
+        %>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title><%= title %> | <%= siteMetadata.siteTitle %></title>
 
         <meta name="application-name" content="<%= siteMetadata.siteTitle %>">
-        <meta name="keywords" content="<%= siteMetadata.keywords && siteMetadata.keywords.join(', ') %>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Control the behavior of search engine crawling and indexing -->
         <meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
         <meta name="googlebot" content="index,follow"><!-- Google Specific -->
 
-        <meta name="description" content="<%= siteMetadata.description %>">
-        <meta name="author" content="Bloggify">
+        <meta name="description" content="<%= description %>">
+        <meta name="author" content="<%= page.author || 'Bloggify' %>">
 
         <meta name="google" content="nositelinkssearchbox">
-        <meta name="subject" content="<%= Bloggify.options.metadata.domain %>">
-        <meta name="abstract" content="<%= Bloggify.options.metadata.domain %>">
-        <meta name="url" content="<%= Bloggify.options.metadata.domain %>">
+        <meta name="subject" content="<%= description %>">
+        <meta name="abstract" content="<%= description %>">
+        <meta name="url" content="<%= siteMetadata.domain %>">
         <meta name="directory" content="submission">
         <meta name="rating" content="General">
 
-        <!-- TODO -->
-        <meta property="og:url" content="<%= Bloggify.options.metadata.domain %>">
+        <!-- Facebook -->
+        <meta property="og:url" content="<%= lien.href %>">
 
         <meta property="og:type" content="website">
         <meta property="og:title" content="<%= siteMetadata.siteTitle %>">
 
-        <!-- TODO -->
-        <meta property="og:image" content="<%= _public('/images/beky.png', true) %>">
+        <% if (ogImage) { %>
+        <meta property="og:image" content="<%= ogImage %>">
+        <meta name="twitter:image" content="<%= ogImage %>">
+        <meta itemprop="image" content="<%= ogImage %> ">
+        <% } %>
+
+        <% if (page.author) { %>
+        <meta name="article:author" content="<%= page.author %>">
+        <% } %>
 
         <meta property="og:site_name" content="<%= siteMetadata.siteTitle %>">
         <meta property="og:locale" content="en_US">
-        <meta property="og:description" content="<%= siteMetadata.description %>">
+        <meta property="og:description" content="<%= description %>">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="<%= description %>">
+
+        <% if (siteMetadata.twitter) { %>
+            <meta name="twitter:site" content="<%= siteMetadata.twitter %>">
+        <% } %>
+
+        <meta name="twitter:url" content="<%= lien.href %>">
+        <meta name="twitter:title" content="<%= title %>">
+        <meta name="twitter:description" content="<%= description %>">
+
+        <!-- Google -->
+        <link href="https://plus.google.com/+YourPage" rel="publisher">
+        <meta itemprop="name" content="<%= title %>">
+        <meta itemprop="description" content="<%= description %>">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="shortcut icon" href="<%= _public('/img/logo.png') %>">
