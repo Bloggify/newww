@@ -6,9 +6,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="fh5co-cover-intro text-center p-t">
-                        <h1 class="cover-text-lead">Logos and Usage</h1>
+                        <h1 class="cover-text-lead"><%= title %></h1>
                         <h2 class="cover-text-sublead">
-                            This page contains the Bloggify logos and related assets. Please follow <a href=".full-screen-popup" data-popup="toggle">these rules</a>.
+                            <%- page.summary %>
                         </h2>
                         <p><a href=".full-screen-popup" class="btn btn-outline btn-lg" data-popup="toggle"=>Learn about usage</a></p>
                         <div class="container">
@@ -64,25 +64,7 @@
 <div class="full-screen-popup">
     <div class="close-box close-icon">×</div>
     <div class="row text-left">
-        <div class="col-md-6">
-            <h2>You can...</h2>
-            <ul>
-                <li><i class="pe-7s-check"></i> Use the Bloggify mascot, logo or mark to link to Bloggify.</li>
-                <li><i class="pe-7s-check"></i> Use the Bloggify mark in social buttons to link to your Bloggify profile.</li>
-                <li><i class="pe-7s-check"></i> Use the Bloggify mark to tell the world your product was built with Bloggify.</li>
-                <li><i class="pe-7s-check"></i> Use the Bloggify logo or mark in a blog post or news article about Bloggify.</li>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            <h2>You should <strong>not</strong>...</h2>
-            <ul>
-                <li><i class="pe-7s-close"></i> Use any Bloggify artwork for your application’s icon.</li>
-                <li><i class="pe-7s-close"></i> Modify the Bloggify masctot, logo or mark.</li>
-                <li><i class="pe-7s-close"></i> Integrate any Bloggify artwork into your logo.</li>
-                <li><i class="pe-7s-close"></i> Use or sell any Bloggify artwork without permission.</li>
-                <li><i class="pe-7s-close"></i> Change the colors, dimensions or add your own text/images.</li>
-            </ul>
-        </div>
+        <%- page.usage %>
     </div>
     <p class="text-center">If not sure, <a href="mailto:support@bloggify.org">contact us</a>.</p>
 </div>
