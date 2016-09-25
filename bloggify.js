@@ -7,6 +7,7 @@ module.exports = {
         siteTitle: "Bloggify"
       , description: "We make publishing easy."
       , domain: isProduction ? "https://bloggify.org" : "http://localhost:8080"
+      , twitter: "Bloggify"
     }
   , theme: {
         previewLink: "https://preview.bloggify.org"
