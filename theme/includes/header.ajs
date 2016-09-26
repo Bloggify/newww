@@ -3,9 +3,8 @@
     <head>
         <%
             var description = page.summary || siteMetadata.description;
-            var ogImage = _public(page.image, true);
+            var ogImage = _public(page.image || Bloggify.options.theme.defaultOgImage, true);
         %>
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title><%= title %> | <%= siteMetadata.siteTitle %></title>

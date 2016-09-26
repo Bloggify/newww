@@ -11,6 +11,7 @@ module.exports = {
     }
   , theme: {
         previewLink: "https://preview.bloggify.org"
+      , defaultOgImage: "/assets/mascot/beky.png"
     }
   , pluginConfigs: {
         "bloggify-ajs-renderer": {
