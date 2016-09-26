@@ -23,31 +23,26 @@
   },
   "homepage": "https://github.com/Bloggify/bloggify.github.io#readme",
   "blah": {
-    "ex_img": "http://i.imgur.com/VpW4ZGd.png",
-    "ex_url": "http://bloggify.org/"
+    "installation_steps": {
+      "content": [
+        "git clone https://github.com/Bloggify/bloggify.github.io bloggify-newww",
+        "cd bloggify-newww",
+        "git checkout app",
+        "npm i",
+        "npm run start:dev",
+        "# Then open http://localhost:8080 in your browser"
+      ],
+      "language": "sh"
+    }
   },
   "dependencies": {
     "bloggify-ajs-renderer": "ionicabizau/bloggify-ajs-renderer",
+    "bloggify-analytics": "ionicabizau/bloggify-analytics",
+    "bloggify-api": "carlisa/api",
+    "bloggify-cli": "^1.0.0",
+    "bloggify-mongoose": "bitbucket:bloggify/bloggify-mongoose",
     "bloggify-plugin-manager": "IonicaBizau/bloggify-plugin-manager",
     "bloggify-router": "IonicaBizau/bloggify-router",
-    "bloggify-viewer": "ionicabizau/bloggify-viewer",
-
-    "bloggify-analytics": "ionicabizau/bloggify-analytics",
-    "bloggify-mongoose": "bitbucket:bloggify/bloggify-mongoose",
-
-    "bloggify-cli": "^1.0.0"
-  },
-  "blah": {
-    "installation_steps": {
-        "content": [
-            "git clone https://github.com/Bloggify/bloggify.github.io bloggify-newww",
-            "cd bloggify-newww",
-            "git checkout app",
-            "npm i",
-            "npm run start:dev",
-            "# Then open http://localhost:8080 in your browser"
-        ],
-        "language": "sh"
-    }
+    "bloggify-viewer": "ionicabizau/bloggify-viewer"
   }
 }

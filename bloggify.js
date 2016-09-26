@@ -38,7 +38,8 @@ module.exports = {
             plugins: [
                 "bloggify-router",
                 "bloggify-ajs-renderer",
-                "bloggify-viewer"
+                "bloggify-viewer",
+                "bloggify-api"
             ].concat(
                 isProduction
               ? ["bloggify-analytics", "bloggify-mongoose"]
