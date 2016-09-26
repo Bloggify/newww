@@ -30,7 +30,7 @@
         <meta property="og:url" content="<%= lien.href %>">
 
         <meta property="og:type" content="website">
-        <meta property="og:title" content="<%= siteMetadata.siteTitle %>">
+        <meta property="og:title" content="<%= title %>">
 
         <% if (ogImage) { %>
         <meta property="og:image" content="<%= ogImage %>">
@@ -47,7 +47,7 @@
         <meta property="og:description" content="<%= description %>">
 
         <!-- Twitter -->
-        <meta name="twitter:card" content="<%= description %>">
+        <meta name="twitter:card" content="summary">
 
         <% if (siteMetadata.twitter) { %>
             <meta name="twitter:site" content="<%= siteMetadata.twitter %>">
