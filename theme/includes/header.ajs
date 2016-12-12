@@ -47,7 +47,7 @@
         <meta property="og:description" content="<%= description %>">
 
         <!-- Twitter -->
-        <meta name="twitter:card" content="summary">
+        <meta name="twitter:card" content="summary_large_image">
 
         <% if (siteMetadata.twitter) { %>
             <meta name="twitter:site" content="<%= siteMetadata.twitter %>">

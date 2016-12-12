@@ -557,3 +557,7 @@ body, html {
 .article-item .row.article-info {
     width: 100%;
 }
+
+.article-img > img {
+    width: 100%;
+}
