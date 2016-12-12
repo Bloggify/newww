@@ -10,19 +10,5 @@
      </div>
    <!-- END page-->
 
-   <!-- jQuery -->
-   <script src="<%= _public('js/jquery.min.js') %>"></script>
-
-   <!-- Bootstrap -->
-   <script src="<%= _public('js/bootstrap.min.js') %>"></script>
-
-   <!-- Waypoints -->
-   <script src="<%= _public('js/jquery.waypoints.min.js') %>"></script>
-
-   <!-- Main -->
-   <script src="<%= _public('js/main.js') %>"></script>
-
-   <!-- Donate -->
-   <script src="https://cdn.rawgit.com/IonicaBizau/donate.js/d85ec20a601cc5d8c009e288b0ac0576a0c3047b/dist/donate.js"></script>
 </body>
 </html>

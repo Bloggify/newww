@@ -65,29 +65,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="shortcut icon" href="<%= _public('/img/logo.png') %>">
 
-        <!-- Google Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
-
-        <!-- Icomoon Icon Fonts-->
-        <link rel="stylesheet" href="<%= _public('css/icomoon.css') %>">
-
-        <!-- Bootstrap  -->
-        <link rel="stylesheet" href="<%= _public('css/bootstrap.css') %>">
-
-        <!-- Cards -->
-        <link rel="stylesheet" href="<%= _public('css/cards.css') %>">
-
-        <!-- Custom -->
-        <link rel="stylesheet" href="<%= _public('css/custom.css') %>">
-
-        <!-- Modernizr JS -->
-        <script src="<%= _public('js/modernizr-2.6.2.min.js') %>"></script>
-
-        <!-- FOR IE9 below -->
-        <!--[if lt IE 9]>
-        <script src="<%= _public('js/respond.min.js') %>"></script>
-        <![endif]-->
-
+        <%- Bloggify.assets.html() %>
         <% include("../styles/critical") %>
     </head>
     <body class="fh5co-overflow template-<%= template %>">

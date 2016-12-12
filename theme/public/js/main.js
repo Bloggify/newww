@@ -1,8 +1,15 @@
+"use strict";
+
+const $ = require("jquery");
+window.$ = window.jQuery= $;
+const bootstrap = require("bootstrap");
+const waypoints = require("./jquery.waypoints.min.js");
+delete window.$;
+delete window.jQuery;
+
 $(function() {
 
-    'use strict';
-
-    var $window = $(window)
+    let $window = $(window)
       , $body = $("body")
       , $bodyAndHtml = $("body,html")
       , $jsFullHeight = $(".js-full-height")
@@ -12,30 +19,28 @@ $(function() {
       ;
 
     // iPad and iPod detection
-    var isiPad = !!~navigator.platform.indexOf("iPad");
-    var isiPhone = (
+    let isiPad = !!~navigator.platform.indexOf("iPad");
+    let isiPhone = (
         !!~(navigator.platform.indexOf("iPhone") !== -1) ||
         !!~(navigator.platform.indexOf("iPod") !== -1)
     );
 
     // Full height
-    var fullHeight = function() {
-        var setMinHeight = function () {
+    let fullHeight = () => {
+        let setMinHeight = () => {
             $jsFullHeight.css('min-height', windowHeight < 550 && windowWidth > 350 && windowWidth < 600 ? 450 : windowHeight);
             $(".full-height").animate({ opacity: 1 })
         };
-      //  if (!isiPhone && !isiPad) {
         setMinHeight();
         $window.resize(setMinHeight);
-      //  }
     };
 
     // Scroll Next
-    var ScrollNext = function() {
+    let ScrollNext = () => {
         $body.on('click', '.scroll-btn', function(e) {
             e.preventDefault();
             $bodyAndHtml.animate({
-                scrollTop: $($(this).closest('[data-next="yes"]').next()).offset().top
+                scrollTop: $(this).closest('[data-next="yes"]').next().offset().top
             }, 1000);
             return false;
         });
@@ -43,8 +48,7 @@ $(function() {
 
 
     // Burger Menu
-    var burgerMenu = function() {
-
+    let burgerMenu = () => {
         $body.on('click', '.js-fh5co-nav-toggle', function(event) {
             if ($navbar.is(':visible')) {
                 $(this).removeClass('active');
@@ -56,7 +60,7 @@ $(function() {
     };
 
     // Off Canvass
-    var offCanvass = function() {
+    let offCanvass = () => {
         if ($('#fh5co-offcanvass').length == 0) {
             if ($('.fh5co-nav-style-1').length > 0) {
                 $('body').prepend('<div id="fh5co-offcanvass" />');
@@ -82,21 +86,21 @@ $(function() {
         }
 
         $('body').on('click', '.js-fh5co-mobile-toggle', function(e) {
-            var $this = $(this);
+            let $this = $(this);
             $this.toggleClass('active');
             $('html').toggleClass('mobile-menu-expanded');
 
         });
 
-        if ($(window).width() < 769) {
+        if ($window.width() < 769) {
             $('body, html').addClass('fh5co-overflow');
         }
 
-        $(window).resize(function() {
-            if ($(window).width() < 769) {
+        $window.resize(function() {
+            if ($window.width() < 769) {
                 $('body, html').addClass('fh5co-overflow');
             }
-            if ($(window).width() > 767) {
+            if ($window.width() > 767) {
                 if ($('html').hasClass('mobile-menu-expanded')) {
                     $('.js-fh5co-mobile-toggle').removeClass('active');
                     $('html').removeClass('mobile-menu-expanded');
@@ -106,7 +110,7 @@ $(function() {
     };
 
     function donate() {
-        var $donate = document.querySelector(".donate");
+        let $donate = document.querySelector(".donate");
         $donate && Donate({
             container: $donate,
             prefix: "$",
@@ -117,10 +121,10 @@ $(function() {
                 1, 5, 10, 50, 100, 300, 500
             ],
             custom: true,
-            format: function(val) {
+            format (val) {
                 return val > 1000 ? (val = val.toString()).substring(0, 1) + "," + val.substring(1) : val;
             },
-            onChange: function(val, li, e) {
+            onChange (val, li, e) {
                 document.querySelector("[name=amount]").value = val;
             },
             defaultValue: 10

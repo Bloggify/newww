@@ -8,6 +8,20 @@
         "site-page.ajs",
         "landing.ajs",
         "logos.ajs"
+      ],
+      "styles": [
+        {
+            "url": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic",
+            "type": "css"
+        },
+        "public/css/icomoon.css",
+        "public/css/bootstrap.css",
+        "public/css/cards.css",
+        "public/css/custom.css"
+      ],
+      "scripts": [
+        "public/js/main.js",
+        "https://cdn.rawgit.com/IonicaBizau/donate.js/d85ec20a601cc5d8c009e288b0ac0576a0c3047b/dist/donate.js"
       ]
   }
 }
