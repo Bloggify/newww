@@ -1,23 +1,19 @@
 "use strict";
 
-const isProduction = process.env.NODE_ENV === "production";
+const conf = require("bloggify-config")
 
-module.exports = {
-    metadata: {
-        siteTitle: "Bloggify"
-      , description: "We make publishing easy."
-      , domain: isProduction ? "https://bloggify.org" : "http://localhost:8080"
-      , twitter: "Bloggify"
-    }
-  , theme: {
-        previewLink: "https://preview.bloggify.org"
-      , defaultOgImage: "/assets/mascot/beky.png"
-    }
-  , pluginConfigs: {
-        "bloggify-ajs-renderer": {
-            disableCache: false
-        }
-      , "bloggify-mongoose": {
+debugger
+module.exports = conf({
+    title: "Bloggify"
+  , description: "We make publishing easy."
+  , domain: "https://bloggify.org"
+  , theme: "/theme"
+  , prodPlugins: [
+        "bloggify-analytics",
+        "bloggify-mongoose"
+    ]
+  , config: {
+        bloggifyMongoose: {
             db: "mongodb://localhost/bloggify-live"
           , models: {
                 Stat: {
@@ -35,16 +31,13 @@ module.exports = {
                 }
             }
         }
-      , "bloggify-plugin-manager": {
-            plugins: [
-                "bloggify-router",
-                "bloggify-ajs-renderer",
-                "bloggify-viewer"
-            ].concat(
-                isProduction
-              ? ["bloggify-analytics", "bloggify-mongoose"]
-              : []
-            )
-        }
     }
-};
+}, {
+    metadata: {
+        twitter: "Bloggify"
+    }
+  , theme: {
+        previewLink: "https://preview.bloggify.org"
+      , defaultOgImage: "/assets/mascot/beky.png"
+    }
+});
