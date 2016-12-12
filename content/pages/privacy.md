@@ -1,6 +1,7 @@
 ---
 title: Privacy Policy
 menu_title: Privacy
+visible: false
 order: 4
 ---
 
@@ -38,3 +39,7 @@ Our pages may contain links to other websites, which are outside our control and
 
 ### How can I complain?
 We take our users' privacy concerns very seriously. If you believe that we have not complied with this Privacy Policy in any way, you may write to us.
+
+----
+
+Related: [Terms of Service](/terms)

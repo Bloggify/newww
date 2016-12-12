@@ -1,11 +1,13 @@
 <ul data-offcanvass="yes">
 <% Bloggify.adapter.getAllPages(function (err, pages) { %>
     <% pages.forEach(function (cPage) { %>
-        <li class="page <%= lien.path === cPage.path ? 'active' : '' %>">
-            <a href="<%= cPage.path %>">
-                <%= cPage.metadata.menu_title || cPage.metadata.title %>
-            </a>
-        </li>
+        <% if (cPage.metadata.visible !== false) { %>
+            <li class="page <%= lien.path === cPage.path ? 'active' : '' %>">
+                <a href="<%= cPage.path %>">
+                    <%= cPage.metadata.menu_title || cPage.metadata.title %>
+                </a>
+            </li>
+        <% } %>
     <% }); %>
 <% }) %>
 </ul>

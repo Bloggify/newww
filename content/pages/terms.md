@@ -1,10 +1,11 @@
 ---
 title: Terms of Service
 menu_title: Terms
+visible: false
 order: 4
 ---
 
-Hey there! We're Bloggify and we're happy that you are here, on our website. When we say **we**, **us** or **Bloggify** it's because that's who we are. We own and run the Bloggify website.
+Hey there! We're Bloggify and we're happy that you are here, on our website. When we say **we**, **us** or **Bloggify** it's because that's who we are. We own and run the [Bloggify](https://bloggify.org) website.
 
 By navigating on our websites you agree to follow the terms explained on this page. Please read and understand them.
 If you don't accept them, then we'll be sorry, but you will need to leave.
@@ -13,7 +14,7 @@ If you don't accept them, then we'll be sorry, but you will need to leave.
 You promise that you will not use a false email address, fake personal information, impersonate others, or misrepresent your affiliation with others.
 
 ### Intellectual Property
-Basically, we own all the Bloggify  content unless otherwise stated and excluding content owned by others. We respect the intellectual property rights of others and we expect our users to do the same. Please contact us if you think that an item or content infringes an intellectual property right.
+Basically, we own all the Bloggify content unless otherwise stated and excluding content owned by others. We respect the intellectual property rights of others and we expect our users to do the same. Please contact us if you think that an item or content infringes an intellectual property right.
 
 ### No Liability
 You agree that we cannot be liable for your use of the website or the content that is posted on Bloggify by other users.
@@ -35,7 +36,7 @@ We may change these terms at any time. If you continue to use the Bloggify websi
 We control and operate the Bloggify from Romania. The laws of Romania govern these terms, and you submit to the jurisdiction of the courts there for the resolution of any dispute between us.
 
 ## Bloggify Market
-The Bloggify Market is a place where you can buy goodies (such as JavaScript libraries, Node.js modules etc) you can integrate into your apps.
+The [Bloggify Market](https://market.bloggify.org) is a place where you can buy goodies (such as JavaScript libraries, Node.js modules etc) you can integrate into your apps.
 
 ### How buying things works
 In this section, we will explain how the process works when you decide to buy something on our website.
@@ -66,3 +67,7 @@ Should you encounter any problems during the buying process, feel free to contac
 
 ### Refunds
 We do *not* grant refunds on the purchases made on this website.
+
+----
+
+Related: [Privacy Policy](/privacy)

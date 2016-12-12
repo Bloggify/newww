@@ -107,6 +107,7 @@ forthSection:
                 <p>What makes her a special owl is the newspaper hat, the notebook and the pen. That's giving her publishing super-powers.</p>
                 <p class="btn-actions"><a href="/logos" class="btn btn-success"><i class="icon-"></i> Learn more</a></p>
                 <hr>
-                <sub>If you want to use the mascot image or any other similar resources (e.g. logos), please follow the <a href="/logos#logos">Bloggify logos and usage</a>.</sub>
+                <sub>If you want to use the mascot image or any other similar resources (e.g. logos), please follow the <a href="/logos#logos">Bloggify logos and usage</a>.<br>
+                Also, check out the <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>.</sub>
 ---
 
