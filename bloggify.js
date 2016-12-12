@@ -2,12 +2,10 @@
 
 const conf = require("bloggify-config")
 
-debugger
 module.exports = conf({
     title: "Bloggify"
   , description: "We make publishing easy."
   , domain: "https://bloggify.org"
-  , theme: "/theme"
   , prodPlugins: [
         "bloggify-analytics",
         "bloggify-mongoose"
