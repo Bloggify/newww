@@ -1,7 +1,6 @@
 <% include("includes/header") %>
 <% include("styles/bg-img") %>
 
-<% include("includes/content", { article: content }) %>
-
+<% include("includes/content", { article: page }) %>
 
 <% include("includes/footer") %>

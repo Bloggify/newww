@@ -3,7 +3,7 @@
     <% pages.forEach(function (cPage) { %>
         <li class="page <%= lien.path === cPage.path ? 'active' : '' %>">
             <a href="<%= cPage.path %>">
-                <%= cPage.metadata.title %>
+                <%= cPage.metadata.menu_title || cPage.metadata.title %>
             </a>
         </li>
     <% }); %>

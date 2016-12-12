@@ -561,3 +561,8 @@ body, html {
 .article-img > img {
     width: 100%;
 }
+
+body.template-site-page .page-content {
+    background: white;
+    padding: 25px;
+}
