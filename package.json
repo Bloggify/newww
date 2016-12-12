@@ -1,5 +1,5 @@
 {
-  "name": "bloggify.github.io",
+  "name": "bloggify.org",
   "version": "1.0.1",
   "description": "The Bloggify.org website source code.",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bloggify/bloggify.github.io.git"
+    "url": "git+https://github.com/Bloggify/newww.git"
   },
   "keywords": [
     "bloggify",
@@ -19,13 +19,13 @@
   "author": "Bloggify <support@bloggify.org> (http://bloggify.org)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Bloggify/bloggify.github.io/issues"
+    "url": "https://github.com/Bloggify/newww/issues"
   },
-  "homepage": "https://github.com/Bloggify/bloggify.github.io#readme",
+  "homepage": "https://github.com/Bloggify/newww#readme",
   "blah": {
     "installation_steps": {
       "content": [
-        "git clone https://github.com/Bloggify/bloggify.github.io bloggify-newww",
+        "git clone https://github.com/Bloggify/newww bloggify-newww",
         "cd bloggify-newww",
         "git checkout app",
         "npm i",
@@ -36,13 +36,10 @@
     }
   },
   "dependencies": {
-    "bloggify-ajs-renderer": "ionicabizau/bloggify-ajs-renderer",
     "bloggify-analytics": "ionicabizau/bloggify-analytics",
     "bloggify-cli": "^1.0.0",
+    "bloggify-config": "^1.0.4",
     "bloggify-mongoose": "bitbucket:bloggify/bloggify-mongoose",
-    "bloggify-plugin-manager": "IonicaBizau/bloggify-plugin-manager",
-    "bloggify-router": "IonicaBizau/bloggify-router",
-    "bloggify-viewer": "ionicabizau/bloggify-viewer",
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.1"
   }
