@@ -20,8 +20,7 @@
         "public/css/custom.css"
       ],
       "scripts": [
-        "public/js/main.js",
-        "https://cdn.rawgit.com/IonicaBizau/donate.js/d85ec20a601cc5d8c009e288b0ac0576a0c3047b/dist/donate.js"
+        "public/js/main.js"
       ]
   }
 }

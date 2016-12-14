@@ -109,28 +109,6 @@ $(function() {
         });
     };
 
-    function donate() {
-        let $donate = document.querySelector(".donate");
-        $donate && Donate({
-            container: $donate,
-            prefix: "$",
-            classes: {
-                active: "active"
-            },
-            amounts: [
-                1, 5, 10, 50, 100, 300, 500
-            ],
-            custom: true,
-            format (val) {
-                return val > 1000 ? (val = val.toString()).substring(0, 1) + "," + val.substring(1) : val;
-            },
-            onChange (val, li, e) {
-                document.querySelector("[name=amount]").value = val;
-            },
-            defaultValue: 10
-        });
-    }
-
     $("a[data-popup='toggle']").click(function () {
         $bodyAndHtml.scrollTop(0);
         $($(this).attr("href")).toggle();
@@ -147,5 +125,4 @@ $(function() {
     ScrollNext();
     burgerMenu();
     offCanvass();
-    donate();
 });
