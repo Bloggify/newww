@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('/!/bloggify/theme/fonts/icomoon/icomoon.eot?eggpxg');
-    src: url('/!/bloggify/theme/fonts/icomoon/icomoon.eot?eggpxg#iefix') format('embedded-opentype'),
-         url('/!/bloggify/theme/fonts/icomoon/icomoon.ttf?eggpxg') format('truetype'),
-         url('/!/bloggify/theme/fonts/icomoon/icomoon.woff?eggpxg') format('woff'),
-         url('/!/bloggify/theme/fonts/icomoon/icomoon.svg?eggpxg#icomoon') format('svg');
+    src: url('../fonts/icomoon/icomoon.eot?eggpxg');
+    src: url('../fonts/icomoon/icomoon.eot?eggpxg#iefix') format('embedded-opentype'),
+         url('../fonts/icomoon/icomoon.ttf?eggpxg') format('truetype'),
+         url('../fonts/icomoon/icomoon.woff?eggpxg') format('woff'),
+         url('../fonts/icomoon/icomoon.svg?eggpxg#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
