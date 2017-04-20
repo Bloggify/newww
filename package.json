@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "bloggify-analytics": "ionicabizau/bloggify-analytics",
-    "bloggify-cli": "^1.0.0",
+    "bloggify-cli": "^1.1.1",
     "bloggify-config": "^1.0.4",
     "bloggify-emoji": "^2.0.1",
     "bloggify-mongoose": "bitbucket:bloggify/bloggify-mongoose",
