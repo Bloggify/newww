@@ -8,7 +8,10 @@ module.exports = conf({
   , domain: "https://bloggify.org"
   , prodPlugins: [
         "bloggify-analytics",
-        "bloggify-mongoose"
+        "bloggify-mongoose",
+    ]
+  , "plugins": [
+        "bloggify-emoji"
     ]
   , config: {
         bloggifyMongoose: {
