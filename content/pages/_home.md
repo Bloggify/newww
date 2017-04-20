@@ -11,8 +11,7 @@ tags:
 landingImage: /assets/mascot/beky.png
 landingTitle: We make publishing easy.
 twitterUsername: Bloggify
-landingDescription: <strong>Bloggify</strong> is a NodeJS platform providing a simple
-                 way to build a blog in minutes. We focus on <em>modularity</em>, <em>flexibility</em>, <em>simplicity</em> and <em>speed</em>.
+landingDescription: <strong>Bloggify</strong> is a modular and flexible platform for publishing your stuff on the internet.
 
 secondSection:
     title: Made possible with the help of these sponsors!
@@ -39,43 +38,30 @@ thirdSection:
 
 features:
     title: Features
-    description: At Bloggify, we focus on maintaining a blogging platform which is simple to use and still extensible, keeping the core minimal.
+    description: At Bloggify, we focus on maintaining a modular platform which is simple to use and still extensible, keeping the core minimal.
     items:
         - class: colored-4
           icon: heart22
           title: Simplicity
           description: |-
-                    <p><strong>Bloggify</strong> is simple
-                        to use. With a minimalist interface,
-                        you can do anything you expect
-                        from a blogging platform.</p>
-                    <p>If you
-                        still want more, you can install and create
-                        <a href="#plugins">plugins</a> easily.</p>
-                    <p>Bloggify is built with love and we should keep it simple.</p>
+                    <p>With Bloggify you can build friendly applications for humans, robots and aliens.</p>
         - class: colored-3
           icon: palette
-          title: Themes
+          title: Reusable templates
           description: |-
                     <p>
-                        The themes are another part that makes <strong>Bloggify</strong> awesome. If you are non-technical,
-                        you can choose a theme you like. However, as developer, you can create a theme easily.
+                        You can build reusable layout pieces of code to be used for multiple apps. For instance, you can change the way how a blog app looks like, just by switching the template.
                     </p>
         - class: colored-2
           icon: gears
           title: RESTful APIs
           description: |-
-                    <p><strong>Bloggify</strong> has a nice
-                        REST API for developers.</p>
-                    <p>Using it, the developers can create
-                        third-pary applications to access
-                        the Bloggify resources.</p>
+                    <p>You can build RESTful API endpoints very easily. Using them, other developers can create
+                        third-pary applications to access your app resources.</p>
         - class: colored-1
-          icon: palette
+          icon: puzzle-piece
           title: Plugin System
           description: |-
-                    <p><strong>Bloggify</strong> is like a puzzle\: it is built from
-                        multiple pieces. Each piece does one thing and does it well.</p>
                     <p>The plugin system makes Bloggify very extensible allowing you to add more custom features and change the core functionality.</p>
         - class: colored-5
           icon: rocket2
@@ -86,18 +72,10 @@ features:
                         are used (both on server and client)
                         to speed up the things.</p>
         - class: colored-6
-          icon: git
-          title: Git Integration
+          icon: box
+          title: Resource Bundling
           description: |-
-                    <p><strong>Bloggify</strong>'s API
-                        has built-in <a href="http://git-scm.com/">Git</a> integration.
-                        This is cool when talking about
-                        content.</p> All changes made by user are saved automatically
-                    into a <code>git</code> repository.
-                    <p>This repository can be synced with
-                        a Git provider (e.g. <a href="http:/github.com">GitHub</a>),
-                        so other people will be able to contribute
-                        to content (e.g. fixing typos and so on).</p>
+                    <p><strong>Bloggify</strong> optimizes your app resources for production, making your website very fast.</p>
 
 forthSection:
       title: Meet <strong>Beky</strong>
