@@ -1,6 +1,6 @@
 {
   "name": "bloggify.org",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Bloggify.org website source code.",
   "main": "index.js",
   "scripts": {
