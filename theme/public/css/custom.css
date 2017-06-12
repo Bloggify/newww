@@ -563,3 +563,41 @@ body.template-site-page .page-content {
     background: white;
     padding: 25px;
 }
+
+.featured-companies h4 {
+    color: #fff;
+    margin: 0.5em 0;
+}
+
+.featured-companies {
+    margin-top: 40px;
+}
+
+.featured-companies ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.featured-companies ul li {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 2px;
+    margin: 2px;
+}
+
+.featured-companies ul li img {
+    height: 29px;
+}
+
+@media (min-width: 1000px) {
+    .featured-companies ul li img {
+        filter: grayscale(1);
+    }
+
+    .featured-companies ul li img:hover {
+        filter: grayscale(0);
+    }
+}

@@ -36,6 +36,16 @@ thirdSection:
               <p>You can now register the Preview program which will help you to stay tuned with the latest news. Also, you may get an invitation to the alpha stage.</p>
               <p><a href="https://preview.bloggify.org" class="btn btn-outline">Join Now</a></p>
 
+featuredCompanies:
+    - title: Purdue IronHacks
+      img: /featured-companies/purdue-ironhacks.png
+    - title: Purdue University
+      img: /featured-companies/purdue-university.png
+    - title: Ofri
+      img: /featured-companies/ofri.png
+
+
+
 features:
     title: Features
     description: At Bloggify, we focus on maintaining a modular platform which is simple to use and still extensible, keeping the core minimal.

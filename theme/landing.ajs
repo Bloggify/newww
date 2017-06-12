@@ -21,6 +21,16 @@
                             <%- page.landingDescription || siteMetadata.description %>
                         </h2>
                         <p><a href="https://twitter.com/<%= page.twitterUsername %>" class="btn btn-outline btn-lg">Follow us</a></p>
+                        <div class="featured-companies">
+                            <h4>Used by organizations like:</h4>
+                            <ul>
+                                <% page.featuredCompanies.forEach(function (currentCompany) { %>
+                                    <li>
+                                        <img src="<%= _public(currentCompany.img) %>" alt="<%= currentCompany.title %>" title="<%= currentCompany.title %>" />
+                                    </li>
+                                <% }); %>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,40 +55,6 @@
         </div>
     </div>
 </div>
-<!--
-<div class="fh5co-blog-style-2 hide">
-    <div class="container">
-        <div class="row p-b text-center">
-            <div class="col-md-6 col-md-offset-3">
-                <h2>Recent Blog</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <a href="#" class="link-block">
-                    <figure><img src="<%= _public('images/img_same_dimension_1.jpg') %>" alt="Image" class="img-responsive img-rounded"></figure>
-                    <h3>Traveling in North Pole</h3>
-                    <p><span class="fh5co-meta">15, August 2015</span></p>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#" class="link-block">
-                    <figure><img src="<%= _public('images/img_same_dimension_2.jpg') %>" alt="Image" class="img-responsive img-rounded"></figure>
-                    <h3>Easy Ways to Create Cards</h3>
-                    <p><span class="fh5co-meta">12, September 2015</span></p>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#" class="link-block">
-                    <figure><img src="<%= _public('images/img_same_dimension_3.jpg') %>" alt="Image" class="img-responsive img-rounded"></figure>
-                    <h3>Live a Healthy Lifestyle this 2016</h3>
-                    <p><span class="fh5co-meta">9, October 2015</span></p>
-                </a>
-            </div>
-        </div>
-    </div>
-</div> -->
 <div class="fh5co-content-style-10">
     <div class="container">
         <div class="row">
