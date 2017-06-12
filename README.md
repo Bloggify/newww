@@ -1,21 +1,13 @@
 
-# bloggify.github.io
+# bloggify.org
 
- [![Version](https://img.shields.io/npm/v/bloggify.github.io.svg)](https://www.npmjs.com/package/bloggify.github.io) [![Downloads](https://img.shields.io/npm/dt/bloggify.github.io.svg)](https://www.npmjs.com/package/bloggify.github.io)
+ [![Version](https://img.shields.io/npm/v/bloggify.org.svg)](https://www.npmjs.com/package/bloggify.org) [![Downloads](https://img.shields.io/npm/dt/bloggify.org.svg)](https://www.npmjs.com/package/bloggify.org)
 
 > The Bloggify.org website source code.
 
-## Installation steps
-```sh
-git clone https://github.com/Bloggify/bloggify.github.io bloggify-newww
-cd bloggify-newww
-git checkout app
-npm i
-npm run start:dev
-# Then open http://localhost:8080 in your browser
-```
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
+
 
 
 ## :scroll: License
