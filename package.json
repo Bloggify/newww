@@ -1,6 +1,6 @@
 {
   "name": "bloggify.org",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "The Bloggify.org website source code.",
   "main": "index.js",
   "scripts": {
@@ -41,7 +41,7 @@
     "bloggify-cli": "^1.1.1",
     "bloggify-config": "^1.0.4",
     "bloggify-emoji": "^2.0.1",
-    "bloggify-mongoose": "bitbucket:bloggify/bloggify-mongoose",
+    "bloggify-mongoose": "^1.0.8",
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.1"
   }
