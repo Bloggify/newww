@@ -4,13 +4,14 @@
             "404.ajs",
             "500.ajs",
             "article.ajs",
-            "blog-page.ajs",
-            "site-page.ajs",
+            "blog_page.ajs",
+            "site_page.ajs",
             "landing.ajs",
             "logos.ajs"
         ],
         "options": {
-            "defaultOgImage": ""
+            "defaultOgImage": "",
+            "previewLink": ""
         }
     },
     "styles": [

@@ -22,7 +22,8 @@ module.exports = {
         },
         "routes": {
           "articles": "/products",
-          "blog_url": "/products"
+          "blog_url": "/products",
+          "home": "_home"
         },
         "theme": ["/app/theme", {
             "options": {

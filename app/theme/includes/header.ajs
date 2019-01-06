@@ -3,11 +3,11 @@
     <head>
         <%
             var description = page.summary || siteMetadata.description;
-            var ogImage = _public(page.image || Bloggify.options.theme.defaultOgImage, true);
+            var ogImage = _public(page.image || theme.defaultOgImage, true);
         %>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><%= title %> | <%= siteMetadata.siteTitle %></title>
+        <title><%= title %> | <%= Bloggify.options.title %></title>
 
         <meta name="application-name" content="<%= siteMetadata.siteTitle %>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,7 +83,7 @@
                     </div>
                     <div class="col-md-3 col-sm-3 text-right fh5co-link-wrap">
                         <ul class="fh5co-special" data-offcanvass="yes">
-                            <li><a href="<%= Bloggify.options.theme.previewLink %>" class="call-to-action">Preview</a></li>
+                            <li><a href="<%= theme.previewLink %>" class="call-to-action">Preview</a></li>
                         </ul>
                     </div>
                 </div>
