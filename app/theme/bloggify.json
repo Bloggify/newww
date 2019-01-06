@@ -8,7 +8,10 @@
             "site-page.ajs",
             "landing.ajs",
             "logos.ajs"
-        ]
+        ],
+        "options": {
+            "defaultOgImage": ""
+        }
     },
     "styles": [
         {
