@@ -1,44 +1,40 @@
 "use strict";
 
-const conf = require("bloggify-config")
-
-module.exports = conf({
+module.exports = {
     title: "Bloggify"
   , description: "We make publishing easy."
   , domain: "https://bloggify.org"
-  , prodPlugins: [
-        "bloggify-analytics",
-        "bloggify-mongoose",
+  , plugins: [
+      "bloggify-emoji"
+    , "social"
+    , ["redirect", {
+        "/blog/26-uploading-videos-to-youtube-using-nodejs": "/blog/14-uploading-videos-to-youtube-using-nodejs"
+      , "/blog/35-the-joy-of-being-a-mentor": "/blog/34-the-joy-of-being-a-mentor"
+      }]
+    , "markdown-highlight"
     ]
-  , "plugins": [
-        "bloggify-emoji"
-    ]
-  , config: {
-        bloggifyMongoose: {
-            db: "mongodb://localhost/bloggify-live"
-          , models: {
-                Stat: {
-                    ip: String
-                  , user_agent: String
-                  , device: Object
-                  , url: String
-                  , path: String
-                  , headers: Object
-                  , session: Object
-                  , date: {
-                        type: Date,
-                        default: () => new Date()
-                    }
+  , "adapter": ["bloggify-markdown-adapter", {
+        "parse": {
+            "converterOptions": {
+                "strikethrough": true,
+                "emoji": true
+            }
+        },
+        "routes": {
+          "articles": "/products",
+          "blog_url": "/products"
+        },
+        "theme": ["/app/theme", {
+            "options": {
+                "social": {
+                    "twitter": "Bloggify",
+                    "github": "Bloggify"
+                },
+                "ga": {
+                    "id": process.env.GA_KEY,
+                    "url": "bloggify.org"
                 }
             }
-        }
-    }
-}, {
-    metadata: {
-        twitter: "Bloggify"
-    }
-  , theme: {
-        previewLink: "https://preview.bloggify.org"
-      , defaultOgImage: "/assets/mascot/beky.png"
-    }
-});
+        }]
+    }]
+}

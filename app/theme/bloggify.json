@@ -1,15 +1,16 @@
 {
-  "bloggify": {
-      "templates": [
-        "404.ajs",
-        "500.ajs",
-        "article.ajs",
-        "blog-page.ajs",
-        "site-page.ajs",
-        "landing.ajs",
-        "logos.ajs"
-      ],
-      "styles": [
+    "config": {
+        "templates": [
+            "404.ajs",
+            "500.ajs",
+            "article.ajs",
+            "blog-page.ajs",
+            "site-page.ajs",
+            "landing.ajs",
+            "logos.ajs"
+        ]
+    },
+    "styles": [
         {
             "url": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic",
             "type": "css"
@@ -18,9 +19,8 @@
         "public/css/bootstrap.css",
         "public/css/cards.css",
         "public/css/custom.css"
-      ],
-      "scripts": [
+    ],
+    "scripts": [
         "public/js/main.js"
-      ]
-  }
+    ]
 }

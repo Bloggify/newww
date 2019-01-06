@@ -11,5 +11,14 @@
   "/!/bloggify/css-urls/36c546640edd3914bb16a163ce5757a9-icomoon.eot": "theme/public/fonts/icomoon/icomoon.eot",
   "/!/bloggify/css-urls/50cc4b03fdf47028fdc6b94833c13a1f-icomoon.ttf": "theme/public/fonts/icomoon/icomoon.ttf",
   "/!/bloggify/css-urls/84d70cb898041e87b033a29c8e5ee2d3-icomoon.woff": "theme/public/fonts/icomoon/icomoon.woff",
-  "/!/bloggify/css-urls/061110f6c4bdead3794912c34c5f4dde-icomoon.svg": "theme/public/fonts/icomoon/icomoon.svg"
+  "/!/bloggify/css-urls/061110f6c4bdead3794912c34c5f4dde-icomoon.svg": "theme/public/fonts/icomoon/icomoon.svg",
+  "/@/bloggify/css-assets/36c546640edd3914bb16a163ce5757a9-icomoon.eot": "app/theme/public/fonts/icomoon/icomoon.eot",
+  "/@/bloggify/css-assets/50cc4b03fdf47028fdc6b94833c13a1f-icomoon.ttf": "app/theme/public/fonts/icomoon/icomoon.ttf",
+  "/@/bloggify/css-assets/84d70cb898041e87b033a29c8e5ee2d3-icomoon.woff": "app/theme/public/fonts/icomoon/icomoon.woff",
+  "/@/bloggify/css-assets/061110f6c4bdead3794912c34c5f4dde-icomoon.svg": "app/theme/public/fonts/icomoon/icomoon.svg",
+  "/@/bloggify/css-assets/a2f0b7f0482d1d7f7a8dd09d5e8560f0-glyphicons-halflings-regular.eot": "app/theme/public/fonts/bootstrap/glyphicons-halflings-regular.eot",
+  "/@/bloggify/css-assets/82877b9d9d148bf25ae1caa1fd56030e-glyphicons-halflings-regular.woff2": "app/theme/public/fonts/bootstrap/glyphicons-halflings-regular.woff2",
+  "/@/bloggify/css-assets/d5579abcefe33c61ef023458ec473eec-glyphicons-halflings-regular.woff": "app/theme/public/fonts/bootstrap/glyphicons-halflings-regular.woff",
+  "/@/bloggify/css-assets/a0a0f579a821240c3f2d2ed2699e4e34-glyphicons-halflings-regular.ttf": "app/theme/public/fonts/bootstrap/glyphicons-halflings-regular.ttf",
+  "/@/bloggify/css-assets/d5e18a891ab6949d95d494285fc10cdd-glyphicons-halflings-regular.svg#glyphicons_halflingsregular": "app/theme/public/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular"
 }
