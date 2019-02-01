@@ -20,9 +20,14 @@
                         <h2 class="cover-text-sublead">
                             <%- page.landingDescription || siteMetadata.description %>
                         </h2>
-                        <p><a href="https://twitter.com/<%= page.twitterUsername %>" class="btn btn-outline btn-lg">Follow us</a></p>
+                        <p>
+                            <a href="/contact" class="btn btn-primary btn-lg">
+                                Work with us
+                            </a>
+                            <a href="https://twitter.com/<%= page.twitterUsername %>" class="btn btn-outline btn-lg">Follow us</a>
+                        </p>
                         <div class="featured-companies">
-                            <h4>Used by organizations like:</h4>
+                            <h4>Some of our clients</h4>
                             <ul>
                                 <% page.featuredCompanies.forEach(function (currentCompany) { %>
                                     <li>
@@ -45,7 +50,7 @@
                 <h3 class="fh5co-heading"><%= page.secondSection.title %></h3>
                 <div class="sponsors">
                     <% page.sponsors.forEach(function (c) { %>
-                        <a target="blank" href="<%= c.url %>" class="s-<%= c.name %>">
+                        <a target="blank" href="<%= c.url || "#" %>" class="s-<%= c.name %>">
                             <img src="<%= _public('/img/sponsors/' + c.name + '.png') %>">
                         </a>
                     <% }) %>

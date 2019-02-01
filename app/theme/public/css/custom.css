@@ -300,9 +300,9 @@ div.background-cover {
   overflow-x: hidden;
 }
 
-body.template-blog-page,
+body.template-blog_page,
 body.template-article,
-body.template-site-page {
+body.template-site_page {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -559,7 +559,7 @@ body, html {
     width: 100%;
 }
 
-body.template-site-page .page-content {
+body.template-site_page .page-content {
     background: white;
     padding: 25px;
 }

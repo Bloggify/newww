@@ -11,7 +11,9 @@ tags:
 landingImage: /assets/mascot/beky.png
 landingTitle: We make publishing easy.
 twitterUsername: Bloggify
-landingDescription: <strong>Bloggify</strong> is a modular and flexible platform for publishing your stuff on the internet.
+landingDescription: At <strong>Bloggify</strong> we build blogs, automation tools, scrapers and custom applications.
+
+
 
 secondSection:
     title: Made possible with the help of these sponsors!
@@ -22,7 +24,7 @@ sponsors:
     - name: imedicare
       url: https://imedicare.com/
     - name: carlisa
-      url: http://www.pleasebelievepeoplearehungry.com/
+      url: https://github.com/Carlisa
     - name: devstickers
       url: http://devstickers.com/
     - name: statuspage
@@ -43,8 +45,8 @@ featuredCompanies:
       img: /featured-companies/purdue-university.png
     - title: Ofri
       img: /featured-companies/ofri.png
-
-
+    - title: Carlisa, Inc.
+      img: /img/sponsors/carlisa.png
 
 features:
     title: Features

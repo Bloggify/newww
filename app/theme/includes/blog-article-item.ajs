@@ -28,21 +28,26 @@
         </div>
     <% } %>
 
-    <% if (article.date) { %>
     <div class="article-bottom-side">
         <div class="row article-info">
-            <div class="col-xs-5 hidden-xs">
-                <p class="article-section-name">Date</p>
-                <p class="article-section-value"><%= article.date.format("LL") %></p>
-            </div>
-            <div class="col-xs-3 hidden-xs">
-                <p class="article-section-name">Posted in</p>
-                <p class="article-section-value"><%= article.category %></p>
-            </div>
-            <div class="col-xs-3 hidden-xs hidden-sm">
-                <p class="article-section-name">Written by</p>
-                <p class="article-section-value"><%= article.author %></p>
-            </div>
+            <% if (article.date) { %>
+                <div class="col-xs-5 hidden-xs">
+                    <p class="article-section-name">Date</p>
+                    <p class="article-section-value"><%= article.date.format("LL") %></p>
+                </div>
+            <% } %>
+            <% if (article.category) { %>
+                <div class="col-xs-3 hidden-xs">
+                    <p class="article-section-name">Posted in</p>
+                    <p class="article-section-value"><%= article.category %></p>
+                </div>
+            <% } %>
+            <% if (article.author) { %>
+                <div class="col-xs-3 hidden-xs hidden-sm">
+                    <p class="article-section-name">Written by</p>
+                    <p class="article-section-value"><%= article.author %></p>
+                </div>
+            <% } %>
         </div>
         <div class="row">
             <div class="col-xs-12">
@@ -52,6 +57,5 @@
             </div>
         </div>
     </div>
-    <% } %>
 
 </article>

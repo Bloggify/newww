@@ -6,10 +6,9 @@ module.exports = {
   , domain: "https://bloggify.org"
   , plugins: [
       "bloggify-emoji"
-    , "social"
     , ["redirect", {
-        "/blog/26-uploading-videos-to-youtube-using-nodejs": "/blog/14-uploading-videos-to-youtube-using-nodejs"
-      , "/blog/35-the-joy-of-being-a-mentor": "/blog/34-the-joy-of-being-a-mentor"
+        "/blog": "/products"
+      , "/blog/*": "/products"
       }]
     , "markdown-highlight"
     ]
@@ -23,11 +22,15 @@ module.exports = {
         "routes": {
           "articles": "/products",
           "blog_url": "/products",
+          "blog": "products",
           "home": "_home"
         },
         "theme": ["/app/theme", {
             "options": {
-                "social": {
+                "previewLink": "https://preview.bloggify.org"
+              , "defaultOgImage": "/assets/mascot/beky.png"
+              , "show_article_metadata": false
+              , "social": {
                     "twitter": "Bloggify",
                     "github": "Bloggify"
                 },

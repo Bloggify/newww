@@ -8,21 +8,23 @@
                     <div class="article-img">
                         <div class="article-info">
                             <h1 class="article-title"><%= article.title %></h1>
-                            <div class="article-sup">
-                                <% if (article.date) { %>
-                                <span class="date">
-                                    <%= article.date.format("LL") %> //
-                                </span>
-                                <% } %>
-                                <% if (article.category) { %>
-                                <span class="category"><%= article.category %></span> //
-                                <% } %>
-                                <% if (article.author) { %>
-                                <span class="date">
-                                    Written by <%= article.author %>
-                                </span>
-                                <% } %>
-                            </div>
+                            <% if (theme.show_article_metadata !== false) { %>
+                                <div class="article-sup">
+                                    <% if (article.date) { %>
+                                    <span class="date">
+                                        <%= article.date.format("LL") %> //
+                                    </span>
+                                    <% } %>
+                                    <% if (article.category) { %>
+                                        <span class="category"><%= article.category %></span> //
+                                    <% } %>
+                                    <% if (article.author) { %>
+                                        <span class="date">
+                                            Written by <%= article.author %>
+                                        </span>
+                                    <% } %>
+                                </div>
+                            <% } %>
                             <div class="summary-top">
                                 <% if (article.summary) { %>
                                     <%- article.summary %>

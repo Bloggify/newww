@@ -28,3 +28,28 @@ usage: |-
             </ul>
         </div>
 ---
+
+
+Visit the [Bloggify Icons](http://icons.bloggify.org) page to see the icons and download the icon font.
+
+The usage is very simple. You have to include the CSS file in your page like this:
+
+```html
+<link href="path/to/bloggify-icons.css" rel="stylesheet">
+```
+
+or if you want to include from a CSS file:
+
+```css
+@import url('path/to/bloggify-icons.css');
+```
+
+Then in the HTML, you can display the icons by using `<span>` elements:
+
+```html
+<span class="icon-bloggify-mark"></span>
+```
+
+Check out the [JSFiddle demo](https://jsfiddle.net/Bloggify/14L3htp1/).
+
+Enjoy using the new icon font!
