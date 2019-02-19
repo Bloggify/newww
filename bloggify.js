@@ -6,6 +6,13 @@ module.exports = {
   , domain: "https://bloggify.org"
   , plugins: [
       "bloggify-emoji"
+    , ["contact-form", {
+         "sendgrid_key": process.env.SG_API_KEY,
+         "contact": {
+           "email": "support@bloggify.org",
+           "name": "Bloggify"
+         }
+      }]
     , ["redirect", {
         "/blog": "/products"
       , "/blog/*": "/products"
@@ -41,4 +48,8 @@ module.exports = {
             }
         }]
     }]
+  , "server": {
+      "session": false,
+      "transformers": true
+    }
 }

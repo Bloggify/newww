@@ -39,6 +39,7 @@
   "dependencies": {
     "bloggify": "^1.2.2",
     "bloggify-config": "^1.0.4",
+    "bloggify-contact-form": "^4.0.2",
     "bloggify-emoji": "^3.0.0",
     "bloggify-markdown-adapter": "^2.0.6",
     "bloggify-markdown-highlight": "^2.0.1",

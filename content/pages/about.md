@@ -13,41 +13,54 @@ order: 1.5
 </style>
 
 <div class="mission">
-    As company, we create websites, web applications, automation tools, scrapers designed for developers and non-tech users.
+    As company, we create websites, web applications, automation tools and scrapers designed for developers and non-tech users.
 </div>
 
-Bloggify is a **software**. Bloggify is a **company**. Bloggify is a **concept**.
+### What We Do
 
 At Bloggify, *we make publishing easy*. Our core product is a platform for creating websites and web applications. The Bloggify apps are like puzzles, everything being modular. That makes code snippets and functionalities reusable across the applications.
+
+<div class="row">
+    <div class="col-md-6">
+        <a class="service-box" href="/contact?subject=Web%20Application%20Request">
+            <img src="/services/custom-web-apps.png" />
+            <h3>Web Applications</h3>
+            <p>We build custom applications, depending on what you need.</p>
+        </a>
+    </div>
+    <div class="col-md-6">
+        <a class="service-box" href="/contact?subject=WordPress%20Website%20Request">
+            <img src="/services/wordpress.png" />
+            <h3>WordPress Websites</h3>
+            <p>If you need a WordPress site or you already have one and you need help improving it, that is something we can help with.</p>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <a class="service-box" href="/contact?subject=Automation%20Tool%20Request">
+            <img src="/services/automation.png" />
+            <h3>Automation Tools</h3>
+            <p>If there is a repetitive task you do, perhaps that can be automated. We are here to help with our scripts and robots.</p>
+        </a>
+    </div>
+    <div class="col-md-6">
+        <a class="service-box" href="/contact?subject=Scraper%20Request">
+            <img src="/services/scrapers.png" />
+            <h3>Crawlers & Scrapers</h3>
+            <p>Crawling and scraping the internet is not always easy. Let us know if you need a specific crawler/scraper.</p>
+        </a>
+    </div>
+</div>
 
 You can learn more about the Bloggify features by checking out [the home page](/).
 
 <div class="row">
-    <div class="col-md-12">
-        <h4>Bloggify<sup>the platform</sup></h4>
+    <div class="col-md-12 text-center">
+        <h4>Bloggify <sup>the platform</sup></h4>
         <p>Bloggify, as a platform, provides an easy way to build Node.js applications with ease.</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-6">
-        <h3>Web Applications</h3>
-        <p>We build custom applications, depending on what you need.</p>
-    </div>
-    <div class="col-md-6">
-        <h3>WordPress Websites</h3>
-        <p>If you need a WordPress site or you already have one and you need help improving it, that is something we can help with.</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-6">
-        <h3>Automation Tools</h3>
-        <p></p>
-    </div>
-    <div class="col-md-6">
-        <h3></h3>
-        <p>If you need a WordPress site or you already have one and you need help improving it, that is something we can help with.</p>
+        <strong>Comming soon...</strong>
     </div>
 </div>
 

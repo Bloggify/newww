@@ -65,6 +65,12 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="shortcut icon" href="<%= _public('/img/logo.png') %>">
 
+        <script>
+            window.BloggifyPage = {
+                query: <%= stringify(ctx.query) %>
+            }
+        </script>
+
         <%- Bloggify.assets.html() %>
         <% include("../styles/critical") %>
     </head>

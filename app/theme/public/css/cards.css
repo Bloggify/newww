@@ -82,12 +82,7 @@ a:hover, a:focus, a:active {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 700;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
   border-radius: 4px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 .btn.btn-md {
@@ -202,10 +197,6 @@ a:hover, a:focus, a:active {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active {
@@ -253,11 +244,7 @@ a .lnk-icon-right {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  display: inline;
   transition: all 0.3s ease;
 }
 a:hover .lnk-icon-right {
@@ -265,42 +252,6 @@ a:hover .lnk-icon-right {
 }
 
 /* Scroll Animations */
-@-webkit-keyframes ani-mouse {
-  0% {
-    opacity: 1;
-    top: 29%;
-  }
-  15% {
-    opacity: 1;
-    top: 50%;
-  }
-  50% {
-    opacity: 0;
-    top: 50%;
-  }
-  100% {
-    opacity: 0;
-    top: 29%;
-  }
-}
-@-moz-keyframes ani-mouse {
-  0% {
-    opacity: 1;
-    top: 29%;
-  }
-  15% {
-    opacity: 1;
-    top: 50%;
-  }
-  50% {
-    opacity: 0;
-    top: 50%;
-  }
-  100% {
-    opacity: 0;
-    top: 29%;
-  }
-}
 @keyframes ani-mouse {
   0% {
     opacity: 1;
@@ -360,8 +311,6 @@ a:hover .lnk-icon-right {
   width: 30px;
   height: 45px;
   margin: 0 auto 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 2px solid white;
   border-radius: 23px;
@@ -376,17 +325,11 @@ a:hover .lnk-icon-right {
   height: 6px;
   margin: -2px 0 0 -1px;
   background: white;
-  -webkit-animation: ani-mouse 2.5s linear infinite;
-  -moz-animation: ani-mouse 2.5s linear infinite;
   animation: ani-mouse 2.5s linear infinite;
 }
 
 /* Utilities */
 .fh5co-flex {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
 }
 
@@ -435,52 +378,20 @@ a:hover .lnk-icon-right {
 }
 #fh5co-offcanvass.fh5co-offcanvass-left {
   left: 0;
-  -moz-transform: translateX(-250px);
-  -webkit-transform: translateX(-250px);
-  -ms-transform: translateX(-250px);
-  -o-transform: translateX(-250px);
   transform: translateX(-250px);
-  -webkit-transition: all 0.8s ease-in;
-  -moz-transition: all 0.8s ease-in;
-  -ms-transition: all 0.8s ease-in;
-  -o-transition: all 0.8s ease-in;
   transition: all 0.8s ease-in;
 }
 .mobile-menu-expanded #fh5co-offcanvass.fh5co-offcanvass-left {
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -ms-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-  -moz-transform: translateX(0px);
-  -webkit-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  -o-transform: translateX(0px);
   transform: translateX(0px);
 }
 #fh5co-offcanvass.fh5co-offcanvass-right {
   right: 0;
-  -moz-transform: translateX(250px);
-  -webkit-transform: translateX(250px);
-  -ms-transform: translateX(250px);
-  -o-transform: translateX(250px);
   transform: translateX(250px);
-  -webkit-transition: all 0.8s ease-in;
-  -moz-transition: all 0.8s ease-in;
-  -ms-transition: all 0.8s ease-in;
-  -o-transition: all 0.8s ease-in;
   transition: all 0.8s ease-in;
 }
 .mobile-menu-expanded #fh5co-offcanvass.fh5co-offcanvass-right {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  -moz-transform: translateX(0px);
-  -webkit-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  -o-transform: translateX(0px);
   transform: translateX(0px);
 }
 @media screen and (max-width: 768px) {
@@ -526,9 +437,6 @@ a:hover .lnk-icon-right {
   zoom: 1;
   *
   display: inline;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
   border-radius: 30px;
   color: #fff;
 }
@@ -542,51 +450,19 @@ a:hover .lnk-icon-right {
   z-index: 2;
 }
 #fh5co-page.fh5co-offcanvass-left {
-  -moz-transform: translateX(0px);
-  -webkit-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  -o-transform: translateX(0px);
   transform: translateX(0px);
-  -webkit-transition: all 0.4s ease-in;
-  -moz-transition: all 0.4s ease-in;
-  -ms-transition: all 0.4s ease-in;
-  -o-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
 .mobile-menu-expanded #fh5co-page.fh5co-offcanvass-left {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  -moz-transform: translateX(250px);
-  -webkit-transform: translateX(250px);
-  -ms-transform: translateX(250px);
-  -o-transform: translateX(250px);
   transform: translateX(250px);
 }
 #fh5co-page.fh5co-offcanvass-right {
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
-  -moz-transform: translateX(0px);
-  -webkit-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  -o-transform: translateX(0px);
   transform: translateX(0px);
 }
 .mobile-menu-expanded #fh5co-page.fh5co-offcanvass-right {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  -moz-transform: translateX(-250px);
-  -webkit-transform: translateX(-250px);
-  -ms-transform: translateX(-250px);
-  -o-transform: translateX(-250px);
   transform: translateX(-250px);
 }
 
@@ -682,9 +558,6 @@ a:hover .lnk-icon-right {
   zoom: 1;
   *
   display: inline;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
   border-radius: 30px;
   color: #fff;
 }
@@ -793,7 +666,6 @@ a:hover .lnk-icon-right {
   color: #fff;
   font-weight: 700;
   -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
@@ -818,7 +690,6 @@ a:hover .lnk-icon-right {
 }
 .fh5co-nav-style-2 .fh5co-nav-toggle i {
   position: relative;
-  display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   *display: inline;
@@ -892,7 +763,6 @@ a:hover .lnk-icon-right {
   border: 2px solid #fff;
   color: #fff;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -966,7 +836,6 @@ a:hover .lnk-icon-right {
 
 .fh5co-project-style-1 .fh5co-grid {
   -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
   background-size: cover;
@@ -977,7 +846,6 @@ a:hover .lnk-icon-right {
 }
 .fh5co-project-style-1 .fh5co-grid > a {
   -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
   position: absolute;
@@ -988,7 +856,6 @@ a:hover .lnk-icon-right {
   right: 0;
   opacity: 0;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1034,7 +901,6 @@ a:hover .lnk-icon-right {
   position: relative;
   list-style: none;
   -webkit-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.8);
   -ms-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.8);
   -o-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.8);
   box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.8);
@@ -1058,7 +924,6 @@ a:hover .lnk-icon-right {
   opacity: .8;
   width: 100%;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -1122,7 +987,6 @@ a:hover .lnk-icon-right {
 .fh5co-project-style-3 .fh5co-project-item .fh5co-text {
   opacity: 0;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -1150,7 +1014,6 @@ a:hover .lnk-icon-right {
   opacity: 0;
   position: relative;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -1245,13 +1108,11 @@ a:hover .lnk-icon-right {
   width: 100%;
   position: relative;
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   .fh5co-project-style-5 .fh5co-project-item {
@@ -1286,7 +1147,6 @@ a:hover .lnk-icon-right {
   background-size: cover;
   background-position: center center;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -1338,7 +1198,6 @@ a:hover .lnk-icon-right {
 }
 .fh5co-project-style-5 .fh5co-project-item:focus .fh5co-project-figure > div, .fh5co-project-style-5 .fh5co-project-item:hover .fh5co-project-figure > div {
   -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -1392,7 +1251,6 @@ a:hover .lnk-icon-right {
   overflow: hidden;
   z-index: 1;
   -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
   margin-bottom: 30px;
@@ -1409,12 +1267,10 @@ a:hover .lnk-icon-right {
   opacity: 0;
   margin-top: 30px;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
 }
@@ -1429,12 +1285,10 @@ a:hover .lnk-icon-right {
 }
 .fh5co-content-style-2 .fh5co-gallery .fh5co-link-block img {
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
   position: absolute;
@@ -1453,12 +1307,10 @@ a:hover .lnk-icon-right {
   background: #1784fb;
   opacity: 0;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
 }
@@ -1474,7 +1326,6 @@ a:hover .lnk-icon-right {
 }
 .fh5co-content-style-2 .fh5co-gallery .fh5co-link-block:hover img, .fh5co-content-style-2 .fh5co-gallery .fh5co-link-block:focus img {
   -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -1509,11 +1360,9 @@ a:hover .lnk-icon-right {
   margin-left: -17px;
   background: #e6e6e6;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -1547,11 +1396,9 @@ a:hover .lnk-icon-right {
   margin-left: -17px;
   background: #1784fb;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -1593,13 +1440,11 @@ a:hover .lnk-icon-right {
   width: 100%;
   position: relative;
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   .fh5co-content-style-5 .fh5co-content-item {
@@ -1634,7 +1479,6 @@ a:hover .lnk-icon-right {
   background-size: cover;
   background-position: center center;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -1686,7 +1530,6 @@ a:hover .lnk-icon-right {
 }
 .fh5co-content-style-5 .fh5co-content-item:focus .fh5co-content-figure > div, .fh5co-content-style-5 .fh5co-content-item:hover .fh5co-content-figure > div {
   -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -1699,7 +1542,6 @@ a:hover .lnk-icon-right {
   overflow: hidden;
   margin-bottom: 20px;
   -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
 }
@@ -1719,14 +1561,12 @@ a:hover .lnk-icon-right {
 }
 .fh5co-content-style-6 .link-block img, .fh5co-content-style-7 .link-block img {
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .fh5co-content-style-6 .link-block:hover img, .fh5co-content-style-7 .link-block:hover img {
   -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -1747,7 +1587,6 @@ a:hover .lnk-icon-right {
   padding-left: 10px;
   padding-right: 10px;
   color: #b3b3b3;
-  display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   *display: inline;
@@ -1855,13 +1694,11 @@ a:hover .lnk-icon-right {
 .fh5co-features-style-5 .fh5co-features {
   width: 100%;
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -1973,7 +1810,6 @@ a:hover .lnk-icon-right {
   margin-bottom: 30px;
   position: relative;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
   display: table;
@@ -2040,12 +1876,10 @@ a:hover .lnk-icon-right {
   position: relative;
   overflow: hidden;
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
 }
@@ -2142,7 +1976,6 @@ a:hover .lnk-icon-right {
   height: 90px;
   margin: 0 auto;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
@@ -2174,30 +2007,25 @@ a:hover .lnk-icon-right {
   position: relative;
   margin-bottom: 30px;
   -webkit-box-shadow: 0px 0px 20px #DFDFDF;
-  -moz-box-shadow: 0px 0px 20px #DFDFDF;
   -ms-box-shadow: 0px 0px 20px #DFDFDF;
   -o-box-shadow: 0px 0px 20px #DFDFDF;
   box-shadow: 0px 0px 20px #DFDFDF;
   -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .fh5co-blog-style-1 .fh5co-post img {
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .fh5co-blog-style-1 .fh5co-post:hover img, .fh5co-blog-style-1 .fh5co-post:focus img {
   -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -2233,10 +2061,8 @@ a:hover .lnk-icon-right {
   border: 1px solid #f2f2f2;
   margin: 0 4px 4px 0;
   -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   border-radius: 30px;
-  display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   *display: inline;
@@ -2310,7 +2136,6 @@ a:hover .lnk-icon-right {
   overflow: hidden;
   margin-bottom: 20px;
   -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
 }
@@ -2321,7 +2146,6 @@ a:hover .lnk-icon-right {
 }
 .fh5co-blog-style-2 .link-block:hover h3 {
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -2338,14 +2162,12 @@ a:hover .lnk-icon-right {
 }
 .fh5co-blog-style-2 .link-block img {
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .fh5co-blog-style-2 .link-block:hover img {
   -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -2382,7 +2204,6 @@ a:hover .lnk-icon-right {
 .fh5co-team-style-1 .fh5co-person .fh5co-text {
   opacity: 0;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -2409,10 +2230,6 @@ a:hover .lnk-icon-right {
 .fh5co-team-style-1 .fh5co-person .fh5co-text h3, .fh5co-team-style-1 .fh5co-person .fh5co-text p {
   opacity: 0;
   position: relative;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .fh5co-team-style-1 .fh5co-person .fh5co-text h3 {

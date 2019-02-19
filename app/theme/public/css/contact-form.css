@@ -1,0 +1,63 @@
+/*********************
+ * Contact form      *
+ *********************/
+.contact-form {
+    max-width: 100%;
+    width: 500px;
+    & input[type="text"],
+    & input[type="email"],
+    & input[type="submit"],
+    & textarea {
+        width: 100%;
+        padding: 10px;
+        border: 3px solid #2980b9;
+        margin-bottom: 20px;
+    }
+
+    & input[type="text"].error,
+    & input[type="email"].error,
+    & input[type="submit"].error,
+    & textarea.error {
+        border-color: #c0392b;
+    }
+
+    & textarea {
+        resize: vertical;
+        height: 200px !important;
+    }
+
+    & table {
+        width: 100%;
+    }
+
+    & input[type="submit"] {
+        background: white;
+        cursor: pointer;
+        width: 200px;
+    }
+
+    & input[type="submit"]:hover {
+        background: #ecf0f1;
+    }
+
+    & td {
+        vertical-align: top;
+    }
+    & label {
+        width: 100%;
+    }
+    & div.message-box {
+        padding: 12px;
+        border-bottom: 4px solid;
+        color: white;
+        text-align: center;
+        &.success {
+            background: #3498db;
+            border-color:  #2980b9;
+        }
+        &.error {
+            background: #e74c3c;
+            border-color: #c0392b;
+        }
+    }
+}
