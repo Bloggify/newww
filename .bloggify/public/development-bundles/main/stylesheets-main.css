@@ -13214,6 +13214,7 @@ a:hover .lnk-icon-right {
     background: #e74c3c;
     border-color: #c0392b;
 }
+.text-left { text-align: left !important; }
 .logo img {
     height: 43px;
     margin-top: -7px;

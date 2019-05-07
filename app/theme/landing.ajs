@@ -22,7 +22,7 @@
                         </h2>
                         <p>
                             <a href="/contact" class="btn btn-primary btn-lg">
-                                Work with us
+
                             </a>
                             <a href="https://twitter.com/<%= page.twitterUsername %>" class="btn btn-outline btn-lg">Follow us</a>
                         </p>

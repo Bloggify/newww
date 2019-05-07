@@ -4,21 +4,16 @@ order: 1.5
 ---
 
 <style>
-    .container.page-content {
-    }
-
     .mission {
         font-size: 1.3em;
     }
 </style>
 
 <div class="mission">
-    As company, we create websites, web applications, automation tools and scrapers designed for developers and non-tech users.
+    As company, we create websites, web applications, automation tools and scrapers designed for developers and non-tech users. In short, at Bloggify, <i>we make publishing easy</i>.
 </div>
 
-### What We Do
-
-At Bloggify, *we make publishing easy*. Our core product is a platform for creating websites and web applications. The Bloggify apps are like puzzles, everything being modular. That makes code snippets and functionalities reusable across the applications.
+---
 
 <div class="row">
     <div class="col-md-6">
@@ -54,13 +49,19 @@ At Bloggify, *we make publishing easy*. Our core product is a platform for creat
     </div>
 </div>
 
-You can learn more about the Bloggify features by checking out [the home page](/).
+----
 
 <div class="row">
     <div class="col-md-12 text-center">
-        <h4>Bloggify <sup>the platform</sup></h4>
-        <p>Bloggify, as a platform, provides an easy way to build Node.js applications with ease.</p>
-        <strong>Comming soon...</strong>
+        <a class="service-box text-left" href="https://preview.bloggify.org">
+            <img src="/services/bloggify-platform.png" />
+            <h3>Bloggify <sup>the platform</sup></h3>
+            <p class="mission">
+                Our core product is a platform for creating websites and web applications. The Bloggify apps are like puzzles, everything being modular. That makes code snippets and functionalities reusable across the applications.<br/><br/>
+                Bloggify, as a platform, provides an easy way to build Node.js applications with ease.<br/><br/>
+                You can learn more about the Bloggify features by checking out the home page.
+            </p>
+        </a>
     </div>
 </div>
 

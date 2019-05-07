@@ -1,6 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Cardo';
 @import "./contact-form";
 
+.text-left { text-align: left !important; }
+
 .logo img {
     height: 43px;
     margin-top: -7px;
@@ -630,3 +632,4 @@ body.template-site_page .page-content {
         padding: 0 10px;
     }
 }
+
