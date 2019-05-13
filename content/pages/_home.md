@@ -9,6 +9,7 @@ tags:
     - early
 
 landingImage: /assets/mascot/beky.png
+callBtnText: Hire us
 landingTitle: We make publishing easy.
 twitterUsername: Bloggify
 landingDescription: At <strong>Bloggify</strong> we build blogs, automation tools, scrapers and custom applications.
@@ -30,13 +31,13 @@ sponsors:
     - name: statuspage
       url: https://statuspage.io/
 
-helpUsLink: "mailto:support@bloggify.org"
+helpUsLink: /contact
 
 thirdSection:
-    title: Join the Preview program.
+    title: Have questions or suggestions?
     description: |-
-              <p>You can now register the Preview program which will help you to stay tuned with the latest news. Also, you may get an invitation to the alpha stage.</p>
-              <p><a href="https://preview.bloggify.org" class="btn btn-outline">Join Now</a></p>
+              <p>Write us what questions you have and send us your suggestions for publishing related software.</p>
+              <p><a href="/contact" class="btn btn-outline">Contact</a></p>
 
 featuredCompanies:
     - title: Purdue IronHacks
@@ -49,7 +50,7 @@ featuredCompanies:
       img: /img/sponsors/carlisa.png
 
 features:
-    title: Features
+    title: Bloggify Features
     description: At Bloggify, we focus on maintaining a modular platform which is simple to use and still extensible, keeping the core minimal.
     items:
         - class: colored-4

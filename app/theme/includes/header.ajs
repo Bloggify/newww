@@ -75,6 +75,11 @@
         <% include("../styles/critical") %>
     </head>
     <body class="fh5co-overflow template-<%= template %>">
+        <% if (page.purchase_text) { %>
+            <a href="<%= page.purchase_link %>" class="btn btn-purchase btn-primary">
+                <%= page.purchase_text %>
+            </a>
+        <% } %>
         <div id="fh5co-page">
             <nav class="fh5co-nav-style-1" role="navigation" data-offcanvass-position="fh5co-offcanvass-left">
                 <div class="container">

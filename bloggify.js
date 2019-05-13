@@ -20,6 +20,7 @@ module.exports = {
     , "markdown-highlight"
     ]
   , "adapter": ["bloggify-markdown-adapter", {
+        "articles_per_page": 100,
         "parse": {
             "converterOptions": {
                 "strikethrough": true,

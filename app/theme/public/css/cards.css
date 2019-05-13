@@ -66,7 +66,6 @@ h2 {
 
 a {
   color: #c25b00;
-  transition: opacity 0.5s ease;
 }
 
 a:hover, a:focus, a:active {
@@ -83,7 +82,6 @@ a:hover, a:focus, a:active {
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 4px;
-  transition: 0.5s;
 }
 .btn.btn-md {
   padding: 10px 20px !important;
@@ -197,7 +195,6 @@ a:hover, a:focus, a:active {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  transition: all 0.3s ease;
 }
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active {
   box-shadow: none;
@@ -245,7 +242,6 @@ a .lnk-icon-right {
   display: inline-block;
   zoom: 1;
   display: inline;
-  transition: all 0.3s ease;
 }
 a:hover .lnk-icon-right {
   padding-left: 5px;
@@ -379,19 +375,15 @@ a:hover .lnk-icon-right {
 #fh5co-offcanvass.fh5co-offcanvass-left {
   left: 0;
   transform: translateX(-250px);
-  transition: all 0.8s ease-in;
 }
 .mobile-menu-expanded #fh5co-offcanvass.fh5co-offcanvass-left {
-  transition: all 0.4s ease-out;
   transform: translateX(0px);
 }
 #fh5co-offcanvass.fh5co-offcanvass-right {
   right: 0;
   transform: translateX(250px);
-  transition: all 0.8s ease-in;
 }
 .mobile-menu-expanded #fh5co-offcanvass.fh5co-offcanvass-right {
-  transition: all 0.5s ease-out;
   transform: translateX(0px);
 }
 @media screen and (max-width: 768px) {
@@ -451,18 +443,14 @@ a:hover .lnk-icon-right {
 }
 #fh5co-page.fh5co-offcanvass-left {
   transform: translateX(0px);
-  transition: all 0.4s ease-in;
 }
 .mobile-menu-expanded #fh5co-page.fh5co-offcanvass-left {
-  transition: all 0.5s ease-out;
   transform: translateX(250px);
 }
 #fh5co-page.fh5co-offcanvass-right {
-  transition: all 0.5s ease-in;
   transform: translateX(0px);
 }
 .mobile-menu-expanded #fh5co-page.fh5co-offcanvass-right {
-  transition: all 0.5s ease-out;
   transform: translateX(-250px);
 }
 
@@ -605,11 +593,6 @@ a:hover .lnk-icon-right {
   font-weight: 400;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav-style-2 #navbar .navbar-nav li a {
@@ -700,7 +683,6 @@ a:hover .lnk-icon-right {
   text-transform: uppercase;
   text-indent: -55px;
   background: rgba(255, 255, 255, 0.5);
-  transition: all .2s ease-out;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav-style-2 .fh5co-nav-toggle i {
@@ -714,9 +696,6 @@ a:hover .lnk-icon-right {
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 0;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav-style-2 .fh5co-nav-toggle i::before, .fh5co-nav-style-2 .fh5co-nav-toggle i::after {
@@ -762,10 +741,6 @@ a:hover .lnk-icon-right {
 .fh5co-cover .fh5co-cover-text .btn-outline {
   border: 2px solid #fff;
   color: #fff;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 .fh5co-cover .fh5co-cover-text .btn-outline:hover {
   color: #fff;
@@ -855,10 +830,6 @@ a:hover .lnk-icon-right {
   left: 0;
   right: 0;
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 .fh5co-project-style-1 .fh5co-grid > a i {
   text-align: center;
@@ -923,10 +894,6 @@ a:hover .lnk-icon-right {
   z-index: 1;
   opacity: .8;
   width: 100%;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 .fh5co-project-style-2 .fh5co-projects ul li a .fh5co-text {
   display: table;
@@ -986,10 +953,6 @@ a:hover .lnk-icon-right {
 .fh5co-project-style-3 .fh5co-project-item .fh5co-overlay,
 .fh5co-project-style-3 .fh5co-project-item .fh5co-text {
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 .fh5co-project-style-3 .fh5co-project-item .fh5co-overlay {
   position: absolute;
@@ -1013,10 +976,6 @@ a:hover .lnk-icon-right {
 .fh5co-project-style-3 .fh5co-project-item .fh5co-text h3, .fh5co-project-style-3 .fh5co-project-item .fh5co-text p {
   opacity: 0;
   position: relative;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 .fh5co-project-style-3 .fh5co-project-item .fh5co-text h3 {
   color: #fff;
@@ -1146,10 +1105,6 @@ a:hover .lnk-icon-right {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 @media screen and (max-width: 768px) {
   .fh5co-project-style-5 .fh5co-project-item .fh5co-project-figure {
@@ -1266,12 +1221,6 @@ a:hover .lnk-icon-right {
   width: 100%;
   opacity: 0;
   margin-top: 30px;
-  -webkit-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-border-radius: 7px;
-  -ms-border-radius: 7px;
   border-radius: 7px;
 }
 .fh5co-content-style-2 .fh5co-gallery .fh5co-link-block .fh5co-text .icon {
@@ -1284,12 +1233,6 @@ a:hover .lnk-icon-right {
   color: #fff;
 }
 .fh5co-content-style-2 .fh5co-gallery .fh5co-link-block img {
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-border-radius: 7px;
-  -ms-border-radius: 7px;
   border-radius: 7px;
   position: absolute;
   top: 0;
@@ -1306,12 +1249,6 @@ a:hover .lnk-icon-right {
   bottom: 0;
   background: #1784fb;
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-border-radius: 7px;
-  -ms-border-radius: 7px;
   border-radius: 7px;
 }
 .fh5co-content-style-2 .fh5co-gallery .fh5co-link-block:hover, .fh5co-content-style-2 .fh5co-gallery .fh5co-link-block:focus {
@@ -1359,13 +1296,7 @@ a:hover .lnk-icon-right {
   margin-top: -4px;
   margin-left: -17px;
   background: #e6e6e6;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 .fh5co-content-style-3 .fh5co-siidear-links li a:hover, .fh5co-content-style-3 .fh5co-siidear-links li a:active, .fh5co-content-style-3 .fh5co-siidear-links li a:focus {
   color: #1a1a1a;
@@ -1395,13 +1326,7 @@ a:hover .lnk-icon-right {
   margin-top: -4px;
   margin-left: -17px;
   background: #1784fb;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .fh5co-content-style-4 {
@@ -1478,10 +1403,6 @@ a:hover .lnk-icon-right {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 @media screen and (max-width: 768px) {
   .fh5co-content-style-5 .fh5co-content-item .fh5co-content-figure {
@@ -1560,10 +1481,6 @@ a:hover .lnk-icon-right {
   letter-spacing: 2px;
 }
 .fh5co-content-style-6 .link-block img, .fh5co-content-style-7 .link-block img {
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 .fh5co-content-style-6 .link-block:hover img, .fh5co-content-style-7 .link-block:hover img {
   -webkit-transform: scale(1.1);
@@ -2006,28 +1923,12 @@ a:hover .lnk-icon-right {
   background: #fff;
   position: relative;
   margin-bottom: 30px;
-  -webkit-box-shadow: 0px 0px 20px #DFDFDF;
-  -ms-box-shadow: 0px 0px 20px #DFDFDF;
-  -o-box-shadow: 0px 0px 20px #DFDFDF;
   box-shadow: 0px 0px 20px #DFDFDF;
-  -webkit-border-radius: 7px;
-  -ms-border-radius: 7px;
   border-radius: 7px;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 .fh5co-blog-style-1 .fh5co-post img {
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 .fh5co-blog-style-1 .fh5co-post:hover img, .fh5co-blog-style-1 .fh5co-post:focus img {
-  -webkit-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 .fh5co-blog-style-1 .fh5co-post .fh5co-post-image {
@@ -2135,8 +2036,6 @@ a:hover .lnk-icon-right {
 .fh5co-blog-style-2 .link-block figure {
   overflow: hidden;
   margin-bottom: 20px;
-  -webkit-border-radius: 7px;
-  -ms-border-radius: 7px;
   border-radius: 7px;
 }
 .fh5co-blog-style-2 .link-block h3 {
@@ -2145,10 +2044,6 @@ a:hover .lnk-icon-right {
   font-weight: 400;
 }
 .fh5co-blog-style-2 .link-block:hover h3 {
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   color: #1784fb;
 }
 .fh5co-blog-style-2 .link-block p {
@@ -2161,10 +2056,6 @@ a:hover .lnk-icon-right {
   letter-spacing: 2px;
 }
 .fh5co-blog-style-2 .link-block img {
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 .fh5co-blog-style-2 .link-block:hover img {
   -webkit-transform: scale(1.1);
@@ -2203,10 +2094,6 @@ a:hover .lnk-icon-right {
 .fh5co-team-style-1 .fh5co-person .fh5co-overlay,
 .fh5co-team-style-1 .fh5co-person .fh5co-text {
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 .fh5co-team-style-1 .fh5co-person .fh5co-overlay {
   position: absolute;
@@ -2230,7 +2117,6 @@ a:hover .lnk-icon-right {
 .fh5co-team-style-1 .fh5co-person .fh5co-text h3, .fh5co-team-style-1 .fh5co-person .fh5co-text p {
   opacity: 0;
   position: relative;
-  transition: all 0.5s ease;
 }
 .fh5co-team-style-1 .fh5co-person .fh5co-text h3 {
   color: #fff;
@@ -2261,14 +2147,6 @@ a:hover .lnk-icon-right {
   padding: 30px;
   float: left;
   width: 100%;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
   border-radius: 7px;
 }
 .fh5co-team-style-2 .fh5co-person figure {
@@ -2453,11 +2331,6 @@ a:hover .lnk-icon-right {
   background: rgba(255, 255, 255, 0.15);
   height: 52px;
   color: #fff;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 .fh5co-footer-style-1 .fh5co-subscribe .form-control::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
@@ -2906,13 +2779,7 @@ a:hover .lnk-icon-right {
   background: #fff;
   padding: 40px 10px;
   margin-bottom: 1.5em;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
   border-radius: 4px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
 }
 .fh5co-pricing-style-1 .fh5co-pricing-item.pricing-feature {
   border-top: 10px solid #1784fb;
@@ -3036,8 +2903,6 @@ a:hover .lnk-icon-right {
   color: #fff;
   border-radius: 5px;
   background: #6ed19c;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
 }
 .fh5co-pricing-style-2 .pricing-action:hover,
 .fh5co-pricing-style-2 .pricing-action:focus {
@@ -3076,7 +2941,6 @@ a:hover .lnk-icon-right {
   text-transform: uppercase;
   text-indent: -55px;
   background: rgba(255, 255, 255, 0.5);
-  transition: all .2s ease-out;
 }
 .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
   content: '';
@@ -3085,9 +2949,6 @@ a:hover .lnk-icon-right {
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 0;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .fh5co-nav-toggle i::before {

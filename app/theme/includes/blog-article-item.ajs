@@ -1,61 +1,37 @@
 <% var articleImage = article.image %>
 
 <article class="article-item <%= articleImage ? 'has-image' : 'no-image' %>">
-
-    <div class="article-item-top">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="long-dash">— </div>
-                <a href="<%= article.url %>" class="article-title-top">
+    <a href="<%= article.url %>" class="article-title-top">
+        <div class="article-item-top">
+            <div class="row">
+                <div class="col-md-12">
                     <h1> <%= article.title %></h1>
-                </a>
-                <div class="summary-top">
-                    <% if (article.summary) { %>
-                        <%- article.summary %>
-                    <% } else { %>
-                        <%- article.content.slice(0, 100) + "..." %>
-                    <% } %>
+                    <div class="summary-top">
+                        <% if (article.summary) { %>
+                            <%- article.summary %>
+                        <% } else { %>
+                            <%- article.content.slice(0, 100) + "..." %>
+                        <% } %>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <% if (articleImage) { %>
-        <div class="article-img">
-            <a href="<%= article.url %>">
+        <% if (articleImage) { %>
+            <div class="article-img">
                 <img src="<%= _public(articleImage) %>">
-            </a>
-        </div>
-    <% } %>
+            </div>
+        <% } %>
 
-    <div class="article-bottom-side">
-        <div class="row article-info">
-            <% if (article.date) { %>
-                <div class="col-xs-5 hidden-xs">
-                    <p class="article-section-name">Date</p>
-                    <p class="article-section-value"><%= article.date.format("LL") %></p>
-                </div>
+        <div class="article-bottom-side">
+            <% if (article.is_free) { %>
+                <div class="article-badge label label-success">FREE</div>
             <% } %>
-            <% if (article.category) { %>
-                <div class="col-xs-3 hidden-xs">
-                    <p class="article-section-name">Posted in</p>
+            <div class="row article-info">
+                <div class="col-xs-12">
                     <p class="article-section-value"><%= article.category %></p>
                 </div>
-            <% } %>
-            <% if (article.author) { %>
-                <div class="col-xs-3 hidden-xs hidden-sm">
-                    <p class="article-section-name">Written by</p>
-                    <p class="article-section-value"><%= article.author %></p>
-                </div>
-            <% } %>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <a href="<%= article.url %>" class="read-more bottom" title="Read more">
-                    <span class="icon icon-triangle-right"></span>
-                </a>
             </div>
         </div>
-    </div>
-
+    </a>
 </article>

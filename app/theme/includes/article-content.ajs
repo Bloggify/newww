@@ -40,8 +40,23 @@
 
                 <div class="single-article-content article-content content">
                     <div class="markdown">
-                    <%- article.html %>
+                        <%- article.html %>
                     </div>
+
+                    <% if (page.purchase_text) { %>
+                        <div class="text-center">
+                            <hr>
+                            <p>
+                                If you are interested in this product, click the button below.
+                                <% if (article.is_free) { %>
+                                    This product is <span class="label label-success">FREE</span>!
+                                <% } %>
+                            </p>
+                            <a href="<%= page.purchase_link %>" class="btn btn-primary btn-lg">
+                                <%= page.purchase_text %>
+                            </a>
+                        </div>
+                    <% } %>
                 </div>
 
             </article>
