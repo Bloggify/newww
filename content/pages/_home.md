@@ -8,7 +8,7 @@ tags:
     - bloggify
     - early
 
-landingImage: /assets/mascot/beky.png
+landingImage: /assets/mascot/beky/1.png
 callBtnText: Hire us
 landingTitle: We make publishing easy.
 twitterUsername: Bloggify
