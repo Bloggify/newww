@@ -37,12 +37,19 @@
     }
   },
   "dependencies": {
-    "bloggify-analytics": "ionicabizau/bloggify-analytics",
-    "bloggify-cli": "^1.1.1",
+    "bloggify": "^1.2.2",
     "bloggify-config": "^1.0.4",
-    "bloggify-emoji": "^2.0.1",
-    "bloggify-mongoose": "^1.0.8",
+    "bloggify-contact-form": "^4.0.2",
+    "bloggify-emoji": "^3.0.0",
+    "bloggify-markdown-adapter": "^2.0.6",
+    "bloggify-markdown-highlight": "^2.0.1",
+    "bloggify-redirect": "^3.0.0",
+    "bloggify-sendgrid": "^3.0.1",
+    "bloggify-social": "^3.0.5",
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "bloggify-cli": "^1.2.2"
   }
 }

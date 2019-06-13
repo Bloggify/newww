@@ -1,0 +1,30 @@
+{
+    "config": {
+        "templates": [
+            "404.ajs",
+            "500.ajs",
+            "article.ajs",
+            "blog_page.ajs",
+            "site_page.ajs",
+            "landing.ajs",
+            "logos.ajs"
+        ],
+        "options": {
+            "defaultOgImage": "",
+            "previewLink": ""
+        }
+    },
+    "styles": [
+        {
+            "url": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic",
+            "type": "css"
+        },
+        "public/css/icomoon.css",
+        "public/css/bootstrap.css",
+        "public/css/cards.css",
+        "public/css/custom.css"
+    ],
+    "scripts": [
+        "public/js/main.js"
+    ]
+}

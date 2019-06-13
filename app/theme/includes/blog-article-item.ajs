@@ -1,0 +1,37 @@
+<% var articleImage = article.image %>
+
+<article class="article-item <%= articleImage ? 'has-image' : 'no-image' %>">
+    <a href="<%= article.url %>" class="article-title-top">
+        <div class="article-item-top">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> <%= article.title %></h1>
+                    <div class="summary-top">
+                        <% if (article.summary) { %>
+                            <%- article.summary %>
+                        <% } else { %>
+                            <%- article.content.slice(0, 100) + "..." %>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <% if (articleImage) { %>
+            <div class="article-img">
+                <img src="<%= _public(articleImage) %>">
+            </div>
+        <% } %>
+
+        <div class="article-bottom-side">
+            <% if (article.is_free) { %>
+                <div class="article-badge label label-success">FREE</div>
+            <% } %>
+            <div class="row article-info">
+                <div class="col-xs-12">
+                    <p class="article-section-value"><%= article.category %></p>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>

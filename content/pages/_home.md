@@ -9,9 +9,10 @@ tags:
     - early
 
 landingImage: /assets/mascot/beky.png
+callBtnText: Contact Us
 landingTitle: We make publishing easy.
 twitterUsername: Bloggify
-landingDescription: <strong>Bloggify</strong> is a modular and flexible platform for publishing your stuff on the internet.
+landingDescription: At <strong>Bloggify</strong> we build blogs, automation tools, scrapers and custom applications.
 
 secondSection:
     title: Made possible with the help of these sponsors!
@@ -22,19 +23,19 @@ sponsors:
     - name: imedicare
       url: https://imedicare.com/
     - name: carlisa
-      url: http://www.pleasebelievepeoplearehungry.com/
+      url: https://github.com/Carlisa
     - name: devstickers
       url: http://devstickers.com/
     - name: statuspage
       url: https://statuspage.io/
 
-helpUsLink: "mailto:support@bloggify.org"
+helpUsLink: /contact
 
 thirdSection:
-    title: Join the Preview program.
+    title: Have questions or suggestions?
     description: |-
-              <p>You can now register the Preview program which will help you to stay tuned with the latest news. Also, you may get an invitation to the alpha stage.</p>
-              <p><a href="https://preview.bloggify.org" class="btn btn-outline">Join Now</a></p>
+              <p>Write us what questions you have and send us your suggestions for publishing related software.</p>
+              <p><a href="/contact" class="btn btn-outline">Contact Us</a></p>
 
 featuredCompanies:
     - title: Purdue IronHacks
@@ -43,11 +44,11 @@ featuredCompanies:
       img: /featured-companies/purdue-university.png
     - title: Ofri
       img: /featured-companies/ofri.png
-
-
+    - title: Carlisa, Inc.
+      img: /img/sponsors/carlisa.png
 
 features:
-    title: Features
+    title: Bloggify Features
     description: At Bloggify, we focus on maintaining a modular platform which is simple to use and still extensible, keeping the core minimal.
     items:
         - class: colored-4

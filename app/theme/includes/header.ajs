@@ -3,11 +3,11 @@
     <head>
         <%
             var description = page.summary || siteMetadata.description;
-            var ogImage = _public(page.image || Bloggify.options.theme.defaultOgImage, true);
+            var ogImage = _public(page.image || theme.defaultOgImage, true);
         %>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><%= title %> | <%= siteMetadata.siteTitle %></title>
+        <title><%= title %> | <%= Bloggify.options.title %></title>
 
         <meta name="application-name" content="<%= siteMetadata.siteTitle %>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,10 +65,21 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="shortcut icon" href="<%= _public('/img/logo.png') %>">
 
+        <script>
+            window.BloggifyPage = {
+                query: <%= stringify(ctx.query) %>
+            }
+        </script>
+
         <%- Bloggify.assets.html() %>
         <% include("../styles/critical") %>
     </head>
     <body class="fh5co-overflow template-<%= template %>">
+        <% if (page.purchase_text) { %>
+            <a href="<%= page.purchase_link %>" class="btn btn-purchase btn-primary">
+                <%= page.purchase_text %>
+            </a>
+        <% } %>
         <div id="fh5co-page">
             <nav class="fh5co-nav-style-1" role="navigation" data-offcanvass-position="fh5co-offcanvass-left">
                 <div class="container">
@@ -83,7 +94,7 @@
                     </div>
                     <div class="col-md-3 col-sm-3 text-right fh5co-link-wrap">
                         <ul class="fh5co-special" data-offcanvass="yes">
-                            <li><a href="<%= Bloggify.options.theme.previewLink %>" class="call-to-action">Preview</a></li>
+                            <li><a href="<%= theme.previewLink %>" class="call-to-action">Preview</a></li>
                         </ul>
                     </div>
                 </div>

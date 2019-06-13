@@ -1,0 +1,65 @@
+<% var articleImage = article.image %>
+
+<div class="container page-content">
+    <div class="row">
+        <div class="col-md-12">
+            <article class="single-article-item <%= articleImage ? 'has-image' : 'no-image' %>">
+                <% if (articleImage) { %>
+                    <div class="article-img">
+                        <div class="article-info">
+                            <h1 class="article-title"><%= article.title %></h1>
+                            <% if (theme.show_article_metadata !== false) { %>
+                                <div class="article-sup">
+                                    <% if (article.date) { %>
+                                    <span class="date">
+                                        <%= article.date.format("LL") %> //
+                                    </span>
+                                    <% } %>
+                                    <% if (article.category) { %>
+                                        <span class="category"><%= article.category %></span> //
+                                    <% } %>
+                                    <% if (article.author) { %>
+                                        <span class="date">
+                                            Written by <%= article.author %>
+                                        </span>
+                                    <% } %>
+                                </div>
+                            <% } %>
+                            <div class="summary-top">
+                                <% if (article.summary) { %>
+                                    <%- article.summary %>
+                                <% } else { %>
+                                    <%- article.html.slice(0, 100) + "..." %>
+                                <% } %>
+                            </div>
+                        </div>
+                        <img src="<%= _public(articleImage) %>">
+                    </div>
+                <% } %>
+
+
+                <div class="single-article-content article-content content">
+                    <div class="markdown">
+                        <%- article.html %>
+                    </div>
+
+                    <% if (page.purchase_text) { %>
+                        <div class="text-center">
+                            <hr>
+                            <p>
+                                If you are interested in this product, click the button below.
+                                <% if (article.is_free) { %>
+                                    This product is <span class="label label-success">FREE</span>!
+                                <% } %>
+                            </p>
+                            <a href="<%= page.purchase_link %>" class="btn btn-primary btn-lg">
+                                <%= page.purchase_text %>
+                            </a>
+                        </div>
+                    <% } %>
+                </div>
+
+            </article>
+        </div>
+    </div>
+</div>
