@@ -8,13 +8,11 @@ tags:
     - bloggify
     - early
 
-landingImage: /assets/mascot/beky/1.png
-callBtnText: Hire us
+landingImage: /assets/mascot/beky.png
+callBtnText: Contact Us
 landingTitle: We make publishing easy.
 twitterUsername: Bloggify
 landingDescription: At <strong>Bloggify</strong> we build blogs, automation tools, scrapers and custom applications.
-
-
 
 secondSection:
     title: Made possible with the help of these sponsors!
@@ -37,7 +35,7 @@ thirdSection:
     title: Have questions or suggestions?
     description: |-
               <p>Write us what questions you have and send us your suggestions for publishing related software.</p>
-              <p><a href="/contact" class="btn btn-outline">Contact</a></p>
+              <p><a href="/contact" class="btn btn-outline">Contact Us</a></p>
 
 featuredCompanies:
     - title: Purdue IronHacks
