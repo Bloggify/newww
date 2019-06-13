@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=production bloggify start >> output.log",
+    "bundle": "PORT=8081 NODE_ENV=production bloggify start --exit-after-bundle",
     "start:dev": "bloggify start",
     "start:debug": "node debug `which bloggify` start"
   },

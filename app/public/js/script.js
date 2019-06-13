@@ -1,32 +1,34 @@
-$(document).ready(function() {
+"use strict";
+
+$(document).ready(function () {
 
     var $collapse = $("#home .collapse");
     $(".nav li > a").on("click", function () {
         $collapse.removeClass("in");
     });
 
-    var parallax = debounce(function() {
+    var parallax = debounce(function () {
         no_of_elements = 0;
-        $('.parallax').each(function() {
+        $('.parallax').each(function () {
             var $elem = $(this);
 
             if (isElementInViewport($elem)) {
                 var parent_top = $elem.offset().top;
                 var window_bottom = $(window).scrollTop();
-                var $image = $elem.find('.parallax-background img')
-                var $oVal = ((window_bottom - parent_top) / 3);
+                var $image = $elem.find('.parallax-background img');
+                var $oVal = (window_bottom - parent_top) / 3;
                 $image.css('margin-top', $oVal + 'px');
             }
         });
-    }, 6)
+    }, 6);
 
     function debounce(func, wait, immediate) {
         var timeout;
-        return function() {
+        return function () {
             var context = this,
                 args = arguments;
             clearTimeout(timeout);
-            timeout = setTimeout(function() {
+            timeout = setTimeout(function () {
                 timeout = null;
                 if (!immediate) func.apply(context, args);
             }, wait);
@@ -34,12 +36,11 @@ $(document).ready(function() {
         };
     };
 
-
     function isElementInViewport(elem) {
         var $elem = $(elem);
 
         // Get the scroll position of the page.
-        var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+        var scrollElem = navigator.userAgent.toLowerCase().indexOf('webkit') != -1 ? 'body' : 'html';
         var viewportTop = $(scrollElem).scrollTop();
         var viewportBottom = viewportTop + $(window).height();
 
@@ -47,40 +48,29 @@ $(document).ready(function() {
         var elemTop = Math.round($elem.offset().top);
         var elemBottom = elemTop + $elem.height();
 
-        return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+        return elemTop < viewportBottom && elemBottom > viewportTop;
     }
 
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         var responsive = $(window).width();
         if (responsive >= 768) {
             parallax();
         }
     });
     Donate({
-        container: ".donate"
-      , prefix: "$"
-      , classes: {
+        container: ".donate",
+        prefix: "$",
+        classes: {
             active: "active"
-        }
-      , amounts: [
-            1
-          , 5
-          , 10
-          , 50
-          , 100
-          , 300
-          , 500
-        ]
-      , custom: true
-      , format: function (val) {
-          return val > 1000
-               ? (val = val.toString()).substring(0, 1) + "," + val.substring(1)
-               : val
-               ;
-        }
-      , onChange: function (val, li, e) {
+        },
+        amounts: [1, 5, 10, 50, 100, 300, 500],
+        custom: true,
+        format: function format(val) {
+            return val > 1000 ? (val = val.toString()).substring(0, 1) + "," + val.substring(1) : val;
+        },
+        onChange: function onChange(val, li, e) {
             document.querySelector("[name=amount]").value = val;
-        }
-      , defaultValue: 10
+        },
+        defaultValue: 10
     });
 });
