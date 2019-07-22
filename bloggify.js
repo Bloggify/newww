@@ -4,16 +4,22 @@ module.exports = {
     title: "Bloggify",
     description: "We make publishing easy.",
     domain: "https://bloggify.org",
-    plugins: ["bloggify-emoji", ["contact-form", {
-        "sendgrid_key": process.env.SG_API_KEY,
-        "contact": {
-            "email": "support@bloggify.org",
-            "name": "Bloggify"
-        }
-    }], ["redirect", {
-        "/blog": "/products",
-        "/blog/*": "/products"
-    }], "markdown-highlight"],
+    plugins: [
+        "ajs-components",
+        "bloggify-emoji",
+        ["contact-form", {
+            "sendgrid_key": process.env.SG_API_KEY,
+            "contact": {
+                "email": "support@bloggify.org",
+                "name": "Bloggify"
+            }
+        }],
+        ["redirect", {
+            "/blog": "/products",
+            "/blog/*": "/products"
+        }],
+        "markdown-highlight"
+    ],
     "adapter": ["bloggify-markdown-adapter", {
         "articles_per_page": 100,
         "parse": {

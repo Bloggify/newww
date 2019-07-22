@@ -1,3 +1,4 @@
+      <% mod("bloggify-ajs-components/lib/footer") %>
       <div class="fh5co-footer-style-3">
          <div class="container">
             <div class="row">

@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production bloggify start >> output.log",
-    "bundle": "PORT=8081 NODE_ENV=production bloggify start --exit-after-bundle",
-    "start:dev": "bloggify start",
-    "start:debug": "node debug `which bloggify` start"
+    "start": "npm run start:prod",
+    "bundle": "bloggify-bundle",
+    "start:dev": "bloggify-dev-start -r",
+    "start:debug": "node debug `which bloggify` start -r",
+    "start:prod": "BLOGGIFY_LOG_LEVEL=4 bloggify-prod-start --no-workers",
+    "start:prod:debug": "NODE_ENV=production node debug `which bloggify` start",
+    "start:prod:debug:devtools": "NODE_ENV=production node debug --inspect `which bloggify` start"
   },
   "repository": {
     "type": "git",
@@ -38,7 +41,8 @@
     }
   },
   "dependencies": {
-    "bloggify": "^1.2.2",
+    "bloggify": "^1.4.1",
+    "bloggify-ajs-components": "^1.0.0",
     "bloggify-config": "^1.0.4",
     "bloggify-contact-form": "^4.0.2",
     "bloggify-emoji": "^3.0.0",
@@ -48,9 +52,9 @@
     "bloggify-sendgrid": "^3.0.1",
     "bloggify-social": "^3.0.5",
     "bootstrap": "^3.3.7",
-    "jquery": "^3.1.1"
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
-    "bloggify-cli": "^1.2.2"
+    "bloggify-cli": "^1.4.1"
   }
 }
