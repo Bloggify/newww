@@ -38,7 +38,7 @@
     }
   },
   "dependencies": {
-    "bloggify": "^1.2.2",
+    "bloggify": "^1.4.1",
     "bloggify-config": "^1.0.4",
     "bloggify-contact-form": "^4.0.2",
     "bloggify-emoji": "^3.0.0",
@@ -48,9 +48,9 @@
     "bloggify-sendgrid": "^3.0.1",
     "bloggify-social": "^3.0.5",
     "bootstrap": "^3.3.7",
-    "jquery": "^3.1.1"
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
-    "bloggify-cli": "^1.2.2"
+    "bloggify-cli": "^1.4.1"
   }
 }
