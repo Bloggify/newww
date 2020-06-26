@@ -36,7 +36,7 @@ module.exports = {
         },
         "theme": ["/app/theme", {
             "options": {
-                "previewLink": "https://preview.bloggify.org",
+                "previewLink": "",
                 "defaultOgImage": "/assets/mascot/beky.png",
                 "show_article_metadata": false,
                 "social": {

@@ -23,10 +23,12 @@
                     <div class="col-md-6 col-sm-6 text-center fh5co-link-wrap">
                         <% include("menu") %>
                     </div>
-                    <div class="col-md-3 col-sm-3 text-right fh5co-link-wrap">
-                        <ul class="fh5co-special" data-offcanvass="yes">
-                            <li><a href="<%= theme.previewLink %>" class="call-to-action">Preview</a></li>
-                        </ul>
-                    </div>
+                    <% if (theme.previewLink) { %>
+                        <div class="col-md-3 col-sm-3 text-right fh5co-link-wrap">
+                            <ul class="fh5co-special" data-offcanvass="yes">
+                                <li><a href="<%= theme.previewLink %>" class="call-to-action">Preview</a></li>
+                            </ul>
+                        </div>
+                    <% } %>
                 </div>
             </nav>
