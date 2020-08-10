@@ -49,6 +49,16 @@
 
 
 
+## Installation
+
+```sh
+git clone https://github.com/Bloggify/newww.git
+cd newww
+npm i
+npm run start:dev
+```
+
+
 
 
 

@@ -1,6 +1,6 @@
 {
   "name": "bloggify.org",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "The Bloggify.org website source code.",
   "main": "index.js",
   "scripts": {
@@ -28,17 +28,22 @@
   },
   "homepage": "https://github.com/Bloggify/newww#readme",
   "blah": {
-    "installation_steps": {
-      "content": [
-        "git clone https://github.com/Bloggify/newww bloggify-newww",
-        "cd bloggify-newww",
-        "git checkout app",
-        "npm i",
-        "npm run start:dev",
-        "# Then open http://localhost:8080 in your browser"
-      ],
-      "language": "sh"
-    }
+    "installation": [
+      {
+        "h2": "Installation"
+      },
+      {
+        "code": {
+          "language": "sh",
+          "content": [
+            "git clone https://github.com/Bloggify/newww.git",
+            "cd newww",
+            "npm i",
+            "npm run start:dev"
+          ]
+        }
+      }
+    ]
   },
   "dependencies": {
     "bloggify": "^1.4.1",
